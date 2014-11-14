@@ -1,0 +1,24 @@
+
+* Move Utils -> Hoos {{done}}
+** Add DB update hook {{done}}
+* Prefs {{done}}
+* Configuration {{done}}
+* i18n {{done}}
+* github {{done}}
+* Usurpation {{done}}
+* Whitelists {{done}}
+* Debugs {{done}}
+* Config flag to disallow local creates {{done}}
+** remove create account link in toolbar {{done}}
+* max session without revalidation when whitelisted {{done}}
+
+* Tests
+** Refactor special
+*** Divide finish handling for flow steps
+*** Location from Special page
+
+* comments / docs
+
+* Reorg directories?
+
+* Change returnto url when clicking login on Special:UserLogout
