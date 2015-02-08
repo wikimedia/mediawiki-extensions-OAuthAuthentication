@@ -10,7 +10,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'OAuthAuthentication',
-	'description'    => 'This extension allows wikis to delegate their authentication to anther wiki',
+	'descriptionmsg' => 'oauthauth-desc',
 	'author'         => array( 'Chris Steipp' ),
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:OAuthAuthentication',
 	'version'        => '0.1.0'

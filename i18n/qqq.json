@@ -4,7 +4,8 @@
 			"CSteipp"
 		]
 	},
-	"oauthauth-already-logged-in": "You are already logged in. $1 to continue",
+	"oauthauth-desc": "{{desc|name=OAuth Authentication|url=https://www.mediawiki.org/wiki/Extension:OAuthAuthentication}}",
+	"oauthauth-already-logged-in": "Error message when user is logged in already",
 	"oauthauth-error": "Title for OAuth login page errors",
 	"ouathauth-logout": "Link text for logout link",
 	"oauthauth-failed-handshake": "Error message to users when an unknown issue occured.",
@@ -14,7 +15,7 @@
 	"oauthauth-login-noname": "Error when the username on the OAuth-server wiki isn't valid on this client wiki.",
 	"oauthauth-login": "Text for link to login on remote wiki.\n\nParameters:\n* $1 - the name of the remote wiki where the user will log in.",
 	"oauthauth-login-usernotexists": "Error when the user logs in with an account that was attached on this wiki, but no longer exists.",
-	"oauthauth-nologin-policy": "Error the user sees hwne the local wiki's administrator has prevented their login with a policy.",
+	"oauthauth-nologin-policy": "Error the user sees when the local wiki's administrator has prevented their login with a policy.",
 	"oauthauth-localuser-not-allowed": "Error when the user attempts to create an account, but the wiki isn't configured to allow it, and instructing the user to login via OAuth.\n\nParameters:\n* $1 - link text {{msg-mw|login}}. A link to login.",
 	"oauthauth-loggout-policy": "Error message when a user is logged out because their user no longer complies with the requirements set by the site administrator"
 }
