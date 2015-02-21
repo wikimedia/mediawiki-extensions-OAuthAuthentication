@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vitorvicentevalente"
+		]
+	},
+	"oauthauth-already-logged-in": "Já está autenticado. $1 para continuar.",
+	"ouathauth-logout": "Sair",
+	"oauthauth-login": "Entrar em $1"
+}

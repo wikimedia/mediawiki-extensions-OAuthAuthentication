@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"oauthauth-desc": "Ermöglicht Wikis, ihre Authentifikation auf ein anderes Wiki zu delegieren",
+	"oauthauth-already-logged-in": "Du bist bereits angemeldet. $1 zum Fortfahren.",
+	"oauthauth-error": "OAuth-Anmeldefehler",
+	"ouathauth-logout": "Abmelden",
+	"oauthauth-failed-handshake": "Es gab einen OAuth-Protokollfehler beim Anmelden. Das Remote-Wiki könnte technische Fehler haben.",
+	"oauthauth-csrf-detected": "OAuth-Sitzung falsch angepasst. Bitte versuche, dich neu anzumelden.",
+	"oauthauth-create-noname": "OAuth-Fehler beim Anmelden. Der Benutzername auf dem Remote-Wiki ist nicht auf diesem Wiki gültig.",
+	"oauthauth-create-userexists": "OAuth-Fehler beim Anmelden. Der Benutzername auf dem Remote-Wiki ist auf diesem Wiki bereits vorhanden. Du musst einen Bürokraten kontaktieren, um das Benutzerkonto zu übernehmen.",
+	"oauthauth-login-noname": "Der OAuth-Benutzer ist verbunden, aber der Name ist auf diesem Wiki nicht gültig.",
+	"oauthauth-login": "Anmelden auf $1",
+	"oauthauth-login-usernotexists": "Der OAuth-Benutzer ist als verbunden gelistet, aber der Benutzer ist auf diesem Wiki nicht vorhanden.",
+	"oauthauth-nologin-policy": "Die Richtlinie dieses Wikis lässt dich nicht anmelden.",
+	"oauthauth-localuser-not-allowed": "Der Website-Administrator hat die lokale Benutzerkontenerstellung deaktiviert. Du solltest dich $1, um ein Benutzerkonto mit OAuth zu erstellen.",
+	"oauthauth-loggout-policy": "Du wurdest abgemeldet, da es dir die Richtlinie der Website nicht mehr gestattet, angemeldet zu sein."
+}
