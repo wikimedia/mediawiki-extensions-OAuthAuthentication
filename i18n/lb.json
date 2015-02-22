@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"oauthauth-already-logged-in": "Dir sidd schonn ageloggt. $1 fir virunzefueren",
+	"oauthauth-error": "OAuth Login-Feeler",
+	"ouathauth-logout": "Ausloggen",
+	"oauthauth-login": "Op $1 aloggen"
+}

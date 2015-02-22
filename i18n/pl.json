@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"ouathauth-logout": "Wyloguj się",
+	"oauthauth-csrf-detected": "Niezgodność sesji OAuth. Spróbuj zalogować się ponownie.",
+	"oauthauth-login": "Zaloguj się do $1"
+}

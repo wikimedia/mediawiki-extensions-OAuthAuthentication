@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"CSteipp"
+			"CSteipp",
+			"Liuxinyu970226"
 		]
 	},
 	"oauthauth-desc": "{{desc|name=OAuth Authentication|url=https://www.mediawiki.org/wiki/Extension:OAuthAuthentication}}",
 	"oauthauth-already-logged-in": "Error message when user is logged in already",
 	"oauthauth-error": "Title for OAuth login page errors",
-	"ouathauth-logout": "Link text for logout link",
+	"ouathauth-logout": "Link text for logout link\n{{Identical|Log out}}",
 	"oauthauth-failed-handshake": "Error message to users when an unknown issue occured.",
 	"oauthauth-csrf-detected": "Error when anti-csrf tokens do not match, and the user needs to login again.",
 	"oauthauth-create-noname": "Error when the username on the OAuth-server wiki isn't valid on this client wiki.",

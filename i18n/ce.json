@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"oauthauth-error": "OAuth чу гӀош гӀалат",
+	"ouathauth-logout": "Болх дӀаберзор",
+	"oauthauth-login": "Кху $1 чугӀо"
+}

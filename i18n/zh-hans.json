@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"oauthauth-desc": "允许wiki代表他们认证至另一wiki",
+	"oauthauth-already-logged-in": "您已经登录。$1以继续",
+	"oauthauth-error": "OAuth登录错误",
+	"ouathauth-logout": "退出",
+	"oauthauth-failed-handshake": "您登录时的OAuth协议有错误。远程wiki可能出现技术问题。",
+	"oauthauth-csrf-detected": "OAuth会话不匹配。请尝试重新登录。",
+	"oauthauth-create-noname": "您登录时OAuth出现错误。远程wiki上的用户名在此wiki不是有效的。",
+	"oauthauth-create-userexists": "您登录时OAuth出现错误。远程wiki上的用户名已存在于此wiki。您必须联络行政员以夺取账户。",
+	"oauthauth-login-noname": "OAuth用户已连接，但名称在此wiki无效。",
+	"oauthauth-login": "在$1登录",
+	"oauthauth-login-usernotexists": "列出的OAuth用户已连接，但用户在此wiki不存在。",
+	"oauthauth-nologin-policy": "此wiki的方针将不会让您登录。",
+	"oauthauth-localuser-not-allowed": "网站管理员已禁用本地账户创建。您应该$1以通过OAuth创建账户。",
+	"oauthauth-loggout-policy": "您已经退出，因为网站方针不再允许您登录。"
+}
