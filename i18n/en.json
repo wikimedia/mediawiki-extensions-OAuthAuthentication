@@ -4,7 +4,7 @@
 			"CSteipp"
 		]
 	},
-	"oauthauth-desc": "Allows wikis to delegate their authentication to anther wiki",
+	"oauthauth-desc": "Allows wikis to delegate their authentication to another wiki",
 	"oauthauth-already-logged-in": "You are already logged in. $1 to continue",
 	"oauthauth-error": "OAuth login error",
 	"ouathauth-logout": "Logout",
