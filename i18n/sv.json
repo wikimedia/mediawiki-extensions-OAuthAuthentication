@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aaoo"
+			"Aaoo",
+			"WikiPhoenix"
 		]
 	},
-	"ouathauth-logout": "Logga ut"
+	"oauthauth-already-logged-in": "Du är redan inloggad. $1 för att fortsätta",
+	"ouathauth-logout": "Logga ut",
+	"oauthauth-nologin-policy": "Denna wikis policy låter dig inte logga in."
 }
