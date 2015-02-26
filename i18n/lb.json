@@ -7,5 +7,7 @@
 	"oauthauth-already-logged-in": "Dir sidd schonn ageloggt. $1 fir virunzefueren",
 	"oauthauth-error": "OAuth Login-Feeler",
 	"ouathauth-logout": "Ausloggen",
+	"oauthauth-create-noname": "OAuth-Feeler beim Aloggen. De Benotzernumm op der Remote-Wiki ass op dëser Wiki net valabel.",
+	"oauthauth-login-noname": "Den OAuth-Benotzer ass verbonn, mä den Numm ass op dëser Wiki net valabel.",
 	"oauthauth-login": "Op $1 aloggen"
 }
