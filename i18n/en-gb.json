@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Caliburn"
+		]
+	},
+	"oauthauth-error": "OAuth login error",
+	"oauthauth-login": "Log in on $1"
+}
