@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"oauthauth-desc": "Määd et müjjelesch för et Wikki, et Pröhve vun Zohjangesberääschtejonge vun enem anndere Wikki maache ze lohße.",
+	"oauthauth-already-logged-in": "o be alld ennjelogg. Donn $1, öm wigger ze maache.",
+	"oauthauth-error": "Beim Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es ene Fähler opjetrodde.",
+	"ouathauth-logout": "Ußlogge",
+	"oauthauth-failed-handshake": "Beim Versohch övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> enzelogge, es ene Fähler em Protokoll opjetrodde. Dat andere Wikki künnt jrahd e täschnesch Problehm han.",
+	"oauthauth-csrf-detected": "Beim Versohch övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> enzelogge, es ene Fähler opjetrodde. De Sezongsdahte passe nit zersamme. Versöhg et norr_ens.",
+	"oauthauth-create-noname": "Dat Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> hät jeflupp. Dinge Metmaacher_Nahme om andere Wikki es ävver heh em Wikki keine jöltejje Nahme.",
+	"oauthauth-create-userexists": "Et Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> däht wall fluppe, ävver Dinge Metmaacher_Nahme om andere Wikki es heh em Wikki ald en jebruch. Do moß medd enem Bürrokraht kalle, öm dä Bahme för Desch beaanschproche ze kunne.",
+	"oauthauth-login-noname": "Dä Metmaacher vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es verbonge, ävver däm singe Nahme es heh em Wikki keine jöltejje Nahme.",
+	"oauthauth-login": "Donn enlogge op",
+	"oauthauth-login-usernotexists": "Dä Metmaacher vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es als verbonge jemälldt, ävver däm singe Nahme es heh em Wikki nit ze fenge.",
+	"oauthauth-nologin-policy": "De Rääjelle för heh dat Wikki lohße nit zoh, dat De enlogge kanns.",
+	"oauthauth-localuser-not-allowed": "Heh dat Wikki löht nit zoh, neue Zohjäng aanzelähje. Do kanns ävver med <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> {{lcfirst:$1}} un esu ene Zohjang zom Wikki krijje.",
+	"oauthauth-loggout-policy": "Do woods ußjelogg, nohdämm de Rääjelle för heh dat Wikki nit mieh zohlohße, dat De enjelogg bes."
+}
