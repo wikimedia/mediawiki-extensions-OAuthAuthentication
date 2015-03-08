@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Leeheonjin"
+		]
+	},
+	"ouathauth-logout": "Mag-logout",
+	"oauthauth-login": "Mag-lagda (login) king $1"
+}
