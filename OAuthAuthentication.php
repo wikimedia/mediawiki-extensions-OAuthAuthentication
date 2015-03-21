@@ -108,6 +108,16 @@ $wgExtensionMessagesFiles['SpecialOAuthLoginNoTranslate'] = "$dir/OAuthAuthentic
 $wgAutoloadClasses['MWOAuthClientConfig'] = "$dir/libs/mwoauth-php/MWOAuthClient.php";
 $wgAutoloadClasses['MWOAuthClient'] = "$dir/libs/mwoauth-php/MWOAuthClient.php";
 $wgAutoloadClasses['OAuthToken'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthException'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthConsumer'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthSignatureMethod'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthSignatureMethod_HMAC_SHA1'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthSignatureMethod_PLAINTEXT'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthSignatureMethod_RSA_SHA1'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthRequest'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthServer'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthDataStore'] = "$dir/libs/mwoauth-php/OAuth.php";
+$wgAutoloadClasses['OAuthUtil'] = "$dir/libs/mwoauth-php/OAuth.php";
 
 
 $wgSpecialPages['OAuthLogin'] = 'MediaWiki\Extensions\OAuthAuthentication\SpecialOAuthLogin';
