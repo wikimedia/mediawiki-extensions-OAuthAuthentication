@@ -5,7 +5,7 @@
 		]
 	},
 	"oauthauth-desc": "Позволяет Вики делегировать проверку подлинности на другой Вики",
-	"oauthauth-error": "Ошибка входа в систему OAuth",
+	"oauthauth-error": "Ошибка входа в систему с помощью OAuth",
 	"ouathauth-logout": "Выйти",
 	"oauthauth-login": "Войдите на $1"
 }
