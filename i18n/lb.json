@@ -4,6 +4,7 @@
 			"Robby"
 		]
 	},
+	"oauthauth-desc": "Erméiglecht et Wikie fir hier Authentifikatioun op eng aner Wiki ze delegéieren",
 	"oauthauth-already-logged-in": "Dir sidd schonn ageloggt. $1 fir virunzefueren",
 	"oauthauth-error": "OAuth Login-Feeler",
 	"ouathauth-logout": "Ausloggen",
