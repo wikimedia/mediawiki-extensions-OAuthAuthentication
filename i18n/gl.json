@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"oauthauth-desc": "Permite que un wiki delegue a súa autenticación a outro wiki",
+	"oauthauth-already-logged-in": "Xa iniciou unha sesión. $1 para continuar",
+	"oauthauth-error": "Erro de acceso con OAuth",
+	"ouathauth-logout": "Saír",
+	"oauthauth-failed-handshake": "Houbo un erro ó acceder mediante o protocolo OAuth. Pode que o wiki remoto teña problemas técnicos.",
+	"oauthauth-csrf-detected": "Discordancia na sesión OAuth. Intente iniciar sesión de novo.",
+	"oauthauth-create-noname": "Erro de OAuth ó intentar iniciar sesión. O nome de usuario no wiki remoto non é válido neste wiki."
+}

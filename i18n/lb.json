@@ -12,5 +12,7 @@
 	"oauthauth-create-noname": "OAuth-Feeler beim Aloggen. De Benotzernumm op der Remote-Wiki ass op dëser Wiki net valabel.",
 	"oauthauth-login-noname": "Den OAuth-Benotzer ass verbonn, mä den Numm ass op dëser Wiki net valabel.",
 	"oauthauth-login": "Op $1 aloggen",
-	"oauthauth-nologin-policy": "D'Richtlinn vun dëser Wiki erlaabt et net datt Dir iech aloggt."
+	"oauthauth-login-usernotexists": "Den OAuth-Benotzer ass als verbonn agedro, awer de Benotzer gëtt et op dëser Wiki net.",
+	"oauthauth-nologin-policy": "D'Richtlinn vun dëser Wiki erlaabt et net datt Dir iech aloggt.",
+	"oauthauth-loggout-policy": "Dir gouft ausgeloggt well d'Richtlinne vum Site et net méi erlaben datt Dir ageloggt sidd."
 }
