@@ -5,7 +5,7 @@
 		]
 	},
 	"oauthauth-desc": "Allows wikis to delegate their authentication to another wiki",
-	"oauthauth-already-logged-in": "You are already logged in. $1 to continue",
+	"oauthauth-already-logged-in": "You are already logged in.",
 	"oauthauth-error": "OAuth login error",
 	"ouathauth-logout": "Logout",
 	"oauthauth-failed-handshake": "There was an OAuth protocol error logging you in. The remote wiki may be experiencing technical issues.",
