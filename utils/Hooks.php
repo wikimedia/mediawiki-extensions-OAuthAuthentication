@@ -45,7 +45,7 @@ class Hooks {
 	}
 
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
-		$updater->addExtensionTable( 'oauthauth_user', __DIR__ . '../store/oauthauth.sql' );
+		$updater->addExtensionTable( 'oauthauth_user', __DIR__ . '/../store/oauthauth.sql' );
 	}
 
 	public static function onGetPreferences( $user, &$preferences ) {
