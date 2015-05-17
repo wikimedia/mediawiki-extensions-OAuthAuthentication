@@ -7,5 +7,5 @@
 	"oauthauth-already-logged-in": "Já está autenticado. $1 para continuar.",
 	"ouathauth-logout": "Sair",
 	"oauthauth-login": "Entrar em $1",
-	"oauthauth-localuser-not-allowed": "O administrador do sítio desativou a criação de contas locais. Deverá $1 para criar uma conta com o OAuth."
+	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. Clique em \"$1\" para criar uma conta com o OAuth."
 }

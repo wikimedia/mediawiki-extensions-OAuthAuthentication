@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fringio"
+		]
+	},
+	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata su questa wiki. Premi \"$1\" per cerare un account con OAuth."
+}

@@ -16,6 +16,6 @@
 	"oauthauth-login": "在$1登录",
 	"oauthauth-login-usernotexists": "列出的OAuth用户已连接，但用户在此wiki不存在。",
 	"oauthauth-nologin-policy": "此wiki的方针将不会让您登录。",
-	"oauthauth-localuser-not-allowed": "网站管理员已禁用本地账户创建。您应该$1以通过OAuth创建账户。",
+	"oauthauth-localuser-not-allowed": "此wiki已禁用本地账户的创建。点击“$1”以通过OAuth创建账户。",
 	"oauthauth-loggout-policy": "您已经退出，因为网站方针不再允许您登录。"
 }

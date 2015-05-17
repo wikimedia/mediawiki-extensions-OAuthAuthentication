@@ -16,6 +16,6 @@
 	"oauthauth-login": "Anmelden auf $1",
 	"oauthauth-login-usernotexists": "Der OAuth-Benutzer ist als verbunden gelistet, aber der Benutzer ist auf diesem Wiki nicht vorhanden.",
 	"oauthauth-nologin-policy": "Die Richtlinie dieses Wikis lässt dich nicht anmelden.",
-	"oauthauth-localuser-not-allowed": "Der Website-Administrator hat die lokale Benutzerkontenerstellung deaktiviert. Du solltest dich $1, um ein Benutzerkonto mit OAuth zu erstellen.",
+	"oauthauth-localuser-not-allowed": "Die Erstellung lokaler Benutzerkonten ist auf diesem Wiki deaktiviert. Klicke auf „$1“, um ein Benutzerkonto mit OAuth zu erstellen.",
 	"oauthauth-loggout-policy": "Du wurdest abgemeldet, da es dir die Richtlinie der Website nicht mehr gestattet, angemeldet zu sein."
 }

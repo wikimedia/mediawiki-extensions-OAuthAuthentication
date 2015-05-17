@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nirjal stha"
+		]
+	},
+	"oauthauth-localuser-not-allowed": "यस विकिमा स्थानिय खाता खोल्न बन्द गरिएको छ ।  अोउथ सहित खाता खोल्नको लागी \"$1\" मा दबाउनु होस ।"
+}
