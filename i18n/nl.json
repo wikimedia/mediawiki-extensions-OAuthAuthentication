@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"oauthauth-localuser-not-allowed": "Lokale accounts aanmaken is uitgeschakeld op deze wiki. Klik \"$1\" op een account via OAuth aan te maken."
+}
