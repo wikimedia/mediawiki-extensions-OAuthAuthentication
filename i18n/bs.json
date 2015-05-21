@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Emir Mujadzic"
+		]
+	},
+	"oauthauth-create-noname": "Prolazna greška vaše prijave . Korisničko ime na daljinskom upravljaču wiki nije važeće na ovoj wiki.",
+	"oauthauth-login-noname": "Prometni korisnik je povezan , ali ovo ime nije važeće na wiki",
+	"oauthauth-login-usernotexists": "Prometni korisnik je naveden kao povezan , ali ovaj korisnik ne postoji na ovoj wiki."
+}

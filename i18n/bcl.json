@@ -4,5 +4,8 @@
 			"Geopoet"
 		]
 	},
+	"oauthauth-create-noname": "Kasalaan sa OAuth sa pagpapalaog saimo. An paragamit sa lataw na wiki bakong balido sa wiking ini.",
+	"oauthauth-login-noname": "An OAuth na paragamit konektado na, alagad an pangaran bakong balido sa wiking ini.",
+	"oauthauth-login-usernotexists": "An OAuth na paragamit pinaglistang konektado, alagad an paragamit bakong midbid sa wiking ini.",
 	"oauthauth-localuser-not-allowed": "Lokal na pagmukna nin panindog pinag-untok sa wiking ini. I-klick an \"$1\" sa pagmukna nin panindog na igwang OAuth."
 }

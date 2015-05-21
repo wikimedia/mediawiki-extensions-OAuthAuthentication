@@ -16,6 +16,6 @@
 	"oauthauth-login": "Acceder a $1",
 	"oauthauth-login-usernotexists": "O usuario OAuth aparece como conectado, pero non existe nesta wiki.",
 	"oauthauth-nologin-policy": "A política desta wiki non lle permite acceder.",
-	"oauthauth-localuser-not-allowed": "Os administradores do sitio desactivaron a creación de contas locais. Debe $1 para crear unha conta con OAuth.",
+	"oauthauth-localuser-not-allowed": "A creación local de contas está desactivada nesta wiki. Prema \"$1\" para crear unha conta con OAuth.",
 	"oauthauth-loggout-policy": "A sesión rematou porque a directiva do sitio xa non permite estar conectado."
 }
