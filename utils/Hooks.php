@@ -8,14 +8,21 @@ class Hooks {
 			$wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
 		if ( $wgUser->getID() == 0 ) {
+
 			$query = array();
-			$query['returnto'] = $title->getPrefixedText();
-			$returntoquery = $wgRequest->getValues();
-			unset( $returntoquery['title'] );
-			unset( $returntoquery['returnto'] );
-			unset( $returntoquery['returntoquery'] );
-			$query['returntoquery'] = wfArrayToCgi( $returntoquery );
-			$personal_urls['login']['href'] = \SpecialPage::getTitleFor( 'OAuthLogin', 'init' )->getFullURL( $query );
+			if ( $title->isSpecial( 'Userlogout' ) ) {
+				$query['returnto'] =  $wgRequest->getVal( 'returnto', 'Main_Page' );
+				$query['returntoquery'] =  $wgRequest->getVal( 'returntoquery' );
+			} else {
+				$query['returnto'] = $title->getPrefixedText();
+				$returntoquery = $wgRequest->getValues();
+				unset( $returntoquery['title'] );
+				unset( $returntoquery['returnto'] );
+				unset( $returntoquery['returntoquery'] );
+				$query['returntoquery'] = wfArrayToCgi( $returntoquery );
+			}
+			$personal_urls['login']['href'] =
+				\SpecialPage::getTitleFor( 'OAuthLogin', 'init' )->getFullURL( $query );
 			if ( $wgOAuthAuthenticationRemoteName ) {
 				$personal_urls['login']['text'] = wfMessage( 'oauthauth-login',
 					$wgOAuthAuthenticationRemoteName )->text();
