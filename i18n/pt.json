@@ -6,6 +6,8 @@
 	},
 	"oauthauth-already-logged-in": "Já está autenticado. $1 para continuar.",
 	"ouathauth-logout": "Sair",
+	"oauthauth-login-noname": "O utilizador OAuth está ligado, mas o nome não é válido nesta wiki.",
 	"oauthauth-login": "Entrar em $1",
+	"oauthauth-login-usernotexists": "O utilizador OAuth está listado como ligado, mas o utilizador não existe nesta wiki.",
 	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. Clique em \"$1\" para criar uma conta com o OAuth."
 }
