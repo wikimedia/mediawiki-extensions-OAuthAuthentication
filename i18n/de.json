@@ -5,7 +5,7 @@
 		]
 	},
 	"oauthauth-desc": "Ermöglicht Wikis, ihre Authentifikation auf ein anderes Wiki zu delegieren",
-	"oauthauth-already-logged-in": "Du bist bereits angemeldet. $1 zum Fortfahren.",
+	"oauthauth-already-logged-in": "Du bist bereits angemeldet.",
 	"oauthauth-error": "OAuth-Anmeldefehler",
 	"ouathauth-logout": "Abmelden",
 	"oauthauth-failed-handshake": "Es gab einen OAuth-Protokollfehler beim Anmelden. Das Remote-Wiki könnte technische Fehler haben.",

@@ -4,7 +4,7 @@
 			"Vitorvicentevalente"
 		]
 	},
-	"oauthauth-already-logged-in": "Já está autenticado. $1 para continuar.",
+	"oauthauth-already-logged-in": "Já está autenticado.",
 	"ouathauth-logout": "Sair",
 	"oauthauth-login-noname": "O utilizador OAuth está ligado, mas o nome não é válido nesta wiki.",
 	"oauthauth-login": "Entrar em $1",

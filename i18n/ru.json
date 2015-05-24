@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dicto23456"
+			"Dicto23456",
+			"KennyTHPS"
 		]
 	},
 	"oauthauth-desc": "Позволяет Вики делегировать проверку подлинности на другой Вики",
+	"oauthauth-already-logged-in": "Вы уже вошли.",
 	"oauthauth-error": "Ошибка входа в систему с помощью OAuth",
 	"ouathauth-logout": "Выйти",
 	"oauthauth-login": "Войдите на $1"

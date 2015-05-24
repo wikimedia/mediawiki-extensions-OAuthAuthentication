@@ -5,7 +5,7 @@
 		]
 	},
 	"oauthauth-desc": "Erméiglecht et Wikie fir hier Authentifikatioun op eng aner Wiki ze delegéieren",
-	"oauthauth-already-logged-in": "Dir sidd schonn ageloggt. $1 fir virunzefueren",
+	"oauthauth-already-logged-in": "Dir sidd schonn ageloggt.",
 	"oauthauth-error": "OAuth Login-Feeler",
 	"ouathauth-logout": "Ausloggen",
 	"oauthauth-csrf-detected": "Duerchernee bei der OAuth-Sessioun. Probéiert w.e.g. nach eng Kéier fir Iech anzeloggen.",
