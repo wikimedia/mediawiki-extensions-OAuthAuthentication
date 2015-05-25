@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Nicolapps",
-			"Element303"
+			"Element303",
+			"Framafan"
 		]
 	},
 	"oauthauth-desc": "Autorise les wikis à déléguer leurs authentifications à un autre wiki",
-	"oauthauth-already-logged-in": "Vous êtes déjà connecté. $1 pour continuer",
+	"oauthauth-already-logged-in": "Vous êtes déjà connecté.",
 	"oauthauth-error": "Erreur de connexion OAuth",
 	"ouathauth-logout": "Déconnexion",
 	"oauthauth-failed-handshake": "Il y a une erreur dans le protocole d'authentification OAuth pour vous connecter. Le wiki distant rencontre peut être des problèmes techniques.",

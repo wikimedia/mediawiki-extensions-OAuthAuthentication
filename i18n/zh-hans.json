@@ -5,7 +5,7 @@
 		]
 	},
 	"oauthauth-desc": "允许wiki代表他们认证至另一wiki",
-	"oauthauth-already-logged-in": "您已经登录。$1以继续",
+	"oauthauth-already-logged-in": "您已经登录。",
 	"oauthauth-error": "OAuth登录错误",
 	"ouathauth-logout": "退出",
 	"oauthauth-failed-handshake": "您登录时的OAuth协议有错误。远程wiki可能出现技术问题。",
