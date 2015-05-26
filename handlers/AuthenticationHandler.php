@@ -12,6 +12,12 @@ class AuthenticationHandler {
 			wfGetDB( DB_MASTER )  #TODO: don't do this
 		);
 		$exUser->setAccessToken( $accessToken );
+		if ( isset( $identity->realname ) ) {
+			$exUser->setRealname( $identity->realname );
+		}
+		if ( isset( $identity->email ) ) {
+			$exUser->setEmail( $identity->email );
+		}
 		$exUser->setIdentifyTS( new \MWTimestamp() );
 
 		if ( $exUser->attached() ) {
@@ -57,9 +63,9 @@ class AuthenticationHandler {
 				return $status;
 			}
 
-			/* TODO: Set email, realname, and language, once we can get them via /identify
 			$u->setEmail( $exUser->getEmail() );
-			$u->setRealName( $exUser->getRealName() );
+			$u->setRealName( $exUser->getRealname() );
+			/*
 			$u->setOption( 'language', $exUser->getLanguage() );
 			*/
 
@@ -100,9 +106,27 @@ class AuthenticationHandler {
 				__METHOD__ . ": Associated user is Anon. Aborting." );
 			return \Status::newFatal( 'oauthauth-login-usernotexists' );
 		}
-wfDebugLog( "OAA", __METHOD__ . " updating exuser: " . print_r( $exUser, true ) );
 		$exUser->updateInDatabase( wfGetDB( DB_MASTER ) );
 
+		$changed = false;
+		// update private data if needed
+		if ( $u->getEmail() !== $exUser->getEmail() ) {
+			if ( $exUser->getEmail() ) {
+				$u->setEmail( $exUser->getEmail() );
+				$u->confirmEmail();
+			} else {
+				$u->invalidateEmail();
+			}
+			$changed = true;
+		}
+		if ( $u->getRealName() !== $exUser->getRealname() ) {
+			$u->setRealName( $exUser->getRealname() );
+			$changed = true;
+		}
+
+		if ( $changed ) {
+			$u->saveSettings();
+		}
 		$u->invalidateCache();
 
 		if ( !$wgSecureLogin ) {

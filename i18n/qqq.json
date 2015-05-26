@@ -18,5 +18,7 @@
 	"oauthauth-login-usernotexists": "Error when the user logs in with an account that was attached on this wiki, but no longer exists.",
 	"oauthauth-nologin-policy": "Error the user sees when the local wiki's administrator has prevented their login with a policy.",
 	"oauthauth-localuser-not-allowed": "Error when the user attempts to create an account, but the wiki isn't configured to allow it, and instructing the user to login via OAuth.\n\nParameters:\n* $1 - link text {{msg-mw|login}}. A link to login.",
-	"oauthauth-loggout-policy": "Error message when a user is logged out because their user no longer complies with the requirements set by the site administrator"
+	"oauthauth-loggout-policy": "Error message when a user is logged out because their user no longer complies with the requirements set by the site administrator",
+	"oauthauth-set-email": "Instructions in the user's preferences telling a user to set their email address on another website.\n\nParameters:\n* $1 - the name of the remote wiki (e.g., 'Wikipedia') where they will set their email address.",
+	"oauthauth-email-set": "Showing the user their current email address, and instructing them how to change it, by going to another wiki.\n\nParameters:\n* $1 - the user's current email address.\n* $2 - the name of the remote wiki (e.g., 'Wikipedia') where they will set their email address."
 }

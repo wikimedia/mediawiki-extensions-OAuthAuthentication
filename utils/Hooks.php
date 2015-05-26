@@ -56,7 +56,7 @@ class Hooks {
 	}
 
 	public static function onGetPreferences( $user, &$preferences ) {
-		global $wgRequirePasswordforEmailChange;
+		global $wgRequirePasswordforEmailChange, $wgOAuthAuthenticationRemoteName;
 
 		$resetlink = \Linker::link(
 			\SpecialPage::getTitleFor( 'PasswordReset' ),
@@ -80,13 +80,27 @@ class Hooks {
 			}
 
 			if ( $wgRequirePasswordforEmailChange ) {
+
+				$emailMsg = wfMessage(
+					'oauthauth-set-email',
+					$wgOAuthAuthenticationRemoteName
+				)->escaped();
+				$emailCss = 'mw-email-none';
+				if ( $user->getEmail() ) {
+					$emailMsg = wfMessage(
+						'oauthauth-email-set',
+						$user->getEmail(),
+						$wgOAuthAuthenticationRemoteName
+					)->escaped();
+					$emailCss = 'mw-email-authenticated';
+				}
 				$preferences['emailaddress'] = array(
 					'type' => 'info',
 					'raw' => 1,
-					'default' => wfMessage( 'oauthauth-set-email' )->escaped(),
+					'default' => $emailMsg,
 					'section' => 'personal/email',
 					'label-message' => 'youremail',
-					'cssclass' => 'mw-email-none',
+					'cssclass' => $emailCss,
 				);
 			}
 
@@ -99,6 +113,7 @@ class Hooks {
 				'label-message' => null,
 			);
 		}
+
 	}
 
 	/**

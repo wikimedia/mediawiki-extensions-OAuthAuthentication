@@ -10,6 +10,12 @@ class OAuthExternalUser {
 	// Remote Username
 	private $username;
 
+	// Remote Realname
+	private $realname;
+
+	// Remote Email
+	private $email;
+
 	// Remote unique id
 	private $remoteId;
 
@@ -171,4 +177,21 @@ class OAuthExternalUser {
 	public function getIdentifyTS() {
 		return $this->identifyTS;
 	}
+
+	public function setRealname( $realname ) {
+		$this->realname = $realname;
+	}
+
+	public function getRealname() {
+		return $this->realname;
+	}
+
+	public function setEmail( $email ) {
+		$this->email = $email;
+	}
+
+	public function getEmail() {
+		return $this->email;
+	}
+
 }

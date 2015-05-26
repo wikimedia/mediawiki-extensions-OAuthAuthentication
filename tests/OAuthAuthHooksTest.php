@@ -1,4 +1,5 @@
 <?php
+namespace MediaWiki\Extensions\OAuthAuthentication;
 /**
  * @group OAuthAuthentication
  */
@@ -11,9 +12,9 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 		) );
 
 		$personal_urls = array( 'login' => array( 'href' => 'fail' ) );
-		$title = new Title();
+		$title = new \Title();
 
-		\MediaWiki\Extensions\OAuthAuthentication\Hooks::onPersonalUrls( $personal_urls, $title );
+		Hooks::onPersonalUrls( $personal_urls, $title );
 
 		$this->assertSame(
 			true,

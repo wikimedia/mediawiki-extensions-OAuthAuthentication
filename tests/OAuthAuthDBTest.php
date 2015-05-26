@@ -1,8 +1,9 @@
 <?php
+namespace MediaWiki\Extensions\OAuthAuthentication;
 /**
  * @group OAuthAuthentication
  */
-class OAuthAuthDBTest extends MediaWikiTestCase {
+class OAuthAuthDBTest extends \MediaWikiTestCase {
 
 	public function __construct( $name = null, array $data = array(), $dataName = '' ) {
 		parent::__construct( $name, $data, $dataName );
@@ -16,13 +17,13 @@ class OAuthAuthDBTest extends MediaWikiTestCase {
 		$this->db->sourceFile( __DIR__ . '/../store/oauthauth.sql' );
 
 		// TODO: Setup some test data
-		$user = User::newFromName( 'OAuthUser' );
+		$user = \User::newFromName( 'OAuthUser' );
 		if ( $user->idForName() == 0 ) {
 			$user->addToDatabase();
 			$user->setPassword( 'OAUP@ssword' );
 			$user->saveSettings();
 		}
-		$exUser = new \MediaWiki\Extensions\OAuthAuthentication\OAuthExternalUser( 100, $user->getId(), 'OAuthUser' );
+		$exUser = new OAuthExternalUser( 100, $user->getId(), 'OAuthUser' );
 		$exUser->addToDatabase( $this->db );
 	}
 

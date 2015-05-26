@@ -96,6 +96,7 @@ $wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\AuthenticationHandl
 $wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\OAuth1Handler'] = "$dir/handlers/OAuth1Handler.php";
 $wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\SessionStore'] = "$dir/store/SessionStore.php";
 $wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\PhpSessionStore'] = "$dir/store/PhpSessionStore.php";
+$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\OAuthAuthDBTest'] = "$dir/tests/OAuthAuthDBTest.php";
 
 ## i18n
 $wgMessagesDirs['OAuthAuthentication'] = "$dir/i18n";

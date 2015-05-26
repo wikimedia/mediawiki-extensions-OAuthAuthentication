@@ -12,7 +12,6 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 	public function execute( $subpage ) {
 		global $wgUser;
 		$request = $this->getRequest();
-
 		$this->setHeaders();
 
 		if ( !$this->getUser()->isAnon() ) {
