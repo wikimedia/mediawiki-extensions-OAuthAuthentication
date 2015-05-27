@@ -6,7 +6,7 @@
 		]
 	},
 	"oauthauth-desc": "Permite que un wiki delegue su autenticación a otro wiki",
-	"oauthauth-already-logged-in": "Ya has iniciado una sesión. $1 para continuar",
+	"oauthauth-already-logged-in": "Ya has iniciado una sesión.",
 	"oauthauth-error": "Error de acceso con OAuth",
 	"ouathauth-logout": "Salir",
 	"oauthauth-failed-handshake": "Se produjo un error al acceder mediante el protocolo OAuth. Puede que el wiki remoto tenga problemas técnicos.",
