@@ -50,9 +50,6 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 				} catch ( Exception $e ) {
 					throw new \ErrorPageError( 'oauthauth-error', $e->getMessage() );
 				}
-				if ( !$status->isGood() ) {
-					throw new \ErrorPageError( 'oauthauth-error', $status->getMessage() );
-				}
 
 				break;
 			case 'finish':
