@@ -6,7 +6,7 @@
 			"Jopparn"
 		]
 	},
-	"oauthauth-already-logged-in": "Du är redan inloggad. $1 för att fortsätta",
+	"oauthauth-already-logged-in": "Du är redan inloggad.",
 	"ouathauth-logout": "Logga ut",
 	"oauthauth-login": "Logga in på $1",
 	"oauthauth-nologin-policy": "Denna wikis policy låter dig inte logga in."
