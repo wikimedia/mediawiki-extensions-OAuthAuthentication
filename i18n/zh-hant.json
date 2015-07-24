@@ -6,7 +6,7 @@
 		]
 	},
 	"oauthauth-desc": "允許 wiki 使用其他 wiki 認証",
-	"oauthauth-already-logged-in": "您已登入。 $1 以繼續",
+	"oauthauth-already-logged-in": "您已登入。",
 	"oauthauth-error": "OAuth 登入錯誤",
 	"ouathauth-logout": "登出",
 	"oauthauth-failed-handshake": "您登入時發生 OAuth 協定錯誤，遠端的 wiki 可能發生技術問題。",
