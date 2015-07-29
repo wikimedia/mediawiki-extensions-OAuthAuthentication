@@ -3,7 +3,8 @@
 		"authors": [
 			"Nicolapps",
 			"Element303",
-			"Framafan"
+			"Framafan",
+			"Wladek92"
 		]
 	},
 	"oauthauth-desc": "Autorise les wikis à déléguer leurs authentifications à un autre wiki",
@@ -18,6 +19,6 @@
 	"oauthauth-login": "Connectez-vous sur $1",
 	"oauthauth-login-usernotexists": "L'utilisateur OAuth est connecté, mais l'utilisateur n'existe pas sur ce wiki.",
 	"oauthauth-nologin-policy": "Cette politique de Wiki ne permettra pas de vous connecter.",
-	"oauthauth-localuser-not-allowed": "L'administrateur du site a désactivé la création de compte. Vous devriez vous authentifier ($1) pour créer un compte avec OAuth.",
+	"oauthauth-localuser-not-allowed": "La création locale de compte est désactivée sur ce wiki. Cliquez sur \"$1\" pour créer un compte avec OAuth.",
 	"oauthauth-loggout-policy": "Vous avez été déconnecté car la politique du site ne permet plus de vous connecter."
 }
