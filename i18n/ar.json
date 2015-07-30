@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"محمد أحمد عبد الفتاح"
+		]
+	},
+	"oauthauth-already-logged-in": "أنت والج بالفعل.",
+	"oauthauth-error": "خطأ في ولوج OAuth",
+	"ouathauth-logout": "تسجيل الخروج"
+}
