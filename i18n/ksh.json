@@ -11,7 +11,7 @@
 	"oauthauth-failed-handshake": "Beim Versohch övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> enzelogge, es ene Fähler em Protokoll opjetrodde. Dat andere Wikki künnt jrahd e täschnesch Problehm han.",
 	"oauthauth-csrf-detected": "Beim Versohch övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> enzelogge, es ene Fähler opjetrodde. De Sezongsdahte passe nit zersamme. Versöhg et norr_ens.",
 	"oauthauth-create-noname": "Dat Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> hät jeflupp. Dinge Metmaacher_Nahme om andere Wikki es ävver heh em Wikki keine jöltejje Nahme.",
-	"oauthauth-create-userexists": "Et Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> däht wall fluppe, ävver Dinge Metmaacher_Nahme om andere Wikki es heh em Wikki ald en jebruch. Do moß medd enem Bürrokraht kalle, öm dä Bahme för Desch beaanschproche ze kunne.",
+	"oauthauth-create-userexists": "Et Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> däht wall fluppe, ävver Dinge Metmaacher_Nahme om andere Wikki es heh em Wikki ald en Jebruch. Do moß en Bürrokrahd holle, öm dä Nahme —&nbsp;velleijsch&nbsp;— för Desch beaanschproche ze kunne.",
 	"oauthauth-login-noname": "Dä Metmaacher vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es verbonge, ävver däm singe Nahme es heh em Wikki keine jöltejje Nahme.",
 	"oauthauth-login": "Donn {{GRAMMAR:em|{{ucfirst:{{$1}}}}}} enlogge",
 	"oauthauth-login-usernotexists": "Dä Metmaacher vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es als verbonge jemälldt, ävver däm singe Nahme es heh em Wikki nit ze fenge.",
