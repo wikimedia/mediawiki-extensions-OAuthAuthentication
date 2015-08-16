@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"oauthauth-desc": "Permite que les wikis deleguen la identificación a otra wiki",
+	"oauthauth-already-logged-in": "Yá aniciasti sesión.",
+	"oauthauth-error": "Error d'accesu con OAuth",
+	"ouathauth-logout": "Salir",
+	"oauthauth-failed-handshake": "Hebo un error de protocolu OAuth al aniciar sesión. Escurque la wiki remota ta teniendo problemes téunicos.",
+	"oauthauth-csrf-detected": "La sesión OAuth nun casa. Intenta volver a aniciar sesión.",
+	"oauthauth-create-noname": "Error d'OAuth al aniciar sesión. El nome d'usuariu na wiki remota nun ye válidu nesta wiki.",
+	"oauthauth-create-userexists": "Error d'OAuth al aniciar sesión. El nome d'usuariu na wiki remota yá esiste nesta wiki. Comunícate con un burócrata pa quedate cola cuenta",
+	"oauthauth-login-noname": "L'usuariu OAuth ta coneutáu, pero'l nome nun ye válidu nesta wiki.",
+	"oauthauth-login": "Aniciar sesión en $1",
+	"oauthauth-login-usernotexists": "L'usuariu OAuth apaez como coneutáu, pero l'usuariu nun esiste nesta wiki.",
+	"oauthauth-nologin-policy": "La política d'esta wiki nun te permite aniciar sesión.",
+	"oauthauth-localuser-not-allowed": "La creación de cuentes llocales ta desactivada nesta wiki. Fai click en \"$1\" pa crear una cuenta con OAuth.",
+	"oauthauth-loggout-policy": "Zarróse la to sesión porque la política del sitiu yá nun te permite que teas coneutáu."
+}
