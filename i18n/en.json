@@ -14,8 +14,8 @@
 	"oauthauth-create-userexists": "OAuth error logging you in. The username on the remote wiki already exists on this wiki. You must contact a bureaucrat to usurp the account.",
 	"oauthauth-login-noname": "The OAuth user is connected, but the name is not valid on this wiki.",
 	"oauthauth-login": "Log in on $1",
-	"oauthauth-login-usernotexists": "The OAuth user listed as connected, but the user does not exist on this wiki.",
+	"oauthauth-login-usernotexists": "The OAuth user is listed as connected, but the user does not exist on this wiki.",
 	"oauthauth-nologin-policy": "This wiki's policy will not let you login.",
-	"oauthauth-localuser-not-allowed": "Local account creation is disabled on this wiki. Click \"$1\" to create an account with OAuth.",
+	"oauthauth-localuser-not-allowed": "Local account creation is disabled on this wiki. \"$1\" creates an account with OAuth.",
 	"oauthauth-loggout-policy": "You have been logged out because the site policy no longer allows you to be logged in."
 }
