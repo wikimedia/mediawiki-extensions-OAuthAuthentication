@@ -8,5 +8,6 @@
 	"oauthauth-already-logged-in": "Jesteś już zalogowany.",
 	"ouathauth-logout": "Wyloguj się",
 	"oauthauth-csrf-detected": "Niezgodność sesji OAuth. Spróbuj zalogować się ponownie.",
-	"oauthauth-login": "Zaloguj się do $1"
+	"oauthauth-login": "Zaloguj się do $1",
+	"oauthauth-localuser-not-allowed": "Tworzenie konta lokalnego na tej wiki jest wyłączone. Kliknij „$1”, aby utworzyć konto z OAuth."
 }

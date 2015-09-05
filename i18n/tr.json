@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"KorkmazO"
+		]
+	},
+	"oauthauth-login-usernotexists": "OAuth kullanıcısı bağlandığında listelenir fakat kullanıcı bu wikide bulunmamaktadır.",
+	"oauthauth-localuser-not-allowed": "Bu wikide yerel hesap oluşturulması devre dışıdır. \"$1\" 0Auth ile bir hesap oluşturur."
+}
