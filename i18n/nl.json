@@ -16,7 +16,7 @@
 	"oauthauth-login-noname": "De OAuth-gebruiker is aangesloten, maar de naam is niet geldig op deze wiki.",
 	"oauthauth-login": "Log in op $1",
 	"oauthauth-login-usernotexists": "De OAuth-gebruiker vermeld als aangesloten, maar de gebruiker niet bestaat op deze wiki.",
-	"oauthauth-nologin-policy": "Deze wiki ' s beleid niet zal laten je aanmelding.",
+	"oauthauth-nologin-policy": "Doro het beleid van deze wiki kunt u niet aanmelden.",
 	"oauthauth-localuser-not-allowed": "Lokale accounts aanmaken is uitgeschakeld op deze wiki. Klik \"$1\" op een account via OAuth aan te maken.",
 	"oauthauth-loggout-policy": "U bent uitgelogd omdat de site beleid niet langer kan u ingelogd te zijn."
 }
