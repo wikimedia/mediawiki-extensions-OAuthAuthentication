@@ -10,13 +10,13 @@
 	"oauthauth-error": "OAuth login fout",
 	"ouathauth-logout": "Afmelden",
 	"oauthauth-failed-handshake": "Er was een OAuth-protocol error logging u in. De externe wiki kan worden kampen met technische problemen.",
-	"oauthauth-csrf-detected": "OAuth sessie komen niet overeen. Probeer het opnieuw inloggen.",
+	"oauthauth-csrf-detected": "OAuth sessie komen niet overeen. Probeer opnieuw aan te melden.",
 	"oauthauth-create-noname": "OAuth-fout u bent aangemeld. De gebruikersnaam op de afstandsbediening op de wiki is niet geldig op deze wiki.",
 	"oauthauth-create-userexists": "OAuth-fout u bent aangemeld. De gebruikersnaam op de afstandsbediening op de wiki bestaat reeds op deze wiki. U moet contact opnemen met een bureaucraat te eigenen om de rekening.",
 	"oauthauth-login-noname": "De OAuth-gebruiker is aangesloten, maar de naam is niet geldig op deze wiki.",
-	"oauthauth-login": "Log in op $1",
+	"oauthauth-login": "Aanmelden bij $1",
 	"oauthauth-login-usernotexists": "De OAuth-gebruiker vermeld als aangesloten, maar de gebruiker niet bestaat op deze wiki.",
 	"oauthauth-nologin-policy": "Doro het beleid van deze wiki kunt u niet aanmelden.",
 	"oauthauth-localuser-not-allowed": "Lokale accounts aanmaken is uitgeschakeld op deze wiki. Klik \"$1\" op een account via OAuth aan te maken.",
-	"oauthauth-loggout-policy": "U bent uitgelogd omdat de site beleid niet langer kan u ingelogd te zijn."
+	"oauthauth-loggout-policy": "U bent afgemeld omdat u volgens het sitebeleid niet langer aangemeld kunt zijn."
 }
