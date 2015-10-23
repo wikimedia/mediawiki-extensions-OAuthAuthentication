@@ -2,10 +2,13 @@
 
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
+use MediaWiki\OAuthClient\Client;
+use MediaWiki\OAuthClient\Token;
+
 class OAuth1Handler {
 
 
-	public function init( SessionStore $session, $client ) {
+	public function init( SessionStore $session, Client $client ) {
 		// Step 1 - Get a request token
 		list( $redir, $requestToken ) = $client->initiate();
 		$session->set( 'oauthreqtoken', "{$requestToken->key}:{$requestToken->secret}" );
@@ -17,7 +20,7 @@ class OAuth1Handler {
 	}
 
 
-	public function finish( \WebRequest $request, SessionStore $session, $client ) {
+	public function finish( \WebRequest $request, SessionStore $session, Client $client ) {
 		$verifyCode = $request->getVal( 'oauth_verifier', false );
 		$recKey = $request->getVal( 'oauth_token', false );
 
@@ -26,11 +29,11 @@ class OAuth1Handler {
 		}
 
 		list( $requestKey, $requestSecret ) = explode( ':', $session->get( 'oauthreqtoken' ) );
-		$requestToken = new \OAuthToken( $requestKey, $requestSecret );
+		$requestToken = new Token( $requestKey, $requestSecret );
 
 		$session->delete( 'oauthreqtoken' );
 
-		//check for csrf
+		// check for csrf
 		if ( $requestKey !== $recKey ) {
 			throw new Exception( "oauthauth-csrf-detected" );
 		}
@@ -42,7 +45,7 @@ class OAuth1Handler {
 	}
 
 
-	public function identify( \OAuthToken $accessToken, $client ) {
+	public function identify( Token $accessToken, Client $client ) {
 		// Get Identity
 		$identity = $client->identify( $accessToken );
 

@@ -1,9 +1,22 @@
 <?php
+
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
-class Hooks {
+use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\OAuthClient\Client;
 
-	public static function onPersonalUrls( &$personal_urls, &$title ) {
+class Hooks {
+	/**
+	 * Register Composer autoloader.
+	 */
+	public static function registerExtension() {
+		$extensionRoot =  dirname( __DIR__ );
+		if ( file_exists( $extensionRoot . '/vendor/autoload.php' ) ) {
+			require_once $extensionRoot . '/vendor/autoload.php';
+		}
+	}
+
+	public static function onPersonalUrls( &$personal_urls, \Title &$title ) {
 		global $wgUser, $wgRequest,
 			$wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
@@ -51,11 +64,11 @@ class Hooks {
 		}
 	}
 
-	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
+	public static function onLoadExtensionSchemaUpdates( \DatabaseUpdater $updater = null ) {
 		$updater->addExtensionTable( 'oauthauth_user', __DIR__ . '/../store/oauthauth.sql' );
 	}
 
-	public static function onGetPreferences( $user, &$preferences ) {
+	public static function onGetPreferences( \User $user, &$preferences ) {
 		global $wgRequirePasswordforEmailChange, $wgOAuthAuthenticationRemoteName;
 
 		$resetlink = \Linker::link(
@@ -120,7 +133,7 @@ class Hooks {
 	 * Check that the identity complies with the site policy
 	 *
 	 */
-	public static function onUserLoadAfterLoadFromSession( $user ) {
+	public static function onUserLoadAfterLoadFromSession( \User $user ) {
 		global $wgOAuthAuthenticationMaxIdentityAge;
 
 		if ( Policy::policyToEnforce() ) {
@@ -133,8 +146,8 @@ class Hooks {
 				$minVerify = new \MWTimestamp( time() - $wgOAuthAuthenticationMaxIdentityAge );
 
 				if ( $lastVerify->getTimestamp() <= $minVerify->getTimestamp() ) {
-					list( $config, $cmrToken ) = Config::getDefaultConfigAndToken();
-					$client = new \MWOAuthClient( $config, $cmrToken );
+					$config = Config::getDefaultConfig();
+					$client = new Client( $config, LoggerFactory::getInstance( 'OAuthAuthentication' ) );
 					$handler = new OAuth1Handler();
 					$identity = $handler->identify( $user->extAuthObj->getAccessToken(), $client );
 					$user->extAuthObj->setIdentifyTS( new \MWTimestamp() );
@@ -151,11 +164,11 @@ class Hooks {
 	}
 
 	/**
-	 * @param $user User
+	 * @param $user \User
 	 * @param $abortError
 	 * @return bool
 	 */
-	static function onAbortNewAccount( $user, &$abortError ) {
+	public static function onAbortNewAccount( $user, &$abortError ) {
 		global $wgOAuthAuthenticationAllowLocalUsers, $wgRequest;
 
 		if ( $wgOAuthAuthenticationAllowLocalUsers === false ) {

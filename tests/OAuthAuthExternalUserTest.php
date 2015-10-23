@@ -1,5 +1,6 @@
 <?php
 namespace MediaWiki\Extensions\OAuthAuthentication;
+
 /**
  * @group OAuthAuthentication
  */

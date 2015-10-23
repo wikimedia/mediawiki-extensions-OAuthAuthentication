@@ -2,9 +2,12 @@
 
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
+use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\OAuthClient\Client;
+
 class SpecialOAuthLogin extends \UnlistedSpecialPage {
 
-	function __construct() {
+	public function __construct() {
 		parent::__construct( 'OAuthLogin' );
 	}
 
@@ -18,11 +21,10 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 			throw new \ErrorPageError( 'oauthauth-error', 'oauthauth-already-logged-in' );
 		}
 
-		$handler = false;
 		$session = new PhpSessionStore( $request );
 
-		list( $config, $cmrToken ) = Config::getDefaultConfigAndToken();
-		$client = new \MWOAuthClient( $config, $cmrToken );
+		$config = Config::getDefaultConfig();
+		$client = new Client( $config, LoggerFactory::getInstance( 'OAuthAuthentication' ) );
 		$handler = new OAuth1Handler();
 
 		switch ( trim( $subpage ) ) {

@@ -4,7 +4,7 @@ namespace MediaWiki\Extensions\OAuthAuthentication;
 
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo "OAuth extension\n";
-	exit( 1 ) ;
+	exit( 1 );
 }
 
 $wgExtensionCredits['other'][] = array(
@@ -86,49 +86,33 @@ $wgOAuthAuthenticationMaxIdentityAge = 3600;
 $wgOAuthAuthenticationValidateSSL = true;
 
 $dir = __DIR__;
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\SpecialOAuthLogin'] = "$dir/specials/SpecialOAuthLogin.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\Config'] = "$dir/utils/Config.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\Exception'] = "$dir/utils/Exception.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\Hooks'] = "$dir/utils/Hooks.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\Policy'] = "$dir/utils/Policy.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\OAuthExternalUser'] = "$dir/utils/OAuthExternalUser.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\AuthenticationHandler'] = "$dir/handlers/AuthenticationHandler.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\OAuth1Handler'] = "$dir/handlers/OAuth1Handler.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\SessionStore'] = "$dir/store/SessionStore.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\PhpSessionStore'] = "$dir/store/PhpSessionStore.php";
-$wgAutoloadClasses['MediaWiki\Extensions\OAuthAuthentication\OAuthAuthDBTest'] = "$dir/tests/OAuthAuthDBTest.php";
+$ns = 'MediaWiki\Extensions\OAuthAuthentication';
+$wgAutoloadClasses[$ns . '\SpecialOAuthLogin'] = "$dir/specials/SpecialOAuthLogin.php";
+$wgAutoloadClasses[$ns . '\Config'] = "$dir/utils/Config.php";
+$wgAutoloadClasses[$ns . '\Exception'] = "$dir/utils/Exception.php";
+$wgAutoloadClasses[$ns . '\Hooks'] = "$dir/utils/Hooks.php";
+$wgAutoloadClasses[$ns . '\Policy'] = "$dir/utils/Policy.php";
+$wgAutoloadClasses[$ns . '\OAuthExternalUser'] = "$dir/utils/OAuthExternalUser.php";
+$wgAutoloadClasses[$ns . '\AuthenticationHandler'] = "$dir/handlers/AuthenticationHandler.php";
+$wgAutoloadClasses[$ns . '\OAuth1Handler'] = "$dir/handlers/OAuth1Handler.php";
+$wgAutoloadClasses[$ns . '\SessionStore'] = "$dir/store/SessionStore.php";
+$wgAutoloadClasses[$ns . '\PhpSessionStore'] = "$dir/store/PhpSessionStore.php";
+$wgAutoloadClasses[$ns . '\OAuthAuthDBTest'] = "$dir/tests/OAuthAuthDBTest.php";
 
-## i18n
+# i18n
 $wgMessagesDirs['OAuthAuthentication'] = "$dir/i18n";
-#$messagesFiles['OAuthAuthentication'] = "$langDir/OAuthAuthentication.alias.php";
-$wgExtensionMessagesFiles['SpecialOAuthLoginNoTranslate'] = "$dir/OAuthAuthentication.notranslate-alias.php";
+# $messagesFiles['OAuthAuthentication'] = "$langDir/OAuthAuthentication.alias.php";
+$wgExtensionMessagesFiles['SpecialOAuthLoginNoTranslate'] =
+	"$dir/OAuthAuthentication.notranslate-alias.php";
 
+$wgSpecialPages['OAuthLogin'] = $ns . '\SpecialOAuthLogin';
 
-
-## Use mwoauth-php. Cool Kids can use composer to do this.
-$wgAutoloadClasses['MWOAuthClientConfig'] = "$dir/libs/mwoauth-php/MWOAuthClient.php";
-$wgAutoloadClasses['MWOAuthClient'] = "$dir/libs/mwoauth-php/MWOAuthClient.php";
-$wgAutoloadClasses['OAuthToken'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthException'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthConsumer'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthSignatureMethod'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthSignatureMethod_HMAC_SHA1'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthSignatureMethod_PLAINTEXT'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthSignatureMethod_RSA_SHA1'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthRequest'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthServer'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthDataStore'] = "$dir/libs/mwoauth-php/OAuth.php";
-$wgAutoloadClasses['OAuthUtil'] = "$dir/libs/mwoauth-php/OAuth.php";
-
-
-$wgSpecialPages['OAuthLogin'] = 'MediaWiki\Extensions\OAuthAuthentication\SpecialOAuthLogin';
-
-$wgHooks['PersonalUrls'][] = 'MediaWiki\Extensions\OAuthAuthentication\Hooks::onPersonalUrls';
-$wgHooks['PostLoginRedirect'][] = 'MediaWiki\Extensions\OAuthAuthentication\Hooks::onPostLoginRedirect';
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'MediaWiki\Extensions\OAuthAuthentication\Hooks::onLoadExtensionSchemaUpdates';
-$wgHooks['GetPreferences'][] = 'MediaWiki\Extensions\OAuthAuthentication\Hooks::onGetPreferences';
-$wgHooks['AbortNewAccount'][] = 'MediaWiki\Extensions\OAuthAuthentication\Hooks::onAbortNewAccount';
-$wgHooks['UserLoadAfterLoadFromSession'][] = 'MediaWiki\Extensions\OAuthAuthentication\Hooks::onUserLoadAfterLoadFromSession';
+$wgHooks['PersonalUrls'][] = $ns . '\Hooks::onPersonalUrls';
+$wgHooks['PostLoginRedirect'][] = $ns . '\Hooks::onPostLoginRedirect';
+$wgHooks['LoadExtensionSchemaUpdates'][] = $ns . '\Hooks::onLoadExtensionSchemaUpdates';
+$wgHooks['GetPreferences'][] = $ns . '\Hooks::onGetPreferences';
+$wgHooks['AbortNewAccount'][] = $ns . '\Hooks::onAbortNewAccount';
+$wgHooks['UserLoadAfterLoadFromSession'][] = $ns . '\Hooks::onUserLoadAfterLoadFromSession';
 
 $wgHooks['UnitTestsList'][] = function( array &$files ) {
 	$directoryIterator = new \RecursiveDirectoryIterator( __DIR__ . '/tests/' );
@@ -140,6 +124,4 @@ $wgHooks['UnitTestsList'][] = function( array &$files ) {
 	return true;
 };
 
-
-
-
+\MediaWiki\Extensions\OAuthAuthentication\Hooks::registerExtension();

@@ -2,14 +2,19 @@
 
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
+use MediaWiki\OAuthClient\Token;
+
 class AuthenticationHandler {
 
-
-	public static function handleIdentity( \WebRequest $request, $identity, \OAuthToken $accessToken ) {
+	public static function handleIdentity(
+		\WebRequest $request,
+		$identity,
+		Token $accessToken
+	) {
 		$exUser = OAuthExternalUser::newFromRemoteId(
 			$identity->sub,
 			$identity->username,
-			wfGetDB( DB_MASTER )  #TODO: don't do this
+			wfGetDB( DB_MASTER )  # TODO: don't do this
 		);
 		$exUser->setAccessToken( $accessToken );
 		if ( isset( $identity->realname ) ) {
@@ -35,7 +40,7 @@ class AuthenticationHandler {
 	}
 
 	public static function doCreateAndLogin( OAuthExternalUser $exUser ) {
-		global $wgAuth, $wgOAuthAuthenticationAccountUsurpation;
+		global $wgOAuthAuthenticationAccountUsurpation;
 		wfDebugLog( "OAuthAuth", "Doing create & login for user " . $exUser->getName() );
 
 		$u = \User::newFromName( $exUser->getName(), 'creatable' );
@@ -79,7 +84,7 @@ class AuthenticationHandler {
 			$exUser->setLocalId( $u->getId() );
 		}
 
-		$exUser->addToDatabase( wfGetDB( DB_MASTER ) ); //TODO: di
+		$exUser->addToDatabase( wfGetDB( DB_MASTER ) ); // TODO: di
 		$u->setCookies();
 		$u->addNewUserLogEntry( 'create' );
 
