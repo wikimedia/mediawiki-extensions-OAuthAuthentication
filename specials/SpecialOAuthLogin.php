@@ -13,7 +13,7 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 
 
 	public function execute( $subpage ) {
-		global $wgUser;
+		global $wgUser, $wgOAuthAuthenticationCallbackUrl;
 		$request = $this->getRequest();
 		$this->setHeaders();
 
@@ -25,6 +25,9 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 
 		$config = Config::getDefaultConfig();
 		$client = new Client( $config, LoggerFactory::getInstance( 'OAuthAuthentication' ) );
+		if ( $wgOAuthAuthenticationCallbackUrl ) {
+			$client->setCallback( $wgOAuthAuthenticationCallbackUrl );
+		}
 		$handler = new OAuth1Handler();
 
 		switch ( trim( $subpage ) ) {

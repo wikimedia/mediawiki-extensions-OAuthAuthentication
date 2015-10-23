@@ -85,6 +85,13 @@ $wgOAuthAuthenticationMaxIdentityAge = 3600;
  */
 $wgOAuthAuthenticationValidateSSL = true;
 
+/**
+ * Callback URL (should point to Special:OAuthLogin/finish). If it is empty, the callback is
+ * assumed to be non-dynamic (and thus read from the consumer record of the target wiki).
+ * Under normal circumstances this should not be changed.
+ */
+$wgOAuthAuthenticationCallbackUrl = null;
+
 $dir = __DIR__;
 $ns = 'MediaWiki\Extensions\OAuthAuthentication';
 $wgAutoloadClasses[$ns . '\SpecialOAuthLogin'] = "$dir/specials/SpecialOAuthLogin.php";
