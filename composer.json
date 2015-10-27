@@ -1,0 +1,33 @@
+{
+	"name": "wikimedia/mediawiki-extensions-OAuthAuthentication",
+	"description": "Delegate authentication from your wiki to another wiki that is running Extension:OAuth.",
+	"version": "0.1.0",
+	"keywords": ["oauth", "authentication"],
+	"license": "GPL2",
+	"authors": [
+		{
+			"name": "Chris Steipp",
+			"email": "csteipp@wikimedia.org"
+		}
+	],
+	"support": {
+		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-oauthauthentication/",
+		"source": "https://github.com/wikimedia/mediawiki-extensions-OAuthAuthentication",
+		"docs": "https://www.mediawiki.org/wiki/Extension:OAuthAuthentication"
+	},
+	"require": {
+		"composer/installers": ">=1.0.1",
+		"mediawiki/oauthclient": "~0.1"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9",
+		"jakub-onderka/php-console-highlighter": "0.3.2",
+		"mediawiki/mediawiki-codesniffer": "0.5.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor"
+		]
+	}
+}
+
