@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"अभय नातू"
+			"अभय नातू",
+			"V.narsikar"
 		]
 	},
-	"oauthauth-login": "$1 वर प्रवेश करा"
+	"oauthauth-already-logged-in": "आपण पूर्वीच सनोंद-प्रवेशित आहात.",
+	"ouathauth-logout": "सनोंद-निर्गम",
+	"oauthauth-login": "$1 वर सनोंद प्रवेश करा"
 }
