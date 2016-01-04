@@ -2,7 +2,10 @@
 	"name": "wikimedia/mediawiki-extensions-OAuthAuthentication",
 	"description": "Delegate authentication from your wiki to another wiki that is running Extension:OAuth.",
 	"version": "0.1.0",
-	"keywords": ["oauth", "authentication"],
+	"keywords": [
+		"oauth",
+		"authentication"
+	],
 	"license": "GPL2",
 	"authors": [
 		{
@@ -22,7 +25,7 @@
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "0.9",
 		"jakub-onderka/php-console-highlighter": "0.3.2",
-		"mediawiki/mediawiki-codesniffer": "0.5.0"
+		"mediawiki/mediawiki-codesniffer": "0.5.1"
 	},
 	"scripts": {
 		"test": [
@@ -30,4 +33,3 @@
 		]
 	}
 }
-
