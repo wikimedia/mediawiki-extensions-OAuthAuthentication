@@ -17,5 +17,7 @@
 	"oauthauth-login-usernotexists": "Der OAuth-Benutzer ist als verbunden gelistet, aber der Benutzer ist auf diesem Wiki nicht vorhanden.",
 	"oauthauth-nologin-policy": "Die Richtlinie dieses Wikis lässt dich nicht anmelden.",
 	"oauthauth-localuser-not-allowed": "Die Erstellung lokaler Benutzerkonten ist auf diesem Wiki deaktiviert. Klicke auf „$1“, um ein Benutzerkonto mit OAuth zu erstellen.",
-	"oauthauth-loggout-policy": "Du wurdest abgemeldet, da es dir die Richtlinie der Website nicht mehr gestattet, angemeldet zu sein."
+	"oauthauth-loggout-policy": "Du wurdest abgemeldet, da es dir die Richtlinie der Website nicht mehr gestattet, angemeldet zu sein.",
+	"oauthauth-set-email": "Dein verbundenes Benutzerkonto hatte bei deiner letzten Anmeldung keine E-Mail-Adresse. Lege eine E-Mail-Adresse auf $1 fest, um deine E-Mail-Adresse hier festzulegen.",
+	"oauthauth-email-set": "$1. Aktualisiere deine E-Mail-Adresse auf $2, um sie zu ändern."
 }
