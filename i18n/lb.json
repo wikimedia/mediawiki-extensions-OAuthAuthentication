@@ -15,5 +15,6 @@
 	"oauthauth-login-usernotexists": "Den OAuth-Benotzer ass als verbonn agedro, awer de Benotzer gëtt et op dëser Wiki net.",
 	"oauthauth-nologin-policy": "D'Richtlinn vun dëser Wiki erlaabt et net datt Dir iech aloggt.",
 	"oauthauth-localuser-not-allowed": "Dat lokaalt Uleeë vu Benotzerkonten ass op dëser Wiki desaktivéiert. Klickt \"$1\" fir e Benotzerkont mat OAuth unzeleeën.",
-	"oauthauth-loggout-policy": "Dir gouft ausgeloggt well d'Richtlinne vum Site et net méi erlaben datt Dir ageloggt sidd."
+	"oauthauth-loggout-policy": "Dir gouft ausgeloggt well d'Richtlinne vum Site et net méi erlaben datt Dir ageloggt sidd.",
+	"oauthauth-set-email": "Äre Benotzerkont hat keng E-Mail-Adress, déi leschte Kéier wéi Dir Iech ageloggt hutt. Gitt eng E-Mail-Adress op $1 an fir Är E-Mail-Adress festzeleeën."
 }
