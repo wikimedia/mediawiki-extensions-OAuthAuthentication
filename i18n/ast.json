@@ -17,5 +17,7 @@
 	"oauthauth-login-usernotexists": "L'usuariu OAuth apaez como coneutáu, pero l'usuariu nun esiste nesta wiki.",
 	"oauthauth-nologin-policy": "La política d'esta wiki nun te permite aniciar sesión.",
 	"oauthauth-localuser-not-allowed": "La creación de cuentes llocales ta desactivada nesta wiki. Fai click en \"$1\" pa crear una cuenta con OAuth.",
-	"oauthauth-loggout-policy": "Zarróse la to sesión porque la política del sitiu yá nun te permite que teas coneutáu."
+	"oauthauth-loggout-policy": "Zarróse la to sesión porque la política del sitiu yá nun te permite que teas coneutáu.",
+	"oauthauth-set-email": "La cuenta venceyada nun tenía una dirección de corréu electrónicu la última vegada qu'aniciasti sesión. Conseña una dirección de corréu electrónicu en $1 pa que se configure equí.",
+	"oauthauth-email-set": "$1. Actualiza la to dirección de corréu electrónicu en $2 pa camudala."
 }
