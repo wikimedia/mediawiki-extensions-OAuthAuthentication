@@ -2,9 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Fringio",
-			"Alexmar983"
+			"Alexmar983",
+			"Beta16"
 		]
 	},
 	"oauthauth-already-logged-in": "Hai già effettuato l'accesso.",
-	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata su questa wiki. Premi \"$1\" per cerare un account con OAuth."
+	"oauthauth-error": "Errore di accesso con OAuth",
+	"ouathauth-logout": "Esci",
+	"oauthauth-login": "Accedi a $1",
+	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata su questa wiki. Premi \"$1\" per cerare un account con OAuth.",
+	"oauthauth-email-set": "$1. Aggiorna il tuo indirizzo email su $2 per modificarlo."
 }
