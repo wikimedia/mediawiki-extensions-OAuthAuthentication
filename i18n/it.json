@@ -3,7 +3,8 @@
 		"authors": [
 			"Fringio",
 			"Alexmar983",
-			"Beta16"
+			"Beta16",
+			"JackLantern"
 		]
 	},
 	"oauthauth-already-logged-in": "Hai già effettuato l'accesso.",
@@ -11,5 +12,6 @@
 	"ouathauth-logout": "Esci",
 	"oauthauth-login": "Accedi a $1",
 	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata su questa wiki. Premi \"$1\" per cerare un account con OAuth.",
+	"oauthauth-set-email": "Il tuo account collegato non aveva un indirizzo di posta elettronica l'ultima volta che hai effettuato l'accesso. Imposta un indirizzo email su $1 per impostare il tuo indirizzo email qui.",
 	"oauthauth-email-set": "$1. Aggiorna il tuo indirizzo email su $2 per modificarlo."
 }
