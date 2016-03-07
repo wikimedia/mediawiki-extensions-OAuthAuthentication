@@ -6,5 +6,6 @@
 	},
 	"oauthauth-already-logged-in": "أنت والج بالفعل.",
 	"oauthauth-error": "خطأ في ولوج OAuth",
-	"ouathauth-logout": "تسجيل الخروج"
+	"ouathauth-logout": "تسجيل الخروج",
+	"oauthauth-nologin-policy": "سياسة هذا الويكي لن تسمح لك بالولوج."
 }
