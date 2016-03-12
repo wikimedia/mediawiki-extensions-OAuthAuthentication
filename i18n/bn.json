@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aftabuzzaman"
+			"Aftabuzzaman",
+			"Bodhisattwa"
 		]
 	},
+	"oauthauth-already-logged-in": "আপনি ইতিমধ্যে প্রবেশ করেছেন।",
 	"ouathauth-logout": "প্রস্থান",
-	"oauthauth-login": "$1-এ প্রবেশ"
+	"oauthauth-login": "$1-এ প্রবেশ",
+	"oauthauth-nologin-policy": "এই উইকির নীতিমালা আপনাকে প্রবেশ করতে দেবে না"
 }
