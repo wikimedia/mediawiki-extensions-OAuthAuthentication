@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Toliño"
 		]
 	},
 	"oauthauth-desc": "Permite que un wiki delegue a súa autenticación a outro wiki",
@@ -11,12 +12,12 @@
 	"oauthauth-failed-handshake": "Houbo un erro ó acceder mediante o protocolo OAuth. Pode que o wiki remoto teña problemas técnicos.",
 	"oauthauth-csrf-detected": "Discordancia na sesión OAuth. Intente iniciar sesión de novo.",
 	"oauthauth-create-noname": "Erro de OAuth ó intentar iniciar sesión. O nome de usuario no wiki remoto non é válido neste wiki.",
-	"oauthauth-create-userexists": "Erro de OAuth ó intentar iniciar sesión. O nome de usuario na wiki remota xa existe nesta wiki. Debe contactar cun burócrata para usurpar a conta.",
-	"oauthauth-login-noname": "O usuario OAuth está conectado, pero o nome non é válido nesta wiki.",
+	"oauthauth-create-userexists": "Erro de OAuth ao intentar iniciar sesión. O nome de usuario no wiki remoto xa existe neste wiki. Debe contactar cun burócrata para usurpar a conta.",
+	"oauthauth-login-noname": "O usuario OAuth está conectado, pero o nome non é válido neste wiki.",
 	"oauthauth-login": "Acceder a $1",
-	"oauthauth-login-usernotexists": "O usuario OAuth aparece como conectado, pero non existe nesta wiki.",
+	"oauthauth-login-usernotexists": "O usuario OAuth aparece como conectado, pero non existe neste wiki.",
 	"oauthauth-nologin-policy": "A política desta wiki non lle permite acceder.",
-	"oauthauth-localuser-not-allowed": "A creación local de contas está desactivada nesta wiki. Prema \"$1\" para crear unha conta con OAuth.",
+	"oauthauth-localuser-not-allowed": "A creación local de contas está desactivada neste wiki. \"$1\" crea unha conta co OAuth.",
 	"oauthauth-loggout-policy": "A sesión rematou porque a directiva do sitio xa non permite estar conectado.",
 	"oauthauth-set-email": "A súa conta asociada non tiña unha dirección de correo electrónico a última vez que iniciou sesión. Configure unha dirección de correo electrónico en $1 para que se configure aquí.",
 	"oauthauth-email-set": "$1. Actualice a súa dirección de correo electrónico en $2 para cambiala."
