@@ -44,9 +44,9 @@ class OAuthExternalUser {
 	public static function newFromRemoteId( $rid, $username, \DatabaseBase $db ) {
 		$row = $db->selectRow(
 			'oauthauth_user',
-			array( 'oaau_rid', 'oaau_uid', 'oaau_username', 'oaau_access_token',
-				'oaau_access_secret', 'oaau_identify_timestamp' ),
-			array( 'oaau_rid' => $rid ),
+			[ 'oaau_rid', 'oaau_uid', 'oaau_username', 'oaau_access_token',
+				'oaau_access_secret', 'oaau_identify_timestamp' ],
+			[ 'oaau_rid' => $rid ],
 			__METHOD__
 		);
 
@@ -62,9 +62,9 @@ class OAuthExternalUser {
 	public static function newFromUser( \User $user, \DatabaseBase $db ) {
 		$row = $db->selectRow(
 			'oauthauth_user',
-			array( 'oaau_rid', 'oaau_uid', 'oaau_username', 'oaau_access_token',
-				'oaau_access_secret', 'oaau_identify_timestamp' ),
-			array( 'oaau_username' => $user->getName() ),
+			[ 'oaau_rid', 'oaau_uid', 'oaau_username', 'oaau_access_token',
+				'oaau_access_secret', 'oaau_identify_timestamp' ],
+			[ 'oaau_username' => $user->getName() ],
 			__METHOD__
 		);
 
@@ -78,23 +78,23 @@ class OAuthExternalUser {
 	}
 
 	public function addToDatabase( \DatabaseBase $db ) {
-		$row = array(
+		$row = [
 			'oaau_rid' => $this->remoteId,
 			'oaau_uid' => $this->userId,
 			'oaau_username' => $this->username,
-		);
+		];
 
 		if ( $this->accessToken ) {
-			$row += array(
+			$row += [
 				'oaau_access_token' => $this->accessToken->key,
 				'oaau_access_secret' => $this->accessToken->secret,
-			);
+			];
 		}
 
 		if ( $this->identifyTS ) {
-			$row += array(
+			$row += [
 				'oaau_identify_timestamp' => $db->timestampOrNull( (string)$this->identifyTS ),
-			);
+			];
 		}
 
 		$db->insert(
@@ -108,28 +108,28 @@ class OAuthExternalUser {
 		if ( !$this->userId > 0 ) {
 			throw new Exception( 'Error updating External User that isn\'t in the DB' );
 		}
-		$row = array(
+		$row = [
 			'oaau_rid' => $this->remoteId,
 			'oaau_username' => $this->username,
-		);
+		];
 
 		if ( $this->accessToken ) {
-			$row += array(
+			$row += [
 				'oaau_access_token' => $this->accessToken->key,
 				'oaau_access_secret' => $this->accessToken->secret,
-			);
+			];
 		}
 
 		if ( $this->identifyTS ) {
-			$row += array(
+			$row += [
 				'oaau_identify_timestamp' => $db->timestampOrNull( (string)$this->identifyTS ),
-			);
+			];
 		}
 
 		$db->update(
 			'oauthauth_user',
 			/* SET */ $row,
-			/* WHERE */ array( 'oaau_uid' => $this->userId ),
+			/* WHERE */ [ 'oaau_uid' => $this->userId ],
 			__METHOD__
 		);
 
@@ -141,11 +141,11 @@ class OAuthExternalUser {
 		}
 		$db->update(
 			'oauthauth_user',
-			array(
+			[
 				'oaau_access_token' => '',
 				'oaau_access_secret' => '',
-			),
-			array( 'oaau_uid' => $this->userId ),
+			],
+			[ 'oaau_uid' => $this->userId ],
 			__METHOD__
 		);
 	}

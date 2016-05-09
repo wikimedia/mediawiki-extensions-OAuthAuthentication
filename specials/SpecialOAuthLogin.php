@@ -11,7 +11,6 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 		parent::__construct( 'OAuthLogin' );
 	}
 
-
 	public function execute( $subpage ) {
 		global $wgUser, $wgOAuthAuthenticationCallbackUrl;
 		$request = $this->getRequest();

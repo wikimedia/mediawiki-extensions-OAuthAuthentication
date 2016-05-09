@@ -25,7 +25,6 @@ class Policy {
 			&& self::checkGroupWhitelist( $identity->groups, $wgOAuthAuthenticationGroupWhitelist );
 	}
 
-
 	private static function checkUserWhitelist( $username, $whitelist ) {
 		return !$whitelist || in_array( $username, $whitelist );
 	}

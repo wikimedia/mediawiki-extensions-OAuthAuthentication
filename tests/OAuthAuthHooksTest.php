@@ -8,11 +8,11 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 
 	public function testOnPersonalUrls() {
 
-		$this->setMwGlobals( array(
+		$this->setMwGlobals( [
 			'wgUser' => \User::newFromName( '127.0.0.1', false ),
-		) );
+		] );
 
-		$personal_urls = array( 'login' => array( 'href' => 'fail' ) );
+		$personal_urls = [ 'login' => [ 'href' => 'fail' ] ];
 		$title = new \Title();
 
 		Hooks::onPersonalUrls( $personal_urls, $title );

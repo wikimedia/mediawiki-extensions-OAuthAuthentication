@@ -27,11 +27,11 @@ class AuthenticationHandler {
 
 		if ( $exUser->attached() ) {
 			$status = AuthenticationHandler::doLogin( $exUser, $request );
-			$s = \Status::newGood( array( 'successfulLogin', $status->getValue() ) );
+			$s = \Status::newGood( [ 'successfulLogin', $status->getValue() ] );
 			$s->merge( $status );
 		} else {
 			$status = AuthenticationHandler::doCreateAndLogin( $exUser, $request );
-			$s = \Status::newGood( array( 'successfulCreation', $status->getValue() ) );
+			$s = \Status::newGood( [ 'successfulCreation', $status->getValue() ] );
 			$s->merge( $status );
 		}
 
@@ -79,7 +79,7 @@ class AuthenticationHandler {
 			$u->addWatch( $u->getUserPage(), \WatchedItem::IGNORE_USER_RIGHTS );
 			$u->saveSettings();
 
-			wfRunHooks( 'AddNewAccount', array( $u, false ) );
+			wfRunHooks( 'AddNewAccount', [ $u, false ] );
 
 			$exUser->setLocalId( $u->getId() );
 		}
@@ -92,7 +92,6 @@ class AuthenticationHandler {
 
 		return \Status::newGood( $u );
 	}
-
 
 	public static function doLogin( OAuthExternalUser $exUser, \WebRequest $request ) {
 		global $wgSecureLogin, $wgCookieSecure;

@@ -7,7 +7,6 @@ use MediaWiki\OAuthClient\Token;
 
 class OAuth1Handler {
 
-
 	public function init( SessionStore $session, Client $client ) {
 		// Step 1 - Get a request token
 		list( $redir, $requestToken ) = $client->initiate();
@@ -18,7 +17,6 @@ class OAuth1Handler {
 	public function authorize( \WebResponse $response, $url ) {
 		$response->header( "Location: $url", true );
 	}
-
 
 	public function finish( \WebRequest $request, SessionStore $session, Client $client ) {
 		$verifyCode = $request->getVal( 'oauth_verifier', false );
@@ -44,13 +42,11 @@ class OAuth1Handler {
 		return $accessToken;
 	}
 
-
 	public function identify( Token $accessToken, Client $client ) {
 		// Get Identity
 		$identity = $client->identify( $accessToken );
 
 		return $identity;
 	}
-
 
 }

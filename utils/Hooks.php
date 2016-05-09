@@ -12,7 +12,7 @@ class Hooks {
 
 		if ( $wgUser->getID() == 0 ) {
 
-			$query = array();
+			$query = [];
 			if ( $title->isSpecial( 'Userlogout' ) ) {
 				$query['returnto'] =  $wgRequest->getVal( 'returnto', 'Main_Page' );
 				$query['returntoquery'] =  $wgRequest->getVal( 'returntoquery' );
@@ -64,20 +64,20 @@ class Hooks {
 		$resetlink = \Linker::link(
 			\SpecialPage::getTitleFor( 'PasswordReset' ),
 			wfMessage( 'passwordreset' )->escaped(),
-			array(),
-			array( 'returnto' => \SpecialPage::getTitleFor( 'Preferences' ) )
+			[],
+			[ 'returnto' => \SpecialPage::getTitleFor( 'Preferences' ) ]
 		);
 
 		if ( empty( $user->mPassword ) && empty( $user->mNewpassword ) ) {
 
 			if ( $user->isEmailConfirmed() ) {
-				$preferences['password'] = array(
+				$preferences['password'] = [
 					'section' => 'personal/info',
 					'type' => 'info',
 					'raw' => true,
 					'default' => $resetlink,
 					'label-message' => 'yourpassword',
-				);
+				];
 			} else {
 				unset( $preferences['password'] );
 			}
@@ -97,24 +97,24 @@ class Hooks {
 					)->escaped();
 					$emailCss = 'mw-email-authenticated';
 				}
-				$preferences['emailaddress'] = array(
+				$preferences['emailaddress'] = [
 					'type' => 'info',
 					'raw' => 1,
 					'default' => $emailMsg,
 					'section' => 'personal/email',
 					'label-message' => 'youremail',
 					'cssclass' => $emailCss,
-				);
+				];
 			}
 
 		} else {
-			$preferences['resetpassword'] = array(
+			$preferences['resetpassword'] = [
 				'section' => 'personal/info',
 				'type' => 'info',
 				'raw' => true,
 				'default' => $resetlink,
 				'label-message' => null,
-			);
+			];
 		}
 
 	}
@@ -162,14 +162,14 @@ class Hooks {
 		global $wgOAuthAuthenticationAllowLocalUsers, $wgRequest;
 
 		if ( $wgOAuthAuthenticationAllowLocalUsers === false ) {
-			$query = array();
+			$query = [];
 			$query['returnto'] = $wgRequest->getVal( 'returnto' );
 			$query['returntoquery'] = $wgRequest->getVal( 'returntoquery' );
 			$loginTitle = \SpecialPage::getTitleFor( 'OAuthLogin', 'init' );
 			$loginlink = \Linker::Link(
 				$loginTitle,
 				wfMessage( 'login' )->escaped(),
-				array(),
+				[],
 				$query
 			);
 			$msg = wfMessage( 'oauthauth-localuser-not-allowed' )->rawParams( $loginlink );
