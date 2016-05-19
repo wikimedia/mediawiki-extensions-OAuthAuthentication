@@ -6,10 +6,10 @@ namespace MediaWiki\Extensions\OAuthAuthentication;
  */
 class OAuthAuthConfigTest extends OAuthAuthDBTest {
 
-	public function testGetDefaultConfigAndToken() {
-		list( $config, $token ) = Config::getDefaultConfigAndToken();
-		$this->assertInstanceOf( 'MWOAuthClientConfig', $config );
-		$this->assertInstanceOf( 'OAuthToken', $token );
+	public function testGetDefaultConfig() {
+		$this->setMwGlobals( 'wgOAuthAuthenticationUrl', 'https://example.com/' );
+		$config = Config::getDefaultConfig();
+		$this->assertInstanceOf( 'MediaWiki\\OAuthClient\\ClientConfig', $config );
 	}
 
 }

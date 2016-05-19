@@ -2,6 +2,8 @@
 
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
+use MediaWiki\OAuthClient\Token;
+
 class OAuthExternalUser {
 
 	// Local user_id
@@ -25,13 +27,15 @@ class OAuthExternalUser {
 	// Timestamp of last identity validation
 	private $identifyTS = null;
 
-	public function __construct( $rid, $uid, $name, $accessKey = '', $accessSecret = '', $idts = null ) {
+	public function __construct(
+		$rid, $uid, $name, $accessKey = '', $accessSecret = '', $idts = null
+	) {
 		$this->remoteId = $rid;
 		$this->userId = $uid; // OIDC specifies this is unique for the IdP
 		$this->username = $name;
 
 		if ( $accessKey && $accessSecret ) {
-			$this->accessToken = new \OAuthToken( $accessKey, $accessSecret );
+			$this->accessToken = new Token( $accessKey, $accessSecret );
 		}
 
 		$this->identifyTS = $idts;
@@ -162,7 +166,7 @@ class OAuthExternalUser {
 		return ( $this->userId !== 0 );
 	}
 
-	public function setAccessToken( \OAuthToken $accessToken ) {
+	public function setAccessToken( Token $accessToken ) {
 		$this->accessToken = $accessToken;
 	}
 
