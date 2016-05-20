@@ -1,0 +1,63 @@
+{
+	"name": "OAuthAuthentication",
+	"version": "0.1.0",
+	"author": [
+		"Chris Steipp"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:OAuthAuthentication",
+	"descriptionmsg": "oauthauth-desc",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
+	"SpecialPages": {
+		"OAuthLogin": "MediaWiki\\Extensions\\OAuthAuthentication\\SpecialOAuthLogin"
+	},
+	"MessagesDirs": {
+		"OAuthAuthentication": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"SpecialOAuthLoginNoTranslate": "OAuthAuthentication.notranslate-alias.php"
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extensions\\OAuthAuthentication\\SpecialOAuthLogin": "specials/SpecialOAuthLogin.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\Config": "utils/Config.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\Exception": "utils/Exception.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\Hooks": "utils/Hooks.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\Policy": "utils/Policy.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthExternalUser": "utils/OAuthExternalUser.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthAuthDBTest": "tests/OAuthAuthDBTest.php"
+	},
+	"Hooks": {
+		"PersonalUrls": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onPersonalUrls",
+		"PostLoginRedirect": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
+		"GetPreferences": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onGetPreferences",
+		"AbortNewAccount": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onAbortNewAccount",
+		"UserLoadAfterLoadFromSession": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession",
+		"UnitTestsList": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUnitTestsList"
+	},
+	"config": {
+		"@doc": "see OAuthAuthentication.php",
+		"OAuthAuthenticationUrl": null,
+		"OAuthAuthenticationConsumerKey": null,
+		"OAuthAuthenticationConsumerSecret": null,
+		"OAuthAuthenticationCanonicalUrl": null,
+		"OAuthAuthenticationAccountUsurpation": false,
+		"OAuthAuthenticationUsernameWhitelist": false,
+		"OAuthAuthenticationGroupWhitelist": false,
+		"OAuthAuthenticationAllowLocalUsers": true,
+		"OAuthAuthenticationRemoteName": false,
+		"OAuthAuthenticationMaxIdentityAge": 3600,
+		"OAuthAuthenticationValidateSSL": true,
+		"OAuthAuthenticationCallbackUrl": null
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 1
+}

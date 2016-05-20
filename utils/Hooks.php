@@ -6,16 +6,6 @@ use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\OAuthClient\Client;
 
 class Hooks {
-	/**
-	 * Register Composer autoloader.
-	 */
-	public static function registerExtension() {
-		$extensionRoot =  dirname( __DIR__ );
-		if ( file_exists( $extensionRoot . '/vendor/autoload.php' ) ) {
-			require_once $extensionRoot . '/vendor/autoload.php';
-		}
-	}
-
 	public static function onPersonalUrls( &$personal_urls, \Title &$title ) {
 		global $wgUser, $wgRequest,
 			$wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
@@ -188,4 +178,13 @@ class Hooks {
 		}
 	}
 
+	public static function onUnitTestsList( array &$files ) {
+		$directoryIterator = new \RecursiveDirectoryIterator( __DIR__ . '/../tests/' );
+		foreach ( new \RecursiveIteratorIterator( $directoryIterator ) as $fileInfo ) {
+			if ( substr( $fileInfo->getFilename(), -8 ) === 'Test.php' ) {
+				$files[] = $fileInfo->getPathname();
+			}
+		}
+		return true;
+	}
 }

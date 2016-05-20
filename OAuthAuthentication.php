@@ -1,20 +1,23 @@
 <?php
 
-namespace MediaWiki\Extensions\OAuthAuthentication;
-
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "OAuth extension\n";
-	exit( 1 );
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'OAuthAuthentication' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['OAuthAuthentication'] = __DIR__ . '/i18n';
+	$wgExtensionMessagesFiles['SpecialOAuthLoginNoTranslate'] =
+		__DIR__ . "/OAuthAuthentication.notranslate-alias.php";
+	/* wfWarn(
+		'Deprecated PHP entry point used for OAuthAuthentication extension. ' .
+		'Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	); */
+	return;
+} else {
+	die( 'This version of the OAuthAuthentication extension requires MediaWiki 1.25+' );
 }
 
-$wgExtensionCredits['other'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'OAuthAuthentication',
-	'descriptionmsg' => 'oauthauth-desc',
-	'author'         => array( 'Chris Steipp' ),
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:OAuthAuthentication',
-	'version'        => '0.1.0'
-);
+// Global declarations and documentation kept for IDEs and PHP documentors.
+// This code is never executed.
 
 /**
  * Must be configured in LocalSettings.php!
@@ -24,11 +27,17 @@ $wgExtensionCredits['other'][] = array(
 $wgOAuthAuthenticationUrl = null;
 
 /**
- * Must be configured in LocalSettings.php!
- * The Key and Secret that were generated for you when you registered
+ * Must be configured!
+ * The key that was generated for you when you registered
  * your consumer. RSA private key isn't currently supported.
  */
 $wgOAuthAuthenticationConsumerKey = null;
+
+/**
+ * Must be configured!
+ * The secret that was generated for you when you registered
+ * your consumer. RSA private key isn't currently supported.
+ */
 $wgOAuthAuthenticationConsumerSecret = null;
 
 /**
@@ -91,44 +100,3 @@ $wgOAuthAuthenticationValidateSSL = true;
  * Under normal circumstances this should not be changed.
  */
 $wgOAuthAuthenticationCallbackUrl = null;
-
-$dir = __DIR__;
-$ns = 'MediaWiki\Extensions\OAuthAuthentication';
-$wgAutoloadClasses[$ns . '\SpecialOAuthLogin'] = "$dir/specials/SpecialOAuthLogin.php";
-$wgAutoloadClasses[$ns . '\Config'] = "$dir/utils/Config.php";
-$wgAutoloadClasses[$ns . '\Exception'] = "$dir/utils/Exception.php";
-$wgAutoloadClasses[$ns . '\Hooks'] = "$dir/utils/Hooks.php";
-$wgAutoloadClasses[$ns . '\Policy'] = "$dir/utils/Policy.php";
-$wgAutoloadClasses[$ns . '\OAuthExternalUser'] = "$dir/utils/OAuthExternalUser.php";
-$wgAutoloadClasses[$ns . '\AuthenticationHandler'] = "$dir/handlers/AuthenticationHandler.php";
-$wgAutoloadClasses[$ns . '\OAuth1Handler'] = "$dir/handlers/OAuth1Handler.php";
-$wgAutoloadClasses[$ns . '\SessionStore'] = "$dir/store/SessionStore.php";
-$wgAutoloadClasses[$ns . '\PhpSessionStore'] = "$dir/store/PhpSessionStore.php";
-$wgAutoloadClasses[$ns . '\OAuthAuthDBTest'] = "$dir/tests/OAuthAuthDBTest.php";
-
-# i18n
-$wgMessagesDirs['OAuthAuthentication'] = "$dir/i18n";
-# $messagesFiles['OAuthAuthentication'] = "$langDir/OAuthAuthentication.alias.php";
-$wgExtensionMessagesFiles['SpecialOAuthLoginNoTranslate'] =
-	"$dir/OAuthAuthentication.notranslate-alias.php";
-
-$wgSpecialPages['OAuthLogin'] = $ns . '\SpecialOAuthLogin';
-
-$wgHooks['PersonalUrls'][] = $ns . '\Hooks::onPersonalUrls';
-$wgHooks['PostLoginRedirect'][] = $ns . '\Hooks::onPostLoginRedirect';
-$wgHooks['LoadExtensionSchemaUpdates'][] = $ns . '\Hooks::onLoadExtensionSchemaUpdates';
-$wgHooks['GetPreferences'][] = $ns . '\Hooks::onGetPreferences';
-$wgHooks['AbortNewAccount'][] = $ns . '\Hooks::onAbortNewAccount';
-$wgHooks['UserLoadAfterLoadFromSession'][] = $ns . '\Hooks::onUserLoadAfterLoadFromSession';
-
-$wgHooks['UnitTestsList'][] = function( array &$files ) {
-	$directoryIterator = new \RecursiveDirectoryIterator( __DIR__ . '/tests/' );
-	foreach ( new \RecursiveIteratorIterator( $directoryIterator ) as $fileInfo ) {
-		if ( substr( $fileInfo->getFilename(), -8 ) === 'Test.php' ) {
-			$files[] = $fileInfo->getPathname();
-		}
-	}
-	return true;
-};
-
-\MediaWiki\Extensions\OAuthAuthentication\Hooks::registerExtension();

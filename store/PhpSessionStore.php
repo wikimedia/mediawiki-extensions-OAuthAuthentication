@@ -7,7 +7,7 @@ class PhpSessionStore extends SessionStore {
 	private $request;
 
 	public function __construct( \WebRequest $request ) {
-		wfSetupSession();
+		$request->getSession()->persist();
 		$this->request = $request;
 	}
 
