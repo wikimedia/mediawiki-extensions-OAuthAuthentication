@@ -3,10 +3,11 @@
 		"authors": [
 			"Dicto23456",
 			"KennyTHPS",
-			"Okras"
+			"Okras",
+			"Kaganer"
 		]
 	},
-	"oauthauth-desc": "Позволяет Вики делегировать проверку подлинности на другой Вики",
+	"oauthauth-desc": "Позволяет вики-сайтам делегировать аутентификацию другому вики-сайту",
 	"oauthauth-already-logged-in": "Вы уже вошли.",
 	"oauthauth-error": "Ошибка входа в систему с помощью OAuth",
 	"ouathauth-logout": "Выйти",
