@@ -1,15 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Annamerida"
+			"Annamerida",
+			"Lluis tgn"
 		]
 	},
 	"oauthauth-desc": "Permet wikis delegar la seva autenticació a altres wikis.",
-	"oauthauth-already-logged-in": "Ja estàs connectat. $1 per continuar.",
+	"oauthauth-already-logged-in": "Ja estàs connectat.",
+	"oauthauth-error": "Error d'inici de sessió",
 	"ouathauth-logout": "Sortir.",
+	"oauthauth-failed-handshake": "Hi ha hagut un error de protocol OAuth a l'inici de sessió. Podria ser algun problema tècnic.",
 	"oauthauth-create-noname": "Error OAuth de registre. L'usuari en el wiki remot no és vàlid en aquest.",
 	"oauthauth-login-noname": "L'usuari OAuth està connectat però no és vàlid en aquesta wiki.",
 	"oauthauth-nologin-policy": "La política d'aquest wiki no et permet connectar.",
-	"oauthauth-localuser-not-allowed": "L'administrador ha deshabilitat la creació de registres locals. Hauries de $1 per crear un compte amb OAuth.",
+	"oauthauth-localuser-not-allowed": "L'administrador ha deshabilitat la creació de registres locals. \"$1\" crea un compte amb OAuth.",
 	"oauthauth-loggout-policy": "La sessió ha finalitzat perquè la política del web no et permet estar connectat."
 }
