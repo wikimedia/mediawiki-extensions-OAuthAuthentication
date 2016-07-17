@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Annamerida",
-			"Lluis tgn"
+			"Lluis tgn",
+			"Toniher"
 		]
 	},
 	"oauthauth-desc": "Permet wikis delegar la seva autenticació a altres wikis.",
-	"oauthauth-already-logged-in": "Ja estàs connectat.",
+	"oauthauth-already-logged-in": "Ja esteu connectat.",
 	"oauthauth-error": "Error d'inici de sessió",
 	"ouathauth-logout": "Sortir.",
 	"oauthauth-failed-handshake": "Hi ha hagut un error de protocol OAuth a l'inici de sessió. Podria ser algun problema tècnic.",
