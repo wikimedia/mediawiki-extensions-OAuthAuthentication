@@ -7,6 +7,7 @@
 			"JackLantern"
 		]
 	},
+	"oauthauth-desc": "Permette agli wiki di delegare la loro autenticazione a un altro wiki",
 	"oauthauth-already-logged-in": "Hai già effettuato l'accesso.",
 	"oauthauth-error": "Errore di accesso con OAuth",
 	"ouathauth-logout": "Esci",
