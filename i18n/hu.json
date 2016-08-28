@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Máté"
+		]
+	},
+	"oauthauth-already-logged-in": "Már bejelentkeztél.",
+	"oauthauth-error": "OAuth bejelentkezési hiba",
+	"ouathauth-logout": "Kijelentkezés",
+	"oauthauth-login-noname": "Az OAuth-felhasználó csatlakoztatva van, de a név nem érvényes ezen a wikin.",
+	"oauthauth-login": "Bejelentkezés a $1 wikin",
+	"oauthauth-set-email": "A kapcsolt fiókodnak nem volt e-mail-címe a legutóbbi bejelentkezésedkor. Ahhoz, hogy itt beállítsd az e-mail-címed, add meg a $1 wikin!",
+	"oauthauth-email-set": "$1. A frissítéséhez változtasd meg az e-mail-címed a $2 wikin."
+}
