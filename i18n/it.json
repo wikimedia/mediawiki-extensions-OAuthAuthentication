@@ -4,7 +4,8 @@
 			"Fringio",
 			"Alexmar983",
 			"Beta16",
-			"JackLantern"
+			"JackLantern",
+			"Tosky"
 		]
 	},
 	"oauthauth-desc": "Permette agli wiki di delegare la loro autenticazione a un altro wiki",
@@ -12,7 +13,7 @@
 	"oauthauth-error": "Errore di accesso con OAuth",
 	"ouathauth-logout": "Esci",
 	"oauthauth-login": "Accedi a $1",
-	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata su questa wiki. Premi \"$1\" per cerare un account con OAuth.",
+	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata per questo wiki. Premi \"$1\" per cercare un account con OAuth.",
 	"oauthauth-set-email": "La tua utenza collegata non aveva un indirizzo di posta elettronica l'ultima volta che hai effettuato l'accesso. Imposta un indirizzo email su $1 per impostare il tuo indirizzo email qui.",
 	"oauthauth-email-set": "$1. Aggiorna il tuo indirizzo email su $2 per modificarlo."
 }
