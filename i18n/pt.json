@@ -5,6 +5,7 @@
 		]
 	},
 	"oauthauth-already-logged-in": "Já está autenticado.",
+	"oauthauth-error": "Erro de autenticação OAuth",
 	"ouathauth-logout": "Sair",
 	"oauthauth-login-noname": "O utilizador OAuth está ligado, mas o nome não é válido nesta wiki.",
 	"oauthauth-login": "Entrar em $1",
