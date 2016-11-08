@@ -1,15 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
+	"oauthauth-desc": "Permite que as wikis deleguem o seu processo de autenticação noutra wiki",
 	"oauthauth-already-logged-in": "Já está autenticado.",
 	"oauthauth-error": "Erro de autenticação OAuth",
 	"ouathauth-logout": "Sair",
+	"oauthauth-failed-handshake": "Ocorreu um erro no protocolo OAuth durante o processo de autenticação. A wiki remota pode estar a sofrer problemas técnicos.",
 	"oauthauth-login-noname": "O utilizador OAuth está ligado, mas o nome não é válido nesta wiki.",
 	"oauthauth-login": "Entrar em $1",
 	"oauthauth-login-usernotexists": "O utilizador OAuth está listado como ligado, mas o utilizador não existe nesta wiki.",
-	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. Clique em \"$1\" para criar uma conta com o OAuth.",
+	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. \"$1\" cria uma conta com o OAuth.",
 	"oauthauth-email-set": "$1. Atualize o seu endereço de correio eletrónico em $2 para alterá-lo."
 }
