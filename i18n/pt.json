@@ -10,9 +10,15 @@
 	"oauthauth-error": "Erro de autenticação OAuth",
 	"ouathauth-logout": "Sair",
 	"oauthauth-failed-handshake": "Ocorreu um erro no protocolo OAuth durante o processo de autenticação. A wiki remota pode estar a sofrer problemas técnicos.",
+	"oauthauth-csrf-detected": "Ocorreu uma incoerência na sessão OAuth. Tente entrar novamente, por favor.",
+	"oauthauth-create-noname": "Ocorreu um erro ao tentar criar a sua sessão. O nome de utilizador na wiki remota não é válido nesta wiki.",
+	"oauthauth-create-userexists": "Ocorreu um erro ao tentar criar a sua sessão. O nome de utilizador na wiki remota já existe nesta wiki. Tem de contactar um burocrata para usurpar a conta.",
 	"oauthauth-login-noname": "O utilizador OAuth está ligado, mas o nome não é válido nesta wiki.",
-	"oauthauth-login": "Entrar em $1",
+	"oauthauth-login": "Entrar na wiki remota $1",
 	"oauthauth-login-usernotexists": "O utilizador OAuth está listado como ligado, mas o utilizador não existe nesta wiki.",
+	"oauthauth-nologin-policy": "As normas desta wiki não lhe permitem entrar.",
 	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. \"$1\" cria uma conta com o OAuth.",
-	"oauthauth-email-set": "$1. Atualize o seu endereço de correio eletrónico em $2 para alterá-lo."
+	"oauthauth-loggout-policy": "A sua sessão foi terminada porque as normas deste ''site'' já não lhe permitem continuar a ter sessões.",
+	"oauthauth-set-email": "A sua conta ligada não tinha um endereço de correio eletrónico na última vez em que entrou na wiki. Defina um endereço eletrónico na wiki remota $1 para definir o seu endereço eletrónico aqui.",
+	"oauthauth-email-set": "$1. Atualize o seu endereço de correio eletrónico na wiki remota $2 para alterá-lo."
 }
