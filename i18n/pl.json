@@ -6,6 +6,7 @@
 	},
 	"oauthauth-desc": "Umożliwia wiki delegowanie ich uwierzytelnienia do innej wiki",
 	"oauthauth-already-logged-in": "Jesteś już zalogowany.",
+	"oauthauth-error": "Błąd logowania OAuth",
 	"ouathauth-logout": "Wyloguj się",
 	"oauthauth-csrf-detected": "Niezgodność sesji OAuth. Spróbuj zalogować się ponownie.",
 	"oauthauth-login": "Zaloguj się do $1",
