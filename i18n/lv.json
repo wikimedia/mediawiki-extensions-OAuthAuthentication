@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Silraks"
+		]
+	},
+	"oauthauth-error": "OAuth pieslēgšanās kļūda",
+	"ouathauth-logout": "Iziet",
+	"oauthauth-login": "Pieslēgties $1",
+	"oauthauth-nologin-policy": "Šīs Vikipēdijas privātuma politika neļauj tev pieslēgties."
+}
