@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"oauthauth-error": "OAuth kirjautumisvirhe",
+	"ouathauth-logout": "Kirjaudu ulos",
+	"oauthauth-login-noname": "OAuth-käyttäjä on yhdistetty, mutta nimi ei ole kelvollinen tässä wikissä.",
+	"oauthauth-login": "Kirjaudu $1ssa",
+	"oauthauth-nologin-policy": "Tämän wikin käytäntö ei anna sinun kirjautua.",
+	"oauthauth-loggout-policy": "Olet kirjautunut ulos, koska sivuston käytäntö ei enää anna sinun kirjautua sisään.",
+	"oauthauth-email-set": "$1. Päivitä sähköpostiosoitteesi $2ssa muuttaaksesi sen."
+}
