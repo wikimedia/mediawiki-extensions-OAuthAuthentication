@@ -4,10 +4,11 @@
 			"SeoJeongHo",
 			"Hwangjy9",
 			"Revi",
-			"Ykhwong"
+			"Ykhwong",
+			"아라"
 		]
 	},
-	"oauthauth-desc": "위키에서 다른 위키에 인증을 위임하도록 허용",
+	"oauthauth-desc": "위키에서 다른 위키에 인증을 위임할 수 있게 합니다",
 	"oauthauth-already-logged-in": "이미 로그인했습니다.",
 	"oauthauth-error": "OAuth 로그인 오류",
 	"ouathauth-logout": "로그아웃",
