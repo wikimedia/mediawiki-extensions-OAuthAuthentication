@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Cwlin0416",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"SupaplexTW"
 		]
 	},
 	"oauthauth-desc": "允許 wiki 使用其他 wiki 認証",
@@ -11,5 +12,6 @@
 	"ouathauth-logout": "登出",
 	"oauthauth-failed-handshake": "您登入時發生 OAuth 協定錯誤，遠端的 wiki 可能發生技術問題。",
 	"oauthauth-csrf-detected": "OAuth 工作階段不相符，請嘗試重新登入。",
+	"oauthauth-create-noname": "OAuth登入錯誤。你在遠端wiki的使用者名稱在這個wiki並沒有效。",
 	"oauthauth-login": "登入於 $1"
 }
