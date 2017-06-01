@@ -6,7 +6,8 @@
 			"Framafan",
 			"Wladek92",
 			"Fylip22",
-			"Seb35"
+			"Seb35",
+			"Urhixidur"
 		]
 	},
 	"oauthauth-desc": "Autorise les wikis à déléguer leurs authentifications à un autre wiki",
@@ -23,6 +24,6 @@
 	"oauthauth-nologin-policy": "Cette politique de Wiki ne permettra pas de vous connecter.",
 	"oauthauth-localuser-not-allowed": "La création locale de compte est désactivée sur ce wiki. Cliquez sur \"$1\" pour créer un compte avec OAuth.",
 	"oauthauth-loggout-policy": "Vous avez été déconnecté car la politique du site ne permet plus de vous connecter.",
-	"oauthauth-set-email": "Votre compte attaché n’avait pas d’adresse email enregistrée la dernière fois que vous vous êtes connecté(e). Enregistrez une adresse email sur $1 pour qu’une adresse email apparaisse ici.",
+	"oauthauth-set-email": "Votre compte attaché n’avait pas d’adresse de courriel enregistrée la dernière fois que vous vous êtes connecté(e). Enregistrez une adresse de courriel sur $1 pour qu’elle apparaisse ici.",
 	"oauthauth-email-set": "$1. Mettre à jour votre adresse de messagerie sur $2 pour le changer."
 }
