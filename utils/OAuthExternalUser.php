@@ -132,7 +132,6 @@ class OAuthExternalUser {
 			/* WHERE */ [ 'oaau_uid' => $this->userId ],
 			__METHOD__
 		);
-
 	}
 
 	public function removeAccessTokens( \DatabaseBase $db ) {

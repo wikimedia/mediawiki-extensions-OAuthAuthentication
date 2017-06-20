@@ -7,7 +7,6 @@ namespace MediaWiki\Extensions\OAuthAuthentication;
 class OAuthAuthHooksTest extends OAuthAuthDBTest {
 
 	public function testOnPersonalUrls() {
-
 		$this->setMwGlobals( [
 			'wgUser' => \User::newFromName( '127.0.0.1', false ),
 		] );

@@ -35,7 +35,7 @@ class AuthenticationHandler {
 			$s->merge( $status );
 		}
 
-		wfDebugLog( "OAuthAuth", __METHOD__ . " returning Status: " . (int) $s->isGood() );
+		wfDebugLog( "OAuthAuth", __METHOD__ . " returning Status: " . (int)$s->isGood() );
 		return $s;
 	}
 

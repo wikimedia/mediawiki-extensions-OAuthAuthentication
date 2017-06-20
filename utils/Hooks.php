@@ -11,7 +11,6 @@ class Hooks {
 			$wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
 		if ( $wgUser->getID() == 0 ) {
-
 			$query = [];
 			if ( $title->isSpecial( 'Userlogout' ) ) {
 				$query['returnto'] =  $wgRequest->getVal( 'returnto', 'Main_Page' );
@@ -69,7 +68,6 @@ class Hooks {
 		);
 
 		if ( empty( $user->mPassword ) && empty( $user->mNewpassword ) ) {
-
 			if ( $user->isEmailConfirmed() ) {
 				$preferences['password'] = [
 					'section' => 'personal/info',
@@ -83,7 +81,6 @@ class Hooks {
 			}
 
 			if ( $wgRequirePasswordforEmailChange ) {
-
 				$emailMsg = wfMessage(
 					'oauthauth-set-email',
 					$wgOAuthAuthenticationRemoteName
@@ -116,7 +113,6 @@ class Hooks {
 				'label-message' => null,
 			];
 		}
-
 	}
 
 	/**

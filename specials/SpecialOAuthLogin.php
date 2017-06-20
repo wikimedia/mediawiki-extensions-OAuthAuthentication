@@ -100,7 +100,6 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 			default:
 				throw new \ErrorPageError( 'oauthauth-error', 'oauthauth-invalid-subpage' );
 		}
-
 	}
 
 }
