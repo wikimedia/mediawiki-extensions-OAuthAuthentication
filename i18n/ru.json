@@ -4,13 +4,15 @@
 			"Dicto23456",
 			"KennyTHPS",
 			"Okras",
-			"Kaganer"
+			"Kaganer",
+			"Facenapalm"
 		]
 	},
 	"oauthauth-desc": "Позволяет вики-сайтам делегировать аутентификацию другому вики-сайту",
 	"oauthauth-already-logged-in": "Вы уже вошли.",
 	"oauthauth-error": "Ошибка входа в систему с помощью OAuth",
 	"ouathauth-logout": "Выйти",
-	"oauthauth-login": "Войдите на $1",
+	"oauthauth-csrf-detected": "Несовпадение сессий OAuth. Пожалуйста, попробуйте авторизоваться позднее.",
+	"oauthauth-login": "Войти на $1",
 	"oauthauth-email-set": "$1. Обновите адрес электронной почты на $2, чтобы изменить его."
 }
