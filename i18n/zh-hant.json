@@ -3,10 +3,11 @@
 		"authors": [
 			"Cwlin0416",
 			"Liuxinyu970226",
-			"SupaplexTW"
+			"SupaplexTW",
+			"A2093064"
 		]
 	},
-	"oauthauth-desc": "允許 wiki 使用其他 wiki 認証",
+	"oauthauth-desc": "允許 wiki 使用其他 wiki 認證",
 	"oauthauth-already-logged-in": "您已登入。",
 	"oauthauth-error": "OAuth 登入錯誤",
 	"ouathauth-logout": "登出",
