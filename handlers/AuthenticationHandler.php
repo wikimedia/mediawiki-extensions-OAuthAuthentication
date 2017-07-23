@@ -26,11 +26,11 @@ class AuthenticationHandler {
 		$exUser->setIdentifyTS( new \MWTimestamp() );
 
 		if ( $exUser->attached() ) {
-			$status = AuthenticationHandler::doLogin( $exUser, $request );
+			$status = self::doLogin( $exUser, $request );
 			$s = \Status::newGood( [ 'successfulLogin', $status->getValue() ] );
 			$s->merge( $status );
 		} else {
-			$status = AuthenticationHandler::doCreateAndLogin( $exUser, $request );
+			$status = self::doCreateAndLogin( $exUser, $request );
 			$s = \Status::newGood( [ 'successfulCreation', $status->getValue() ] );
 			$s->merge( $status );
 		}
