@@ -4,6 +4,7 @@ namespace MediaWiki\Extensions\OAuthAuthentication;
 
 /**
  * @group OAuthAuthentication
+ * @group Database
  */
 class OAuthAuthExternalUserTest extends OAuthAuthDBTest {
 
