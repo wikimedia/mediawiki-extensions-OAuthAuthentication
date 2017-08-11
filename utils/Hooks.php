@@ -13,8 +13,8 @@ class Hooks {
 		if ( $wgUser->getID() == 0 ) {
 			$query = [];
 			if ( $title->isSpecial( 'Userlogout' ) ) {
-				$query['returnto'] =  $wgRequest->getVal( 'returnto', 'Main_Page' );
-				$query['returntoquery'] =  $wgRequest->getVal( 'returntoquery' );
+				$query['returnto'] = $wgRequest->getVal( 'returnto', 'Main_Page' );
+				$query['returntoquery'] = $wgRequest->getVal( 'returntoquery' );
 			} else {
 				$query['returnto'] = $title->getPrefixedText();
 				$returntoquery = $wgRequest->getValues();
