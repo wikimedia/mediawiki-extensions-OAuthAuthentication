@@ -3,6 +3,7 @@
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
 use MediaWiki\OAuthClient\Token;
+use Wikimedia\Rdbms\IDatabase;
 
 class OAuthExternalUser {
 
@@ -41,7 +42,7 @@ class OAuthExternalUser {
 		$this->identifyTS = $idts;
 	}
 
-	public static function newFromRemoteId( $rid, $username, \DatabaseBase $db ) {
+	public static function newFromRemoteId( $rid, $username, IDatabase $db ) {
 		$row = $db->selectRow(
 			'oauthauth_user',
 			[ 'oaau_rid', 'oaau_uid', 'oaau_username', 'oaau_access_token',
@@ -59,7 +60,7 @@ class OAuthExternalUser {
 		}
 	}
 
-	public static function newFromUser( \User $user, \DatabaseBase $db ) {
+	public static function newFromUser( \User $user, IDatabase $db ) {
 		$row = $db->selectRow(
 			'oauthauth_user',
 			[ 'oaau_rid', 'oaau_uid', 'oaau_username', 'oaau_access_token',
@@ -77,7 +78,7 @@ class OAuthExternalUser {
 		}
 	}
 
-	public function addToDatabase( \DatabaseBase $db ) {
+	public function addToDatabase( IDatabase $db ) {
 		$row = [
 			'oaau_rid' => $this->remoteId,
 			'oaau_uid' => $this->userId,
@@ -104,7 +105,7 @@ class OAuthExternalUser {
 		);
 	}
 
-	public function updateInDatabase( \DatabaseBase $db ) {
+	public function updateInDatabase( IDatabase $db ) {
 		if ( !$this->userId > 0 ) {
 			throw new Exception( 'Error updating External User that isn\'t in the DB' );
 		}
@@ -134,7 +135,7 @@ class OAuthExternalUser {
 		);
 	}
 
-	public function removeAccessTokens( \DatabaseBase $db ) {
+	public function removeAccessTokens( IDatabase $db ) {
 		if ( !$this->userId > 0 ) {
 			throw new Exception( 'Error updating External User that isn\'t in the DB' );
 		}
