@@ -117,7 +117,8 @@ class Hooks {
 
 	/**
 	 * Check that the identity complies with the site policy
-	 *
+	 * @param \User $user
+	 * @return true
 	 */
 	public static function onUserLoadAfterLoadFromSession( \User $user ) {
 		global $wgOAuthAuthenticationMaxIdentityAge;
@@ -150,8 +151,8 @@ class Hooks {
 	}
 
 	/**
-	 * @param $user \User
-	 * @param $abortError
+	 * @param \User $user
+	 * @param string &$abortError
 	 * @return bool
 	 */
 	public static function onAbortNewAccount( $user, &$abortError ) {
