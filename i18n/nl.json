@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"Esketti"
+			"Esketti",
+			"Mainframe98"
 		]
 	},
-	"oauthauth-desc": "Laat wiki ' s te delegeren hun verificatie naar een andere wiki",
+	"oauthauth-desc": "Laat wiki's toe hun verificatie te delegeren naar een andere wiki",
 	"oauthauth-already-logged-in": "U bent al aangemeld.",
 	"oauthauth-error": "OAuth login fout",
 	"ouathauth-logout": "Afmelden",
