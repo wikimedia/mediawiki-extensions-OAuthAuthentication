@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Vitorvicentevalente",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"oauthauth-desc": "Permite que as wikis deleguem o seu processo de autenticação noutra wiki",
@@ -18,7 +19,7 @@
 	"oauthauth-login-usernotexists": "O utilizador OAuth está listado como ligado, mas o utilizador não existe nesta wiki.",
 	"oauthauth-nologin-policy": "As normas desta wiki não lhe permitem entrar.",
 	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. \"$1\" cria uma conta com o OAuth.",
-	"oauthauth-loggout-policy": "A sua sessão foi terminada porque as normas deste ''site'' já não lhe permitem continuar a ter sessões.",
+	"oauthauth-loggout-policy": "A sua sessão foi terminada porque as normas deste sítio já não lhe permitem continuar a ter sessões.",
 	"oauthauth-set-email": "A sua conta ligada não tinha um endereço de correio eletrónico na última vez em que entrou na wiki. Defina um endereço eletrónico na wiki remota $1 para definir o seu endereço eletrónico aqui.",
 	"oauthauth-email-set": "$1. Atualize o seu endereço de correio eletrónico na wiki remota $2 para alterá-lo."
 }
