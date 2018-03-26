@@ -4,7 +4,8 @@
 			"Cwlin0416",
 			"Liuxinyu970226",
 			"SupaplexTW",
-			"A2093064"
+			"A2093064",
+			"Kly"
 		]
 	},
 	"oauthauth-desc": "允許 wiki 使用其他 wiki 認證",
@@ -14,5 +15,13 @@
 	"oauthauth-failed-handshake": "您登入時發生 OAuth 協定錯誤，遠端的 wiki 可能發生技術問題。",
 	"oauthauth-csrf-detected": "OAuth 工作階段不相符，請嘗試重新登入。",
 	"oauthauth-create-noname": "OAuth登入錯誤。你在遠端wiki的使用者名稱在這個wiki並沒有效。",
-	"oauthauth-login": "登入於 $1"
+	"oauthauth-create-userexists": "您登入時 OAuth 出現錯誤。遠端 wiki 的使用者名稱已存在此 wiki 上，您必須聯絡行政員來奪取帳戶。",
+	"oauthauth-login-noname": "OAuth 使用者已連接，但名稱在此 wiki 上無效。",
+	"oauthauth-login": "登入於 $1",
+	"oauthauth-login-usernotexists": "所列出的 OAuth 使用者為已連接，但使用者此 wiki 上不存在。",
+	"oauthauth-nologin-policy": "此 wiki 的方針不讓您登入。",
+	"oauthauth-localuser-not-allowed": "在此 wiki 上的本地帳戶建立功能已停用。\"$1\"來建立 OAuth 帳戶。",
+	"oauthauth-loggout-policy": "您已登出，因網站的方針不再允許您登入。",
+	"oauthauth-set-email": "您上一次登入附加的帳戶並沒有電子郵件地址。在此的電子郵件地址可您在 $1 上設定。",
+	"oauthauth-email-set": "$1。在 $2 上更新您的電子郵件地址來更改。"
 }
