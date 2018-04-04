@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ans"
+			"Ans",
+			"Horus"
 		]
 	},
-	"ouathauth-logout": "ออกจากระบบ"
+	"ouathauth-logout": "ลงชื่อออก"
 }
