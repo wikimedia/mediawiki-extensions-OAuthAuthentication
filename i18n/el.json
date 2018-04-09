@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"oauthauth-already-logged-in": "Έχετε συνδεθεί ήδη.",
+	"oauthauth-error": "Σφάλμα σύνδεσης OAuth",
+	"ouathauth-logout": "Έξοδος",
+	"oauthauth-failed-handshake": "Υπήρξε ένα σφάλμα πρωτοκόλλου OAuth ενώ συνδεόσασταν. Το απομακρυσμένο βίκι μπορεί να έχει τεχνικά προβλήματα.",
+	"oauthauth-csrf-detected": "Δυσαντιστοιχία συνεδρίας OAuth. Παρακαλώ προσπαθήστε να συνδεθείτε ξανά.",
+	"oauthauth-create-noname": "Σφάλμα OAuth ενώ συνδεόσασταν. Το όνομα χρήστη στο απομακρυσμένο βίκι δεν είναι έγκυρο σε αυτό το βίκι.",
+	"oauthauth-login": "Συνδεθείτε στο $1"
+}
