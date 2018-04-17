@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Ans",
-			"Horus"
+			"Horus",
+			"Aefgh39622"
 		]
 	},
-	"ouathauth-logout": "ลงชื่อออก"
+	"ouathauth-logout": "ออกจากระบบ"
 }
