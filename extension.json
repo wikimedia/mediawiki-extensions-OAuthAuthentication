@@ -32,7 +32,7 @@
 		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
 		"MediaWiki\\Extensions\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
 		"MediaWiki\\Extensions\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthAuthDBTest": "tests/OAuthAuthDBTest.php"
+		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
 	},
 	"Hooks": {
 		"PersonalUrls": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onPersonalUrls",
@@ -40,8 +40,7 @@
 		"LoadExtensionSchemaUpdates": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
 		"GetPreferences": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onGetPreferences",
 		"AbortNewAccount": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onAbortNewAccount",
-		"UserLoadAfterLoadFromSession": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession",
-		"UnitTestsList": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUnitTestsList"
+		"UserLoadAfterLoadFromSession": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
 	},
 	"config": {
 		"@doc": "see OAuthAuthentication.php",
