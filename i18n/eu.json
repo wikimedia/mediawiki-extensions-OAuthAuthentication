@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amaia"
+		]
+	},
+	"oauthauth-desc": "Wiki batek bere autentifikazioa beste wiki bati delegatzea ahalbidetzen du.",
+	"oauthauth-already-logged-in": "Saioa hasi duzu dagoeneko.",
+	"oauthauth-error": "Arazoa OAuth-en saioa hastean",
+	"ouathauth-logout": "Saioa itxi",
+	"oauthauth-failed-handshake": "Arazo bat egon da OAuth protokoloa erabiltzean. Izan liteke urruneko wikiak arazo teknikoak izatea.",
+	"oauthauth-csrf-detected": "Desadostasuna OAuth saioan. Mesedez, saiatu saioa berriro hasten.",
+	"oauthauth-create-noname": "Arazo bat egon da OAuth-en saioa hastean. Erabiltzaile izenak urruneko wikian ez du balio wiki honetarako.",
+	"oauthauth-create-userexists": "Arazo bat egon da OAuth protokoloa erabiltzean. Erabiltzaile izena urruneko wikian dagoeneko existitzen da wiki honetan. Burokrata batekin jarri behar duzu kontaktuan kontua zeureganatzeko.",
+	"oauthauth-login-noname": "OAuth erabiltzailea konektatuta dago, baina izena ez da baliozkoa wiki honetan.",
+	"oauthauth-login": "$1-(e)n saioa hasi",
+	"oauthauth-login-usernotexists": "OAuth erabiltzailea kontatu bezala agertzen da, baina ez da existitzen wiki honetan.",
+	"oauthauth-nologin-policy": "Wiki honen politikak ez dizu saioa hasten utziko.",
+	"oauthauth-localuser-not-allowed": "Kontu lokal baten sorrera desgaituta dago wiki honetan. \"$1\"-(e)k kontu bat sortzen du OAuth erabiliz.",
+	"oauthauth-loggout-policy": "Saioa itxi da gunearen politikak ez dizulako saioa hasten usten.",
+	"oauthauth-set-email": "Zure kontu erantziak ez zeukan helbide elektronikorik saioa hasi zenuen azken aldian. Ezarri helbide elektroniko bat $1-(e)n zure helbidea hemen ezartzeko.",
+	"oauthauth-email-set": "$1. Zure helbide elektronikoa aldatzeko, eguneratu $2-(e)n."
+}
