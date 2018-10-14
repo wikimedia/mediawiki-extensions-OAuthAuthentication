@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Macofe"
+			"Macofe",
+			"Tiberius1701"
 		]
 	},
 	"oauthauth-desc": "Permite que un wiki delegue su autenticación a otro wiki",
@@ -12,7 +13,7 @@
 	"oauthauth-failed-handshake": "Se produjo un error al acceder mediante el protocolo OAuth. Puede que el wiki remoto tenga problemas técnicos.",
 	"oauthauth-csrf-detected": "Discordancia en la sesión OAuth. Intenta iniciar sesión nuevamente.",
 	"oauthauth-create-noname": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en el wiki remoto no es válido en este wiki.",
-	"oauthauth-create-userexists": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en el wiki remoto ya existe en este wiki. Debes contactar a un burócrata para usurpar la cuenta.",
+	"oauthauth-create-userexists": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en el wiki remoto ya existe en este wiki. Debes ponerte en contacto con un burócrata para usurpar la cuenta.",
 	"oauthauth-login-noname": "El usuario OAuth está conectado, pero el nombre no es válido en este wiki.",
 	"oauthauth-login": "Acceder a $1",
 	"oauthauth-login-usernotexists": "El usuario OAuth aparece como conectado, pero no existe en este wiki.",
