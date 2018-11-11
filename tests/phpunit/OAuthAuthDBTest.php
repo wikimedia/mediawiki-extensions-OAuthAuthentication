@@ -3,6 +3,8 @@
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
 /**
+ * @covers \MediaWiki\Extensions\OAuthAuthentication\OAuthExternalUser
+ *
  * @group OAuthAuthentication
  * @group Database
  */
@@ -27,7 +29,10 @@ class OAuthAuthDBTest extends \MediaWikiTestCase {
 		$exUser->addToDatabase( $this->db );
 	}
 
-	// Stub to make sure db handling is working
+	/**
+	 * Stub to make sure db handling is working
+	 * @coversNothing
+	 */
 	public function testInit() {
 		$this->assertSame( true, true );
 	}

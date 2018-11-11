@@ -2,11 +2,16 @@
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
 /**
+ * @coversDefaultClass \MediaWiki\Extensions\OAuthAuthentication\Hooks
+ *
  * @group OAuthAuthentication
  * @group Database
  */
 class OAuthAuthHooksTest extends OAuthAuthDBTest {
 
+	/**
+	 * @covers ::onPersonalUrls
+	 */
 	public function testOnPersonalUrls() {
 		$this->setMwGlobals( [
 			'wgUser' => \User::newFromName( '127.0.0.1', false ),

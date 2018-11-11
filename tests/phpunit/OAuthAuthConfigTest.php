@@ -3,6 +3,8 @@
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
 /**
+ * @covers \MediaWiki\Extensions\OAuthAuthentication\Config
+ *
  * @group OAuthAuthentication
  * @group Database
  */
