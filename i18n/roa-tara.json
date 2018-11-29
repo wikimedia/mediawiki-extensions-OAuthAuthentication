@@ -4,5 +4,7 @@
 			"Joetaras"
 		]
 	},
-	"oauthauth-login-noname": "L'utende OAuth jè connesse, ma 'u nome non g'è valide sus a sta uicchi."
+	"ouathauth-logout": "Isse",
+	"oauthauth-login-noname": "L'utende OAuth jè connesse, ma 'u nome non g'è valide sus a sta uicchi.",
+	"oauthauth-login": "Tràse jndr'à $1"
 }
