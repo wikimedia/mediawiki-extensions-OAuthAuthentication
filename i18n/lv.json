@@ -4,6 +4,7 @@
 			"Silraks"
 		]
 	},
+	"oauthauth-already-logged-in": "Tu jau esi pieslēdzies.",
 	"oauthauth-error": "OAuth pieslēgšanās kļūda",
 	"ouathauth-logout": "Iziet",
 	"oauthauth-login": "Pieslēgties $1",
