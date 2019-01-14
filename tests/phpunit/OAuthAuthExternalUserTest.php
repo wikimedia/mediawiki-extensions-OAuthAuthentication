@@ -28,9 +28,9 @@ class OAuthAuthExternalUserTest extends OAuthAuthDBTest {
 	 */
 	public function testNewFromRemoteId() {
 		// We added remoteId 120 in parent class
-		$exUser = OAuthExternalUser::newFromRemoteId( 120, 'OAuthUser', $this->db );
+		$exUser = OAuthExternalUser::newFromRemoteId( 120, $this->userName, $this->db );
 		$this->assertInstanceOf( 'MediaWiki\Extensions\OAuthAuthentication\OAuthExternalUser', $exUser );
-		$this->assertEquals( 'OAuthUser', $exUser->getName() );
+		$this->assertEquals( $this->userName, $exUser->getName() );
 	}
 
 }

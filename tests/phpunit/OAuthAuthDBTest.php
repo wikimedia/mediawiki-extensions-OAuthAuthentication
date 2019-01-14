@@ -10,6 +10,11 @@ namespace MediaWiki\Extensions\OAuthAuthentication;
  */
 class OAuthAuthDBTest extends \MediaWikiTestCase {
 
+	/**
+	 * @var string
+	 */
+	protected $userName;
+
 	public function __construct( $name = null, array $data = [], $dataName = '' ) {
 		parent::__construct( $name, $data, $dataName );
 		$this->tablesUsed[] = 'oauthauth_user';
@@ -18,14 +23,9 @@ class OAuthAuthDBTest extends \MediaWikiTestCase {
 	protected function setUp() {
 		parent::setUp();
 
-		// TODO: Setup some test data
-		$user = \User::newFromName( 'OAuthUser' );
-		if ( $user->idForName() == 0 ) {
-			$user->addToDatabase();
-			$user->setPassword( 'OAUP@ssword' );
-			$user->saveSettings();
-		}
-		$exUser = new OAuthExternalUser( 100, $user->getId(), 'OAuthUser' );
+		$user = $this->getTestUser()->getUser();
+		$this->userName = $user->getName();
+		$exUser = new OAuthExternalUser( 100, $user->getId(), $this->userName );
 		$exUser->addToDatabase( $this->db );
 	}
 
