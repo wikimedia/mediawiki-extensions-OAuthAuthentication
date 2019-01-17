@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"A Chinese Wikipedian"
 		]
 	},
 	"oauthauth-desc": "允许wiki代表他们认证至另一wiki",
@@ -19,5 +20,6 @@
 	"oauthauth-localuser-not-allowed": "此wiki已禁用本地账户的创建。点击“$1”以通过OAuth创建账户。",
 	"oauthauth-loggout-policy": "您已经退出，因为网站方针不再允许您登录。",
 	"oauthauth-set-email": "您附加的账户在您上次登录时没有电子邮件地址。在$1设置电子邮件地址以在此设置您的电子邮件地址。",
-	"oauthauth-email-set": "$1。在$2更新您的电子邮件地址以更改它。"
+	"oauthauth-email-set": "$1。在$2更新您的电子邮件地址以更改它。",
+	"oauthauth-invalid-subpage": "目标子页无效。"
 }

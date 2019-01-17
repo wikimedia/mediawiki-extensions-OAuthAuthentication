@@ -15,5 +15,6 @@
 	"oauthauth-login": "Accedi a $1",
 	"oauthauth-localuser-not-allowed": "La creazione locale degli account è disabilitata per questo wiki. Premi \"$1\" per cercare un account con OAuth.",
 	"oauthauth-set-email": "La tua utenza collegata non aveva un indirizzo di posta elettronica l'ultima volta che hai effettuato l'accesso. Imposta un indirizzo email su $1 per impostare il tuo indirizzo email qui.",
-	"oauthauth-email-set": "$1. Aggiorna il tuo indirizzo email su $2 per modificarlo."
+	"oauthauth-email-set": "$1. Aggiorna il tuo indirizzo email su $2 per modificarlo.",
+	"oauthauth-invalid-subpage": "La sottopagina di destinazione non è valida."
 }

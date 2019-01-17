@@ -3,8 +3,10 @@
 		"authors": [
 			"Ans",
 			"Horus",
-			"Aefgh39622"
+			"Aefgh39622",
+			"B20180"
 		]
 	},
-	"ouathauth-logout": "ออกจากระบบ"
+	"ouathauth-logout": "ออกจากระบบ",
+	"oauthauth-invalid-subpage": "หน้าย่อยเป้าหมายไม่ถูกต้อง"
 }

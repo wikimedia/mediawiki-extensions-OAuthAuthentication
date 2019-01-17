@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"ShockD"
+			"ShockD",
+			"Vlad5250"
 		]
 	},
-	"oauthauth-already-logged-in": "Вече сте влезли."
+	"oauthauth-already-logged-in": "Вече сте влезли.",
+	"oauthauth-invalid-subpage": "Целевата подстраница е невалидна."
 }

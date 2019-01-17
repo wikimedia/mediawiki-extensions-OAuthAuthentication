@@ -21,5 +21,6 @@
 	"oauthauth-localuser-not-allowed": "A criação de contas locais está desativada nesta wiki. \"$1\" cria uma conta com o OAuth.",
 	"oauthauth-loggout-policy": "A sua sessão foi terminada porque as normas deste sítio já não lhe permitem continuar a ter sessões.",
 	"oauthauth-set-email": "A sua conta ligada não tinha um endereço de correio eletrónico na última vez em que entrou na wiki. Defina um endereço eletrónico na wiki remota $1 para definir o seu endereço eletrónico aqui.",
-	"oauthauth-email-set": "$1. Atualize o seu endereço de correio eletrónico na wiki remota $2 para alterá-lo."
+	"oauthauth-email-set": "$1. Atualize o seu endereço de correio eletrónico na wiki remota $2 para alterá-lo.",
+	"oauthauth-invalid-subpage": "A subpágina alvo é inválida."
 }

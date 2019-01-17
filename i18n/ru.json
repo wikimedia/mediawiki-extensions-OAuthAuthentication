@@ -5,7 +5,8 @@
 			"KennyTHPS",
 			"Okras",
 			"Kaganer",
-			"Facenapalm"
+			"Facenapalm",
+			"Vlad5250"
 		]
 	},
 	"oauthauth-desc": "Позволяет вики-сайтам делегировать аутентификацию другому вики-сайту",
@@ -14,5 +15,6 @@
 	"ouathauth-logout": "Выйти",
 	"oauthauth-csrf-detected": "Несовпадение сессий OAuth. Пожалуйста, попробуйте авторизоваться позднее.",
 	"oauthauth-login": "Войти на $1",
-	"oauthauth-email-set": "$1. Обновите адрес электронной почты на $2, чтобы изменить его."
+	"oauthauth-email-set": "$1. Обновите адрес электронной почты на $2, чтобы изменить его.",
+	"oauthauth-invalid-subpage": "Целевая подстраница ошибочна."
 }

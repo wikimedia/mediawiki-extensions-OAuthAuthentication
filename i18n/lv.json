@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silraks"
+			"Silraks",
+			"Papuass"
 		]
 	},
 	"oauthauth-already-logged-in": "Tu jau esi pieslēdzies.",
 	"oauthauth-error": "OAuth pieslēgšanās kļūda",
 	"ouathauth-logout": "Iziet",
 	"oauthauth-login": "Pieslēgties $1",
-	"oauthauth-nologin-policy": "Šīs Vikipēdijas privātuma politika neļauj tev pieslēgties."
+	"oauthauth-nologin-policy": "Šīs Vikipēdijas privātuma politika neļauj tev pieslēgties.",
+	"oauthauth-invalid-subpage": "Mērķa apakšlapa ir nederīga."
 }
