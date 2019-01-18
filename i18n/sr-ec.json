@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"BadDog"
 		]
 	},
-	"ouathauth-logout": "Одјави ме"
+	"ouathauth-logout": "Одјави ме",
+	"oauthauth-invalid-subpage": "Циљна подстраница није важећа."
 }
