@@ -21,5 +21,6 @@
 	"oauthauth-login-usernotexists": "OAuth 사용자가 연결된 것으로 나타나지만, 사용자 계정이 존재하지 않습니다.",
 	"oauthauth-nologin-policy": "이 위키의 정책에 따라 로그인할 수 없습니다.",
 	"oauthauth-localuser-not-allowed": "이 위키에서 로컬 계정 생성은 금지되어 있습니다. \"$1\"은(는) OAuth로 계정을 생성합니다.",
-	"oauthauth-loggout-policy": "이 위키의 정책이 로그인을 불허하므로 로그아웃되었습니다."
+	"oauthauth-loggout-policy": "이 위키의 정책이 로그인을 불허하므로 로그아웃되었습니다.",
+	"oauthauth-invalid-subpage": "대상 하위 문서가 유효하지 않습니다."
 }
