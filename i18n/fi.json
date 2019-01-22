@@ -4,7 +4,7 @@
 			"Pyscowicz"
 		]
 	},
-	"oauthauth-error": "OAuth kirjautumisvirhe",
+	"oauthauth-error": "OAuth-kirjautumisvirhe",
 	"ouathauth-logout": "Kirjaudu ulos",
 	"oauthauth-login-noname": "OAuth-käyttäjä on yhdistetty, mutta nimi ei ole kelvollinen tässä wikissä.",
 	"oauthauth-login": "Kirjaudu $1ssa",
