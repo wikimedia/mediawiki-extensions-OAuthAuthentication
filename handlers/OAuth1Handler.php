@@ -22,7 +22,7 @@ class OAuth1Handler {
 		$verifyCode = $request->getVal( 'oauth_verifier', false );
 		$recKey = $request->getVal( 'oauth_token', false );
 
-		if ( !$verifyCode || ! $recKey ) {
+		if ( !$verifyCode || !$recKey ) {
 			throw new Exception( 'oauthauth-failed-handshake' );
 		}
 
