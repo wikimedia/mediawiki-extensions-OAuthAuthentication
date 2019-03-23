@@ -76,7 +76,7 @@ class AuthenticationHandler {
 			*/
 
 			$u->setToken();
-			\DeferredUpdates::addUpdate( new \SiteStatsUpdate( 0, 0, 0, 0, 1 ) );
+			\DeferredUpdates::addUpdate( \SiteStatsUpdate::factory( [ 'users' => 1 ] ) );
 			$u->addWatch( $u->getUserPage(), \User::IGNORE_USER_RIGHTS );
 			$u->saveSettings();
 
