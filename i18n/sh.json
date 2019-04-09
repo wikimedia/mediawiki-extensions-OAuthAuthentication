@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"oauthauth-desc": "Omogućuje da wikiji dodijele svoje autentifikacije drugim wikijima.",
+	"oauthauth-already-logged-in": "Već ste prijavljeni.",
+	"oauthauth-error": "Greška prijave OAuth",
+	"ouathauth-logout": "Odjavi me",
+	"oauthauth-failed-handshake": "Došlo je do greške u protokolu prilikom prijave na OAuth. Udaljeni wiki možda ima tehničkih problema.",
+	"oauthauth-csrf-detected": "Razlika u sesiji OAuth. Prijavite se ponovno.",
+	"oauthauth-create-noname": "Došlo je do greške prilikom prijave OAuth. Korisničko ime udaljenog wikija nije valjano na ovom wikiju.",
+	"oauthauth-create-userexists": "Došlo je do greške u OAuthu prilikom prijave. Korisničko ime udaljenog wikija već postoji na ovom wikiju. Obratite se birokratu kako bi vam pružili mogućnost da je koristite.",
+	"oauthauth-login-noname": "Korisnik OAutha je povezan, ali ime nije valjano na ovom wikiju.",
+	"oauthauth-login": "Prijava na $1",
+	"oauthauth-login-usernotexists": "Korisnik OAutha naveden je kao povezan, ali ne postoji na ovom wikiju.",
+	"oauthauth-nologin-policy": "Pravila ovog wikija ne dopuštaju prijavu.",
+	"oauthauth-localuser-not-allowed": "Stvaranje lokalnih računa onemogućeno je na ovom wikiju. Kliknite \"$1\" da biste otvorili račun s OAuth.",
+	"oauthauth-loggout-policy": "Odjavljeni ste jer pravila wikija više ne dopuštaju prijavu.",
+	"oauthauth-set-email": "Priloženi račun nije imao e-poštu kada ste se posljednji put prijavili. Postavite e-poštu na $1 da biste je postavili i ovdje.",
+	"oauthauth-email-set": "$1. Smijenite e-poštu na $2 da biste je izmijenili.",
+	"oauthauth-invalid-subpage": "Ciljna podstranica nije valjana."
+}
