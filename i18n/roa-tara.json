@@ -4,7 +4,21 @@
 			"Joetaras"
 		]
 	},
+	"oauthauth-desc": "Permette a le uicchi de delegà 'a lore autendicazione a 'n'otra uicchi",
+	"oauthauth-already-logged-in": "E' ggià trasute.",
+	"oauthauth-error": "Errore de accesse cu OAuth",
 	"ouathauth-logout": "Isse",
+	"oauthauth-failed-handshake": "Ha assute 'n'errore de protocolle sus a OAuth quanne ste trasive. 'A uicchi remote pò essere ca tène probbleme tecnice.",
+	"oauthauth-csrf-detected": "'A sessione OAuth non s'accocchie. Pruève a trasè arrete.",
+	"oauthauth-create-noname": "Ha assute 'n'errore OAuth quanne ste trasive. 'U nome utende sus 'a uicchi remote non g'è valide sus a sta uicchi.",
+	"oauthauth-create-userexists": "Ha assute 'n'errore OAuth quanne ste trasive. 'U nome utende sus 'a uicchi remote ggià esiste sus a sta uicchi. Tu a condattà 'nu burocrate purcé t'onne futtute 'u cunde utende.",
 	"oauthauth-login-noname": "L'utende OAuth jè connesse, ma 'u nome non g'è valide sus a sta uicchi.",
-	"oauthauth-login": "Tràse jndr'à $1"
+	"oauthauth-login": "Tràse jndr'à $1",
+	"oauthauth-login-usernotexists": "L'utente OAuth jè elengate cumme connesse, ma l'utende non g'esiste sus a sta uicchi.",
+	"oauthauth-nologin-policy": "Sta regole d'a uicchi non ge te face trasè.",
+	"oauthauth-localuser-not-allowed": "'A ccrejazione de le cunde locale jè disabbilitate sus a sta uicchi. \"$1\" ccreje 'nu cunde cu OAuth.",
+	"oauthauth-loggout-policy": "E' state mise fore purcé le regole d'u site non ge te ponne fà cchiù trasè.",
+	"oauthauth-set-email": "'U cunde tune collegate non ge tenève 'n'indirizze de poste l'urtema vote ca è trasute. 'Mboste 'nu 'ndirizze email sus a $1 pe 'mbostarle aqquà.",
+	"oauthauth-email-set": "$1. Aggiorne 'u 'ndirizze email tune sus a $2 pe cangiarle.",
+	"oauthauth-invalid-subpage": "'A sottopàgene de destinazione non g'è valide."
 }
