@@ -1,14 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Rail"
 		]
 	},
 	"oauthauth-desc": "Umożliwia wiki delegowanie ich uwierzytelnienia do innej wiki",
 	"oauthauth-already-logged-in": "Jesteś już zalogowany.",
 	"oauthauth-error": "Błąd logowania OAuth",
 	"ouathauth-logout": "Wyloguj się",
+	"oauthauth-failed-handshake": "Podczas logowania wystąpił błąd protokołu OAuth. Zdalna wiki może mieć problemy techniczne.",
 	"oauthauth-csrf-detected": "Niezgodność sesji OAuth. Spróbuj zalogować się ponownie.",
+	"oauthauth-create-noname": "Podczas logowania wystąpił błąd OAuth. Nazwa użytkownika w zdalnej wiki nie jest prawidłowa na tej wiki.",
+	"oauthauth-create-userexists": "Podczas logowania wystąpił błąd OAuth. Nazwa użytkownika w zdalnej wiki już istnieje na tej wiki. Musisz skontaktować się z biurokratą aby zdobyć konto.",
+	"oauthauth-login-noname": "Użytkownik OAuth jest połączony, jednak nazwa nie jest prawidłowa na tej wiki.",
 	"oauthauth-login": "Zaloguj się do $1",
-	"oauthauth-localuser-not-allowed": "Tworzenie konta lokalnego na tej wiki jest wyłączone. Kliknij „$1”, aby utworzyć konto z OAuth."
+	"oauthauth-login-usernotexists": "Użytkownik OAuth jest listowany jako połączony, jednak użytkownik nie istnieje na tej wiki.",
+	"oauthauth-nologin-policy": "Polityka tej wiki nie pozwala ci się zalogować.",
+	"oauthauth-localuser-not-allowed": "Tworzenie konta lokalnego na tej wiki jest wyłączone. Kliknij „$1”, aby utworzyć konto z OAuth.",
+	"oauthauth-loggout-policy": "Zostałeś wylogowany, ponieważ polityka tej strony nie zezwala ci już na bycie zalogowanym.",
+	"oauthauth-set-email": "Twoje załączone konto nie posiadało adresu e-mail, gdy ostatnio się zalogowałeś. Ustaw adres e-mail w {{GRAMMAR:D.lp|$1}} aby ustawić inny e-mail tutaj.",
+	"oauthauth-email-set": "$1. Zaktualizuj swój adres e-mail w {{GRAMMAR:D.lp|$2}} aby go zmienić.",
+	"oauthauth-invalid-subpage": "Docelowa podstron jest nieprawidłowa."
 }
