@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"oauthauth-desc": "Lar wikier delegere autentisering til en annen wiki",
+	"oauthauth-already-logged-in": "Du er allerede innlogget.",
+	"oauthauth-error": "OAuth-innloggingsfeil",
+	"ouathauth-logout": "Logg ut",
+	"oauthauth-failed-handshake": "En OAuth-protokollfeil oppsto under innlogging. Den eksterne wikien kan ha tekniske problemer.",
+	"oauthauth-csrf-detected": "Ikke samsvar i OAuth-økt. Prøv å logge inn igjen.",
+	"oauthauth-create-noname": "OAuth-feil under innlogging. Brukernavnet på den eksterne wikien er ikke gyldig på denne wikien.",
+	"oauthauth-create-userexists": "OAuth-feil under innlogging. Brukernavnet på den eksterne wikien eksisterer allerede på denne wikien. Du må kontakte en byråkrat for å ta over kontoen.",
+	"oauthauth-login-noname": "OAuth-brukeren er tilkoblet, men navnet er ikke gyldig på denne wikien.",
+	"oauthauth-login": "Logg inn på $1",
+	"oauthauth-login-usernotexists": "OAuth-brukeren er listet opp som tilkoblet, men brukeren eksisterer ikke på denne wikien.",
+	"oauthauth-nologin-policy": "Reglene på denne wikien lar deg ikke logge inn.",
+	"oauthauth-localuser-not-allowed": "Lokal kontoopprettelse er slått av på denne wikien. «$1» skaper en konto med OAuth.",
+	"oauthauth-loggout-policy": "Du har blitt logget ut fordi sidens regler ikke lenger tillater at du er logget inn.",
+	"oauthauth-set-email": "Din tilkoblede konto hadde ikke en epostadresse forrige gang du logget inn. Sett en epostadresse på $1 for å sette epostadressa di her.",
+	"oauthauth-email-set": "$1. Oppdater epostadressa di på $2 for å endre den.",
+	"oauthauth-invalid-subpage": "Målundersiden er ugyldig."
+}
