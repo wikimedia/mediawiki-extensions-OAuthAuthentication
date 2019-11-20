@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"oauthauth-desc": "Permitte que wikis delega lor authentication a un altere wiki",
+	"oauthauth-already-logged-in": "Tu ha jam aperite session.",
+	"oauthauth-error": "Error de apertura de session OAuth",
+	"ouathauth-logout": "Clauder session",
+	"oauthauth-failed-handshake": "Le protocollo OAuth produceva un error durante le apertura de tu session. Es possibile que le wiki remote ha problemas technic.",
+	"oauthauth-csrf-detected": "Session OAuth incoherente. Per favor tenta aperir session de novo.",
+	"oauthauth-create-noname": "Error de OAuth durante le apertura de session. Le nomine de usator sur le wiki remote non es valide sur iste wiki.",
+	"oauthauth-create-userexists": "Error de OAuth durante le apertura de session. Le nomine de usator sur le wiki remote jam existe sur iste wiki. Tu debe contactar un bureaucrate pro usurpar le conto.",
+	"oauthauth-login-noname": "Le usator OAuth es connectite, ma le nomine non es valide sur iste wiki.",
+	"oauthauth-login": "Aperir session sur $1",
+	"oauthauth-login-usernotexists": "Le usator OAuth es listate como connectite, ma le usator non existe sur iste wiki.",
+	"oauthauth-nologin-policy": "Le politica de iste wiki non te permitte aperir session.",
+	"oauthauth-localuser-not-allowed": "Le creation de contos local es disactivate sur iste wiki. \"$1\" crea un conto con OAuth.",
+	"oauthauth-loggout-policy": "Tu session ha essite claudite perque le politica del sito non plus te permitte aperir session.",
+	"oauthauth-set-email": "Tu conto attachate non habeva un adresse de e-mail le ultime vice que tu aperiva session. Specifica un adresse de e-mail sur $1 pro specificar tu adresse de e-mail hic.",
+	"oauthauth-email-set": "$1. Actualisa tu adresse de e-mail sur $2 pro cambiar lo.",
+	"oauthauth-invalid-subpage": "Le subpagina de destination non es valide."
+}
