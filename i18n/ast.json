@@ -19,5 +19,6 @@
 	"oauthauth-localuser-not-allowed": "La creación de cuentes llocales ta desactivada nesta wiki. Fai click en \"$1\" pa crear una cuenta con OAuth.",
 	"oauthauth-loggout-policy": "Zarróse la to sesión porque la política del sitiu yá nun te permite que teas coneutáu.",
 	"oauthauth-set-email": "La cuenta venceyada nun tenía una dirección de corréu electrónicu la última vegada qu'aniciasti sesión. Conseña una dirección de corréu electrónicu en $1 pa que se configure equí.",
-	"oauthauth-email-set": "$1. Actualiza la to dirección de corréu electrónicu en $2 pa camudala."
+	"oauthauth-email-set": "$1. Actualiza la to dirección de corréu electrónicu en $2 pa camudala.",
+	"oauthauth-invalid-subpage": "La subpáxina de destín nun ye válida."
 }
