@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reza1615"
+			"Reza1615",
+			"Huji"
 		]
 	},
-	"oauthauth-already-logged-in": "شما هم‌اکنون وارد شده‌اید.",
+	"oauthauth-already-logged-in": "شما از پیش وارد شده‌اید.",
 	"ouathauth-logout": "خروج"
 }
