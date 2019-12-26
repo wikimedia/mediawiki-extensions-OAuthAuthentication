@@ -2,9 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"KorkmazO",
-			"McAang"
+			"McAang",
+			"BaRaN6161 TURK"
 		]
 	},
+	"oauthauth-desc": "Wikilerin kimlik doğrulamalarını başka bir wikiye devretmesine izin verir",
+	"oauthauth-already-logged-in": "Zaten giriş yaptınız.",
+	"oauthauth-error": "OAuth giriş hatası",
+	"ouathauth-logout": "Çıkış",
+	"oauthauth-failed-handshake": "Oturum açarken bir OAuth protokol hatası oluştu. Uzak wikide teknik sorunlar yaşanıyor olabilir.",
+	"oauthauth-csrf-detected": "OAuth oturumu uyuşmazlığı. Lütfen tekrar giriş yapmayı deneyin.",
+	"oauthauth-create-noname": "Oturum açarken OAuth hatası. Uzak wikideki kullanıcı adı bu wikide geçerli değil.",
+	"oauthauth-create-userexists": "Oturum açarken OAuth hatası. Uzak wikideki kullanıcı adı bu wikide zaten var. Hesabı gasp etmek için bir bürokratla görüşmelisiniz.",
+	"oauthauth-login-noname": "OAuth kullanıcısı bağlı, ancak ad bu wikide geçerli değil.",
+	"oauthauth-login": "$1 üzerinde giriş yapın",
 	"oauthauth-login-usernotexists": "OAuth kullanıcısı bağlandığında listelenir fakat kullanıcı bu vikide bulunmamaktadır.",
-	"oauthauth-localuser-not-allowed": "Bu wikide yerel hesap oluşturulması devre dışıdır. \"$1\" 0Auth ile bir hesap oluşturur."
+	"oauthauth-nologin-policy": "Bu wikinin politikası giriş yapmanıza izin vermeyecek.",
+	"oauthauth-localuser-not-allowed": "Bu wikide yerel hesap oluşturulması devre dışıdır. \"$1\" 0Auth ile bir hesap oluşturur.",
+	"oauthauth-loggout-policy": "Site politikası artık oturum açmanıza izin vermediği için oturumu kapattınız.",
+	"oauthauth-set-email": "Ekli hesabınızın en son giriş yaptığınızda bir e-posta adresi yoktu. E-posta adresinizi burada ayarlamak için $1 bir e-posta adresi ayarlayın.",
+	"oauthauth-email-set": "$1. Değiştirmek için e-posta adresinizi $2 olarak güncelleyin.",
+	"oauthauth-invalid-subpage": "Hedef alt sayfa geçersiz."
 }
