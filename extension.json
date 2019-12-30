@@ -31,7 +31,9 @@
 		"MediaWiki\\Extensions\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
 		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
 		"MediaWiki\\Extensions\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php",
+		"MediaWiki\\Extensions\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php"
+	},
+	"TestAutoloadClasses": {
 		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
 	},
 	"Hooks": {
