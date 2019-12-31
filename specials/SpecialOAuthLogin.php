@@ -90,7 +90,7 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 				list( $method, $u ) = $status->getValue();
 
 				$this->getContext()->setUser( $u );
-				$wgUser = $u;
+				$wgUser = $u; // TODO: remove this
 
 				$lp = new \LoginForm();
 

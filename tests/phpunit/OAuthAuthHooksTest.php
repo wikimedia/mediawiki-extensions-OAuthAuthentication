@@ -13,18 +13,25 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 	 * @covers ::onPersonalUrls
 	 */
 	public function testOnPersonalUrls() {
-		$this->setMwGlobals( [
-			'wgUser' => \User::newFromName( '127.0.0.1', false ),
-		] );
-
 		$personal_urls = [ 'login' => [ 'href' => 'fail' ] ];
-		$title = new \Title();
 
-		Hooks::onPersonalUrls( $personal_urls, $title );
+		$title = $this->createMock( \Title::class );
+		$user = $this->getMockBuilder( \User::class )
+			->setMethods( [ 'getId' ] )
+			->getMock();
+		$user->method( 'getId' )->willReturn( 0 );
 
-		$this->assertSame(
-			true,
-			strpos( $personal_urls['login']['href'], 'Special:OAuthLogin/init' ) !== false
+		$skinTemplate = $this->getMockBuilder( \SkinTemplate::class )
+			->setMethods( [ 'getUser' ] )
+			->getMock();
+		$skinTemplate->method( 'getUser' )->willReturn( $user );
+
+		Hooks::onPersonalUrls( $personal_urls, $title, $skinTemplate );
+
+		$this->assertStringContainsString(
+			'Special:OAuthLogin/init',
+			$personal_urls['login']['href'],
+			'Personal urls should include OAuthLogin link'
 		);
 	}
 
