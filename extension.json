@@ -43,20 +43,43 @@
 		"UserLoadAfterLoadFromSession": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
 	},
 	"config": {
-		"@doc": "see OAuthAuthentication.php",
-		"OAuthAuthenticationUrl": null,
-		"OAuthAuthenticationConsumerKey": null,
-		"OAuthAuthenticationConsumerSecret": null,
-		"OAuthAuthenticationCanonicalUrl": null,
-		"OAuthAuthenticationAccountUsurpation": false,
-		"OAuthAuthenticationUsernameWhitelist": false,
-		"OAuthAuthenticationGroupWhitelist": false,
-		"OAuthAuthenticationAllowLocalUsers": true,
-		"OAuthAuthenticationRemoteName": false,
-		"OAuthAuthenticationMaxIdentityAge": 3600,
-		"OAuthAuthenticationValidateSSL": true,
-		"OAuthAuthenticationCallbackUrl": null
+		"OAuthAuthenticationUrl": {
+			"value": null
+		},
+		"OAuthAuthenticationConsumerKey": {
+			"value": null
+		},
+		"OAuthAuthenticationConsumerSecret": {
+			"value": null
+		},
+		"OAuthAuthenticationCanonicalUrl": {
+			"value": null
+		},
+		"OAuthAuthenticationAccountUsurpation": {
+			"value": false
+		},
+		"OAuthAuthenticationUsernameWhitelist": {
+			"value": false
+		},
+		"OAuthAuthenticationGroupWhitelist": {
+			"value": false
+		},
+		"OAuthAuthenticationAllowLocalUsers": {
+			"value": true
+		},
+		"OAuthAuthenticationRemoteName": {
+			"value": false
+		},
+		"OAuthAuthenticationMaxIdentityAge": {
+			"value": 3600
+		},
+		"OAuthAuthenticationValidateSSL": {
+			"value": true
+		},
+		"OAuthAuthenticationCallbackUrl": {
+			"value": null
+		}
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
