@@ -96,7 +96,7 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 
 				// Call LoginForm::successfulCreation() on create, or successfulLogin()
 				$lp->$method();
-						break;
+				break;
 			default:
 				throw new \ErrorPageError( 'oauthauth-error', 'oauthauth-invalid-subpage' );
 		}
