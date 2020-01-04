@@ -6,11 +6,15 @@ use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\OAuthClient\Client;
 
 class Hooks {
-	public static function onPersonalUrls( &$personal_urls, \Title &$title ) {
-		global $wgUser, $wgRequest,
+	public static function onPersonalUrls(
+			&$personal_urls,
+			\Title &$title,
+			\SkinTemplate $skinTemplate
+		) {
+		global $wgRequest,
 			$wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
-		if ( $wgUser->getID() == 0 ) {
+		if ( $skinTemplate->getUser()->getID() == 0 ) {
 			$query = [];
 			if ( $title->isSpecial( 'Userlogout' ) ) {
 				$query['returnto'] = $wgRequest->getVal( 'returnto', 'Main_Page' );
