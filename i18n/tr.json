@@ -9,7 +9,7 @@
 	"oauthauth-desc": "Wikilerin kimlik doğrulamalarını başka bir wikiye devretmesine izin verir",
 	"oauthauth-already-logged-in": "Zaten giriş yaptınız.",
 	"oauthauth-error": "OAuth giriş hatası",
-	"ouathauth-logout": "Çıkış",
+	"ouathauth-logout": "Oturumu kapat",
 	"oauthauth-failed-handshake": "Oturum açarken bir OAuth protokol hatası oluştu. Uzak wikide teknik sorunlar yaşanıyor olabilir.",
 	"oauthauth-csrf-detected": "OAuth oturumu uyuşmazlığı. Lütfen tekrar giriş yapmayı deneyin.",
 	"oauthauth-create-noname": "Oturum açarken OAuth hatası. Uzak wikideki kullanıcı adı bu wikide geçerli değil.",
