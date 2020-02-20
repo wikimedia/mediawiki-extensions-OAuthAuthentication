@@ -19,7 +19,7 @@
 	},
 	"require": {
 		"composer/installers": "~1.0",
-		"mediawiki/oauthclient": "~1.0.2"
+		"mediawiki/oauthclient": "~1.1.0"
 	},
 	"require-dev": {
 		"jakub-onderka/php-parallel-lint": "1.0.0",
