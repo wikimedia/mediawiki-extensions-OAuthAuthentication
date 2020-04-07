@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
-			"Piramidion"
+			"Piramidion",
+			"Ата"
 		]
 	},
 	"oauthauth-desc": "Дозволяє вікі делегувати їх автентифікацію іншій вікі",

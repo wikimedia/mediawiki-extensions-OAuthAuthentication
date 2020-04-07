@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
 	"oauthauth-desc": "Laat wiki's toe hun verificatie te delegeren naar een andere wiki",

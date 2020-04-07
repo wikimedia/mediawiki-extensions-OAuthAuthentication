@@ -1,14 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nicolapps",
 			"Element303",
 			"Framafan",
-			"Wladek92",
 			"Fylip22",
+			"Nicolapps",
 			"Seb35",
+			"Thibaut120094",
 			"Urhixidur",
-			"Thibaut120094"
+			"Wladek92"
 		]
 	},
 	"oauthauth-desc": "Autorise les wikis à déléguer leurs authentifications à un autre wiki",
