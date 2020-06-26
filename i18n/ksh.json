@@ -13,7 +13,7 @@
 	"oauthauth-create-noname": "Dat Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> hät jeflupp. Dinge Metmaacher_Nahme om andere Wikki es ävver heh em Wikki keine jöltejje Nahme.",
 	"oauthauth-create-userexists": "Et Enlogge övver <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> däht wall fluppe, ävver Dinge Metmaacher_Nahme om andere Wikki es heh em Wikki ald en Jebruch. Do moß en Bürrokrahd holle, öm dä Nahme —&nbsp;velleijsch&nbsp;— för Desch beaanschproche ze kunne.",
 	"oauthauth-login-noname": "Dä Metmaacher vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es verbonge, ävver däm singe Nahme es heh em Wikki keine jöltejje Nahme.",
-	"oauthauth-login": "Donn {{GRAMMAR:em|{{ucfirst:{{$1}}}}}} enlogge",
+	"oauthauth-login": "Donn {{GRAMMAR:em|{{ucfirst:$1}}}} enlogge",
 	"oauthauth-login-usernotexists": "Dä Metmaacher vum <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> es als verbonge jemälldt, ävver däm singe Nahme es heh em Wikki nit ze fenge.",
 	"oauthauth-nologin-policy": "De Rääjelle för heh dat Wikki lohße nit zoh, dat De enlogge kanns.",
 	"oauthauth-localuser-not-allowed": "Heh dat Wikki löht nit zoh, neue Zohjäng aanzelähje. Do kanns ävver med <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\">OAuth<i> {{lcfirst:$1}} un doh dövver ene Zohjang zom Wikki krijje.",
