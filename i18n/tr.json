@@ -7,7 +7,7 @@
 		]
 	},
 	"oauthauth-desc": "Wikilerin kimlik doğrulamalarını başka bir wikiye devretmesine izin verir",
-	"oauthauth-already-logged-in": "Zaten giriş yaptınız.",
+	"oauthauth-already-logged-in": "Zaten oturum açtınız.",
 	"oauthauth-error": "OAuth giriş hatası",
 	"ouathauth-logout": "Oturumu kapat",
 	"oauthauth-failed-handshake": "Oturum açarken bir OAuth protokol hatası oluştu. Uzak wikide teknik sorunlar yaşanıyor olabilir.",
