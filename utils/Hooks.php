@@ -3,6 +3,7 @@
 namespace MediaWiki\Extensions\OAuthAuthentication;
 
 use MediaWiki\Logger\LoggerFactory;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\OAuthClient\Client;
 
 class Hooks {
@@ -64,9 +65,10 @@ class Hooks {
 	public static function onGetPreferences( \User $user, &$preferences ) {
 		global $wgRequirePasswordforEmailChange, $wgOAuthAuthenticationRemoteName;
 
-		$resetlink = \Linker::link(
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+		$resetlink = $linkRenderer->makeLink(
 			\SpecialPage::getTitleFor( 'PasswordReset' ),
-			wfMessage( 'passwordreset' )->escaped(),
+			wfMessage( 'passwordreset' )->text(),
 			[],
 			[ 'returnto' => \SpecialPage::getTitleFor( 'Preferences' ) ]
 		);
@@ -167,9 +169,10 @@ class Hooks {
 			$query['returnto'] = $wgRequest->getVal( 'returnto' );
 			$query['returntoquery'] = $wgRequest->getVal( 'returntoquery' );
 			$loginTitle = \SpecialPage::getTitleFor( 'OAuthLogin', 'init' );
-			$loginlink = \Linker::Link(
+			$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+			$loginlink = $linkRenderer->makeLink(
 				$loginTitle,
-				wfMessage( 'login' )->escaped(),
+				wfMessage( 'login' )->text(),
 				[],
 				$query
 			);
