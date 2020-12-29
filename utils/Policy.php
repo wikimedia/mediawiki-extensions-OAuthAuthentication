@@ -14,7 +14,7 @@ class Policy {
 	}
 
 	/**
-	 * @param object $identity jwt identity object
+	 * @param mixed $identity jwt identity object
 	 * @return bool true if the user should be allowed according to whitelists. False otherwise.
 	 */
 	public static function checkWhitelists( $identity ) {
