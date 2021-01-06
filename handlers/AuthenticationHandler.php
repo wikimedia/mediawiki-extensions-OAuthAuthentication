@@ -50,7 +50,7 @@ class AuthenticationHandler {
 			wfDebugLog( "OAuthAuth",
 				__METHOD__ . ": Bad username '{$exUser->getName()}'" );
 			return \Status::newFatal( 'oauthauth-create-noname' );
-		} elseif ( 0 !== $u->idForName() ) {
+		} elseif ( $u->idForName() !== 0 ) {
 			wfDebugLog( "OAuthAuth",
 				__METHOD__ . ": User already exists, but no usurpation. Aborting." );
 			if ( !$wgOAuthAuthenticationAccountUsurpation ) {
