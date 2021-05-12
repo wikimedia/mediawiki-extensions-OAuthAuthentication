@@ -31,7 +31,6 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 
 		switch ( trim( $subpage ) ) {
 			case 'init':
-
 				// Keep around returnto/returntoquery and set with PostLoginRedirect hook
 				$session->set(
 					'oauth-init-returnto',

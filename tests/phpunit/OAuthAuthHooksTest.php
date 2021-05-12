@@ -17,12 +17,12 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 
 		$title = $this->createMock( \Title::class );
 		$user = $this->getMockBuilder( \User::class )
-			->setMethods( [ 'getId' ] )
+			->onlyMethods( [ 'getId' ] )
 			->getMock();
 		$user->method( 'getId' )->willReturn( 0 );
 
 		$skinTemplate = $this->getMockBuilder( \SkinTemplate::class )
-			->setMethods( [ 'getUser' ] )
+			->onlyMethods( [ 'getUser' ] )
 			->getMock();
 		$skinTemplate->method( 'getUser' )->willReturn( $user );
 
