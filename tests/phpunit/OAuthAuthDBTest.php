@@ -20,7 +20,7 @@ class OAuthAuthDBTest extends \MediaWikiTestCase {
 		$this->tablesUsed[] = 'oauthauth_user';
 	}
 
-	protected function setUp() : void {
+	protected function setUp(): void {
 		parent::setUp();
 
 		$user = $this->getTestUser()->getUser();
