@@ -8,7 +8,7 @@ namespace MediaWiki\Extensions\OAuthAuthentication;
  * @group OAuthAuthentication
  * @group Database
  */
-class OAuthAuthDBTest extends \MediaWikiTestCase {
+class OAuthAuthDBTest extends \MediaWikiIntegrationTestCase {
 
 	/**
 	 * @var string
