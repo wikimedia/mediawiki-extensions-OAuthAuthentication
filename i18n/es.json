@@ -13,7 +13,7 @@
 	"ouathauth-logout": "Salir",
 	"oauthauth-failed-handshake": "Se produjo un error al acceder mediante el protocolo OAuth. Puede que la wiki remota tenga problemas técnicos.",
 	"oauthauth-csrf-detected": "Discordancia en la sesión OAuth. Intenta iniciar sesión nuevamente.",
-	"oauthauth-create-noname": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en la wiki remoto no es válido en esta wiki.",
+	"oauthauth-create-noname": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en la wiki remota no es válido en esta wiki.",
 	"oauthauth-create-userexists": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en la wiki remota ya existe en esta wiki. Debes ponerte en contacto con un burócrata para usurpar la cuenta.",
 	"oauthauth-login-noname": "El usuario OAuth está conectado, pero el nombre no es válido en esta wiki.",
 	"oauthauth-login": "Acceder a $1",
