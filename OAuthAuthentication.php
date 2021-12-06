@@ -6,14 +6,14 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 	$wgMessagesDirs['OAuthAuthentication'] = __DIR__ . '/i18n';
 	$wgExtensionMessagesFiles['SpecialOAuthLoginNoTranslate'] =
 		__DIR__ . "/OAuthAuthentication.notranslate-alias.php";
-	/* wfWarn(
+	wfWarn(
 		'Deprecated PHP entry point used for OAuthAuthentication extension. ' .
 		'Please use wfLoadExtension instead, ' .
 		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
-	); */
+	);
 	return;
 } else {
-	die( 'This version of the OAuthAuthentication extension requires MediaWiki 1.25+' );
+	die( 'This version of the OAuthAuthentication extension requires MediaWiki 1.34+' );
 }
 
 // Global declarations and documentation kept for IDEs and PHP documentors.
