@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amaia"
+			"Amaia",
+			"Xabier Armendaritz"
 		]
 	},
 	"oauthauth-desc": "Wiki batek bere autentifikazioa beste wiki bati delegatzea ahalbidetzen du.",
@@ -14,7 +15,7 @@
 	"oauthauth-create-userexists": "Arazo bat egon da OAuth protokoloa erabiltzean. Erabiltzaile izena urruneko wikian dagoeneko existitzen da wiki honetan. Burokrata batekin jarri behar duzu kontaktuan kontua zeureganatzeko.",
 	"oauthauth-login-noname": "OAuth erabiltzailea konektatuta dago, baina izena ez da baliozkoa wiki honetan.",
 	"oauthauth-login": "$1-(e)n saioa hasi",
-	"oauthauth-login-usernotexists": "OAuth erabiltzailea kontatu bezala agertzen da, baina ez da existitzen wiki honetan.",
+	"oauthauth-login-usernotexists": "OAuth erabiltzailea konektatutzat ageri da, baina ez da existitzen wiki honetan.",
 	"oauthauth-nologin-policy": "Wiki honen politikak ez dizu saioa hasten utziko.",
 	"oauthauth-localuser-not-allowed": "Kontu lokal baten sorrera desgaituta dago wiki honetan. \"$1\"-(e)k kontu bat sortzen du OAuth erabiliz.",
 	"oauthauth-loggout-policy": "Saioa itxi da gunearen politikak ez dizulako saioa hasten usten.",

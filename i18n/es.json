@@ -3,22 +3,23 @@
 		"authors": [
 			"Fitoschido",
 			"Macofe",
-			"Tiberius1701"
+			"Tiberius1701",
+			"Jakeukalane"
 		]
 	},
-	"oauthauth-desc": "Permite que un wiki delegue su autenticación a otro wiki",
+	"oauthauth-desc": "Permite que una wiki delegue su autenticación a otra wiki",
 	"oauthauth-already-logged-in": "Ya has iniciado una sesión.",
 	"oauthauth-error": "Error de acceso con OAuth",
 	"ouathauth-logout": "Salir",
-	"oauthauth-failed-handshake": "Se produjo un error al acceder mediante el protocolo OAuth. Puede que el wiki remoto tenga problemas técnicos.",
+	"oauthauth-failed-handshake": "Se produjo un error al acceder mediante el protocolo OAuth. Puede que la wiki remota tenga problemas técnicos.",
 	"oauthauth-csrf-detected": "Discordancia en la sesión OAuth. Intenta iniciar sesión nuevamente.",
-	"oauthauth-create-noname": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en el wiki remoto no es válido en este wiki.",
-	"oauthauth-create-userexists": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en el wiki remoto ya existe en este wiki. Debes ponerte en contacto con un burócrata para usurpar la cuenta.",
-	"oauthauth-login-noname": "El usuario OAuth está conectado, pero el nombre no es válido en este wiki.",
+	"oauthauth-create-noname": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en la wiki remota no es válido en esta wiki.",
+	"oauthauth-create-userexists": "Error de OAuth al intentar iniciar sesión. El nombre de usuario en la wiki remota ya existe en esta wiki. Debes ponerte en contacto con un burócrata para usurpar la cuenta.",
+	"oauthauth-login-noname": "El usuario OAuth está conectado, pero el nombre no es válido en esta wiki.",
 	"oauthauth-login": "Acceder a $1",
-	"oauthauth-login-usernotexists": "El usuario OAuth aparece como conectado, pero no existe en este wiki.",
+	"oauthauth-login-usernotexists": "El usuario OAuth aparece como conectado, pero no existe en esta wiki.",
 	"oauthauth-nologin-policy": "Por directiva de este sitio no puedes acceder.",
-	"oauthauth-localuser-not-allowed": "La creación de una cuenta local está desactivada en este wiki. Pulsa en «$1» para crear una cuenta con OAuth.",
+	"oauthauth-localuser-not-allowed": "La creación de una cuenta local está desactivada en esta wiki. Pulsa en «$1» para crear una cuenta con OAuth.",
 	"oauthauth-loggout-policy": "La sesión ha finalizado porque la directiva del sitio ya no lo permite.",
 	"oauthauth-set-email": "Tu cuenta asociada no tenía una dirección de correo electrónico la última vez que iniciaste sesión. Configura una dirección de correo electrónico en $1 para que se configure aquí.",
 	"oauthauth-email-set": "$1. Actualiza tu dirección de correo electrónico en $2 para cambiarla."
