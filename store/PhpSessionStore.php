@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\OAuthAuthentication;
+namespace MediaWiki\Extension\OAuthAuthentication;
 
 class PhpSessionStore extends SessionStore {
 

@@ -11,7 +11,7 @@
 		"MediaWiki": ">= 1.34.0"
 	},
 	"SpecialPages": {
-		"OAuthLogin": "MediaWiki\\Extensions\\OAuthAuthentication\\SpecialOAuthLogin"
+		"OAuthLogin": "MediaWiki\\Extension\\OAuthAuthentication\\SpecialOAuthLogin"
 	},
 	"MessagesDirs": {
 		"OAuthAuthentication": [
@@ -22,27 +22,27 @@
 		"SpecialOAuthLoginNoTranslate": "OAuthAuthentication.notranslate-alias.php"
 	},
 	"AutoloadClasses": {
-		"MediaWiki\\Extensions\\OAuthAuthentication\\SpecialOAuthLogin": "specials/SpecialOAuthLogin.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\Config": "utils/Config.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\Exception": "utils/Exception.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\Hooks": "utils/Hooks.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\Policy": "utils/Policy.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthExternalUser": "utils/OAuthExternalUser.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
-		"MediaWiki\\Extensions\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php"
+		"MediaWiki\\Extension\\OAuthAuthentication\\SpecialOAuthLogin": "specials/SpecialOAuthLogin.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Config": "utils/Config.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Exception": "utils/Exception.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Hooks": "utils/Hooks.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Policy": "utils/Policy.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthExternalUser": "utils/OAuthExternalUser.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php"
 	},
 	"TestAutoloadClasses": {
-		"MediaWiki\\Extensions\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
+		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
 	},
 	"Hooks": {
-		"PersonalUrls": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onPersonalUrls",
-		"PostLoginRedirect": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
-		"LoadExtensionSchemaUpdates": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
-		"GetPreferences": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onGetPreferences",
-		"AbortNewAccount": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onAbortNewAccount",
-		"UserLoadAfterLoadFromSession": "MediaWiki\\Extensions\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
+		"PersonalUrls": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPersonalUrls",
+		"PostLoginRedirect": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
+		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
+		"GetPreferences": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onGetPreferences",
+		"AbortNewAccount": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onAbortNewAccount",
+		"UserLoadAfterLoadFromSession": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
 	},
 	"config": {
 		"OAuthAuthenticationUrl": {

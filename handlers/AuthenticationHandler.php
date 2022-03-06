@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\OAuthAuthentication;
+namespace MediaWiki\Extension\OAuthAuthentication;
 
 use Hooks;
 use MediaWiki\OAuthClient\Token;

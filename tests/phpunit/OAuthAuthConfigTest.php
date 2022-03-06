@@ -1,11 +1,11 @@
 <?php
 
-namespace MediaWiki\Extensions\OAuthAuthentication;
+namespace MediaWiki\Extension\OAuthAuthentication;
 
 use MediaWiki\OAuthClient\ClientConfig;
 
 /**
- * @covers \MediaWiki\Extensions\OAuthAuthentication\Config
+ * @covers \MediaWiki\Extension\OAuthAuthentication\Config
  *
  * @group OAuthAuthentication
  * @group Database

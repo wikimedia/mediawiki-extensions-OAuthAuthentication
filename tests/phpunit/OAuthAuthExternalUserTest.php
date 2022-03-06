@@ -1,9 +1,9 @@
 <?php
 
-namespace MediaWiki\Extensions\OAuthAuthentication;
+namespace MediaWiki\Extension\OAuthAuthentication;
 
 /**
- * @coversDefaultClass \MediaWiki\Extensions\OAuthAuthentication\OAuthExternalUser
+ * @coversDefaultClass \MediaWiki\Extension\OAuthAuthentication\OAuthExternalUser
  *
  * @group OAuthAuthentication
  * @group Database
