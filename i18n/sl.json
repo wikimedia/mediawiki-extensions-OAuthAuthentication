@@ -4,5 +4,6 @@
 			"Eleassar"
 		]
 	},
-	"oauthauth-desc": "Wikijem omogoča dodeljevanje avtentikacije drugemu wikiju"
+	"oauthauth-desc": "Wikijem omogoča dodeljevanje avtentikacije drugemu wikiju",
+	"ouathauth-logout": "Odjava"
 }
