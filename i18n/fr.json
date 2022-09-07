@@ -8,7 +8,8 @@
 			"Seb35",
 			"Thibaut120094",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"Verdy p"
 		]
 	},
 	"oauthauth-desc": "Autorise les wikis à déléguer leurs authentifications à un autre wiki",
@@ -21,7 +22,7 @@
 	"oauthauth-create-userexists": "OAuth ne peut pas vous authentifier. Le nom d'utilisateur sur le wiki distant existe déjà sur ce wiki. Vous devez contacter un administrateur pour signaler une usurpation de compte.",
 	"oauthauth-login-noname": "L'utilisateur OAuth est connecté, mais le nom n'est pas valide sur ce wiki.",
 	"oauthauth-login": "Connectez-vous sur $1",
-	"oauthauth-login-usernotexists": "L’utilisateur OAuth est connecté, mais l’utilisateur n’existe pas sur ce wiki.",
+	"oauthauth-login-usernotexists": "L’utilisateur ou l’utilisatrice OAuth est connecté, mais il ou elle n’existe pas sur ce wiki.",
 	"oauthauth-nologin-policy": "Cette politique de Wiki ne permettra pas de vous connecter.",
 	"oauthauth-localuser-not-allowed": "La création locale de compte est désactivée sur ce wiki. Cliquez sur \"$1\" pour créer un compte avec OAuth.",
 	"oauthauth-loggout-policy": "Vous avez été déconnecté car la politique du site ne permet plus de vous connecter.",
