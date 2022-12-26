@@ -4,5 +4,6 @@
 			"Milicevic01"
 		]
 	},
-	"ouathauth-logout": "Odjavi me"
+	"ouathauth-logout": "Odjavi me",
+	"oauthauth-invalid-subpage": "Ciljna podstranica nije važeća."
 }
