@@ -17,7 +17,7 @@
 	"oauthauth-login-usernotexists": "Uporabnik OAuth je naveden kot povezan, vendar uporabnik v tem vikiju ne obstaja.",
 	"oauthauth-nologin-policy": "To pravilo vikija vam ne dovoli prijave.",
 	"oauthauth-localuser-not-allowed": "Ustvaritev lokalnega računa je v tem vikiju onemogočena. »$1« ustvari račun z OAuth.",
-	"oauthauth-loggout-policy": "Bili ste odjavljeni, ker vam pravilo spletnega mesta ne dovoljuje več prijave.",
+	"oauthauth-loggout-policy": "Bili ste odjavljeni, ker vam politika mesta ne dovoljuje več biti prijavljeni.",
 	"oauthauth-set-email": "Vaš priloženi račun ni imel e-poštnega naslova, ko ste se zadnjič prijavili. Nastavite e-poštni naslov na $1, da tukaj nastavite svoj e-poštni naslov.",
 	"oauthauth-email-set": "$1. Posodobite svoj e-poštni naslov na $2, da ga spremenite.",
 	"oauthauth-invalid-subpage": "Ciljna podstran je neveljavna."
