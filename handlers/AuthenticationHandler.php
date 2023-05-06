@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\OAuthAuthentication;
 
-use Hooks;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\OAuthClient\Token;
 
 class AuthenticationHandler {
@@ -80,7 +80,7 @@ class AuthenticationHandler {
 			$u->addWatch( $u->getUserPage(), \User::IGNORE_USER_RIGHTS );
 			$u->saveSettings();
 
-			Hooks::run( 'AddNewAccount', [ $u, false ] );
+			MediaWikiServices::getInstance()->getHookContainer()->run( 'AddNewAccount', [ $u, false ] );
 
 			$exUser->setLocalId( $u->getId() );
 		}
