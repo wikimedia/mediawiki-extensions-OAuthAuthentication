@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
 
 namespace MediaWiki\Extension\OAuthAuthentication;
 
@@ -7,22 +8,20 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\OAuthClient\Client;
 
 class Hooks {
-	public static function onPersonalUrls(
-			&$personal_urls,
-			\Title &$title,
-			\SkinTemplate $skinTemplate
-		) {
-		global $wgRequest,
-			$wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
+	public static function onSkinTemplateNavigation__Universal( $sktemplate, &$links ) {
+		global $wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
-		if ( $skinTemplate->getUser()->getID() == 0 ) {
+		if ( $sktemplate->getUser()->getID() == 0 ) {
+			$personal_urls = &$links['user-menu'];
+			$title = $sktemplate->getTitle();
+			$request = $sktemplate->getRequest();
 			$query = [];
 			if ( $title->isSpecial( 'Userlogout' ) ) {
-				$query['returnto'] = $wgRequest->getVal( 'returnto', 'Main_Page' );
-				$query['returntoquery'] = $wgRequest->getVal( 'returntoquery' );
+				$query['returnto'] = $request->getVal( 'returnto', 'Main_Page' );
+				$query['returntoquery'] = $request->getVal( 'returntoquery' );
 			} else {
 				$query['returnto'] = $title->getPrefixedText();
-				$returntoquery = $wgRequest->getValues();
+				$returntoquery = $request->getValues();
 				unset( $returntoquery['title'] );
 				unset( $returntoquery['returnto'] );
 				unset( $returntoquery['returntoquery'] );
@@ -31,7 +30,7 @@ class Hooks {
 			$personal_urls['login']['href'] =
 				\SpecialPage::getTitleFor( 'OAuthLogin', 'init' )->getFullURL( $query );
 			if ( $wgOAuthAuthenticationRemoteName ) {
-				$personal_urls['login']['text'] = wfMessage( 'oauthauth-login',
+				$personal_urls['login']['text'] = $sktemplate->msg( 'oauthauth-login',
 					$wgOAuthAuthenticationRemoteName )->text();
 			}
 

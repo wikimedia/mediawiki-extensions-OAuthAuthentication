@@ -1,6 +1,8 @@
 <?php
 namespace MediaWiki\Extension\OAuthAuthentication;
 
+use MediaWiki\Request\FauxRequest;
+
 /**
  * @coversDefaultClass \MediaWiki\Extension\OAuthAuthentication\Hooks
  *
@@ -10,10 +12,10 @@ namespace MediaWiki\Extension\OAuthAuthentication;
 class OAuthAuthHooksTest extends OAuthAuthDBTest {
 
 	/**
-	 * @covers ::onPersonalUrls
+	 * @covers ::onSkinTemplateNavigation__Universal
 	 */
-	public function testOnPersonalUrls() {
-		$personal_urls = [ 'login' => [ 'href' => 'fail' ] ];
+	public function testOnSkinTemplateNavigation__Universal() {
+		$links = [ 'user-menu' => [ 'login' => [ 'href' => 'fail' ] ] ];
 
 		$title = $this->createMock( \Title::class );
 		$user = $this->getMockBuilder( \User::class )
@@ -22,15 +24,20 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 		$user->method( 'getId' )->willReturn( 0 );
 
 		$skinTemplate = $this->getMockBuilder( \SkinTemplate::class )
-			->onlyMethods( [ 'getUser' ] )
+			->onlyMethods( [ 'getUser', 'getTitle', 'getRequest', 'msg' ] )
 			->getMock();
 		$skinTemplate->method( 'getUser' )->willReturn( $user );
+		$skinTemplate->method( 'getTitle' )->willReturn( $title );
+		$skinTemplate->method( 'getRequest' )->willReturn( new FauxRequest() );
+		$skinTemplate->method( 'msg' )->willReturnCallback( static function ( $msg, $param ) {
+			return wfMessage( $msg, $param );
+		} );
 
-		Hooks::onPersonalUrls( $personal_urls, $title, $skinTemplate );
+		Hooks::onSkinTemplateNavigation__Universal( $skinTemplate, $links );
 
 		$this->assertStringContainsString(
 			'Special:OAuthLogin/init',
-			$personal_urls['login']['href'],
+			$links['user-menu']['login']['href'],
 			'Personal urls should include OAuthLogin link'
 		);
 	}

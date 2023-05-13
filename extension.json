@@ -37,7 +37,7 @@
 		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
 	},
 	"Hooks": {
-		"PersonalUrls": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPersonalUrls",
+		"SkinTemplateNavigation::Universal": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onSkinTemplateNavigation__Universal",
 		"PostLoginRedirect": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
 		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
 		"GetPreferences": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onGetPreferences",
