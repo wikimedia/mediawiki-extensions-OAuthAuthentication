@@ -86,7 +86,7 @@ class SpecialOAuthLogin extends \UnlistedSpecialPage {
 					throw new \ErrorPageError( 'oauthauth-error', $e->getMessage() );
 				}
 
-				list( $method, $u ) = $status->getValue();
+				[ $method, $u ] = $status->getValue();
 
 				$this->getContext()->setUser( $u );
 				$wgUser = $u; // TODO: remove this

@@ -9,7 +9,7 @@ class OAuth1Handler {
 
 	public function init( SessionStore $session, Client $client ) {
 		// Step 1 - Get a request token
-		list( $redir, $requestToken ) = $client->initiate();
+		[ $redir, $requestToken ] = $client->initiate();
 		$session->set( 'oauthreqtoken', "{$requestToken->key}:{$requestToken->secret}" );
 		return $redir;
 	}
@@ -26,7 +26,7 @@ class OAuth1Handler {
 			throw new Exception( 'oauthauth-failed-handshake' );
 		}
 
-		list( $requestKey, $requestSecret ) = explode( ':', $session->get( 'oauthreqtoken' ) );
+		[ $requestKey, $requestSecret ] = explode( ':', $session->get( 'oauthreqtoken' ) );
 		$requestToken = new Token( $requestKey, $requestSecret );
 
 		$session->delete( 'oauthreqtoken' );
@@ -37,7 +37,7 @@ class OAuth1Handler {
 		}
 
 		// Step 3 - Get access token
-		$accessToken = $client->complete( $requestToken,  $verifyCode );
+		$accessToken = $client->complete( $requestToken, $verifyCode );
 
 		return $accessToken;
 	}
