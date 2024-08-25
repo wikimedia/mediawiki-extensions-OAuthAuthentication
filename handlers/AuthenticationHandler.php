@@ -15,7 +15,7 @@ class AuthenticationHandler {
 		$exUser = OAuthExternalUser::newFromRemoteId(
 			$identity->sub,
 			$identity->username,
-			wfGetDB( DB_MASTER )  # TODO: don't do this
+			wfGetDB( DB_PRIMARY )  # TODO: don't do this
 		);
 		$exUser->setAccessToken( $accessToken );
 		if ( isset( $identity->realname ) ) {
@@ -85,7 +85,7 @@ class AuthenticationHandler {
 			$exUser->setLocalId( $u->getId() );
 		}
 
-		$exUser->addToDatabase( wfGetDB( DB_MASTER ) ); // TODO: di
+		$exUser->addToDatabase( wfGetDB( DB_PRIMARY ) ); // TODO: di
 		$u->setCookies();
 		$u->addNewUserLogEntry( 'create' );
 
@@ -111,7 +111,7 @@ class AuthenticationHandler {
 				__METHOD__ . ": Associated user is Anon. Aborting." );
 			return \Status::newFatal( 'oauthauth-login-usernotexists' );
 		}
-		$exUser->updateInDatabase( wfGetDB( DB_MASTER ) );
+		$exUser->updateInDatabase( wfGetDB( DB_PRIMARY ) );
 
 		$changed = false;
 		// update private data if needed

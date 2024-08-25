@@ -130,7 +130,7 @@ class Hooks {
 
 		if ( Policy::policyToEnforce() ) {
 			if ( !isset( $user->extAuthObj ) ) {
-				$user->extAuthObj = OAuthExternalUser::newFromUser( $user, wfGetDB( DB_MASTER ) );
+				$user->extAuthObj = OAuthExternalUser::newFromUser( $user, wfGetDB( DB_PRIMARY ) );
 			}
 
 			if ( $user->extAuthObj ) {
@@ -143,7 +143,7 @@ class Hooks {
 					$handler = new OAuth1Handler();
 					$identity = $handler->identify( $user->extAuthObj->getAccessToken(), $client );
 					$user->extAuthObj->setIdentifyTS( new \MWTimestamp() );
-					$user->extAuthObj->updateInDatabase( wfGetDB( DB_MASTER ) );
+					$user->extAuthObj->updateInDatabase( wfGetDB( DB_PRIMARY ) );
 					if ( !Policy::checkWhitelists( $identity ) ) {
 						$user->logout();
 						throw new \ErrorPageError( 'oauthauth-error', 'oauthauth-loggout-policy' );
