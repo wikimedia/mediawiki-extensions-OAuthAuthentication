@@ -129,8 +129,9 @@ class Hooks {
 		global $wgOAuthAuthenticationMaxIdentityAge;
 
 		if ( Policy::policyToEnforce() ) {
+			$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 			if ( !isset( $user->extAuthObj ) ) {
-				$user->extAuthObj = OAuthExternalUser::newFromUser( $user, wfGetDB( DB_PRIMARY ) );
+				$user->extAuthObj = OAuthExternalUser::newFromUser( $user, $dbw );
 			}
 
 			if ( $user->extAuthObj ) {
@@ -143,7 +144,7 @@ class Hooks {
 					$handler = new OAuth1Handler();
 					$identity = $handler->identify( $user->extAuthObj->getAccessToken(), $client );
 					$user->extAuthObj->setIdentifyTS( new \MWTimestamp() );
-					$user->extAuthObj->updateInDatabase( wfGetDB( DB_PRIMARY ) );
+					$user->extAuthObj->updateInDatabase( $dbw );
 					if ( !Policy::checkWhitelists( $identity ) ) {
 						$user->logout();
 						throw new \ErrorPageError( 'oauthauth-error', 'oauthauth-loggout-policy' );

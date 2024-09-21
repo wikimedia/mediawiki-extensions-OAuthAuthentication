@@ -15,7 +15,7 @@ class AuthenticationHandler {
 		$exUser = OAuthExternalUser::newFromRemoteId(
 			$identity->sub,
 			$identity->username,
-			wfGetDB( DB_PRIMARY )  # TODO: don't do this
+			MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY )  # TODO: don't do this
 		);
 		$exUser->setAccessToken( $accessToken );
 		if ( isset( $identity->realname ) ) {
@@ -85,7 +85,8 @@ class AuthenticationHandler {
 			$exUser->setLocalId( $u->getId() );
 		}
 
-		$exUser->addToDatabase( wfGetDB( DB_PRIMARY ) ); // TODO: di
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY ); // TODO: di
+		$exUser->addToDatabase( $dbw );
 		$u->setCookies();
 		$u->addNewUserLogEntry( 'create' );
 
@@ -111,7 +112,8 @@ class AuthenticationHandler {
 				__METHOD__ . ": Associated user is Anon. Aborting." );
 			return \Status::newFatal( 'oauthauth-login-usernotexists' );
 		}
-		$exUser->updateInDatabase( wfGetDB( DB_PRIMARY ) );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+		$exUser->updateInDatabase( $dbw );
 
 		$changed = false;
 		// update private data if needed
