@@ -8,7 +8,7 @@
 	"descriptionmsg": "oauthauth-desc",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.35.3"
+		"MediaWiki": ">= 1.39.0"
 	},
 	"SpecialPages": {
 		"OAuthLogin": "MediaWiki\\Extension\\OAuthAuthentication\\SpecialOAuthLogin"
