@@ -36,12 +36,17 @@
 	"TestAutoloadClasses": {
 		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks"
+		}
+	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onSkinTemplateNavigation__Universal",
-		"PostLoginRedirect": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
-		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
-		"GetPreferences": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onGetPreferences",
-		"UserLoadAfterLoadFromSession": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
+		"SkinTemplateNavigation::Universal": "main",
+		"PostLoginRedirect": "main",
+		"LoadExtensionSchemaUpdates": "main",
+		"GetPreferences": "main",
+		"UserLoadAfterLoadFromSession": "main"
 	},
 	"config": {
 		"OAuthAuthenticationUrl": {

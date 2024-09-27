@@ -7,8 +7,14 @@ use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\OAuthClient\Client;
 
-class Hooks {
-	public static function onSkinTemplateNavigation__Universal( $sktemplate, &$links ) {
+class Hooks implements
+	\MediaWiki\Hook\PostLoginRedirectHook,
+	\MediaWiki\Hook\SkinTemplateNavigation__UniversalHook,
+	\MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook,
+	\MediaWiki\Preferences\Hook\GetPreferencesHook,
+	\MediaWiki\User\Hook\UserLoadAfterLoadFromSessionHook
+{
+	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
 		global $wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
 		if ( $sktemplate->getUser()->getID() == 0 ) {
@@ -38,10 +44,9 @@ class Hooks {
 				unset( $personal_urls['createaccount'] );
 			}
 		}
-		return true;
 	}
 
-	public static function onPostLoginRedirect( &$returnTo, &$returnToQuery, &$type ) {
+	public function onPostLoginRedirect( &$returnTo, &$returnToQuery, &$type ) {
 		global $wgRequest;
 		$session = new PhpSessionStore( $wgRequest );
 
@@ -57,11 +62,11 @@ class Hooks {
 		}
 	}
 
-	public static function onLoadExtensionSchemaUpdates( ?\DatabaseUpdater $updater = null ) {
+	public function onLoadExtensionSchemaUpdates( $updater ) {
 		$updater->addExtensionTable( 'oauthauth_user', __DIR__ . '/../store/oauthauth.sql' );
 	}
 
-	public static function onGetPreferences( \User $user, &$preferences ) {
+	public function onGetPreferences( $user, &$preferences ) {
 		global $wgOAuthAuthenticationRemoteName;
 
 		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
@@ -123,7 +128,7 @@ class Hooks {
 	 * @param \User $user
 	 * @return true
 	 */
-	public static function onUserLoadAfterLoadFromSession( \User $user ) {
+	public function onUserLoadAfterLoadFromSession( $user ) {
 		global $wgOAuthAuthenticationMaxIdentityAge;
 
 		if ( Policy::policyToEnforce() ) {
