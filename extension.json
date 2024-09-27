@@ -41,7 +41,6 @@
 		"PostLoginRedirect": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onPostLoginRedirect",
 		"LoadExtensionSchemaUpdates": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onLoadExtensionSchemaUpdates",
 		"GetPreferences": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onGetPreferences",
-		"AbortNewAccount": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onAbortNewAccount",
 		"UserLoadAfterLoadFromSession": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks::onUserLoadAfterLoadFromSession"
 	},
 	"config": {

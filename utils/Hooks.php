@@ -154,30 +154,4 @@ class Hooks {
 		return true;
 	}
 
-	/**
-	 * @param \User $user
-	 * @param string &$abortError
-	 * @return bool
-	 */
-	public static function onAbortNewAccount( $user, &$abortError ) {
-		global $wgOAuthAuthenticationAllowLocalUsers, $wgRequest;
-
-		if ( $wgOAuthAuthenticationAllowLocalUsers === false ) {
-			$query = [];
-			$query['returnto'] = $wgRequest->getVal( 'returnto' );
-			$query['returntoquery'] = $wgRequest->getVal( 'returntoquery' );
-			$loginTitle = \SpecialPage::getTitleFor( 'OAuthLogin', 'init' );
-			$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
-			$loginlink = $linkRenderer->makeLink(
-				$loginTitle,
-				wfMessage( 'login' )->text(),
-				[],
-				$query
-			);
-			$msg = wfMessage( 'oauthauth-localuser-not-allowed' )->rawParams( $loginlink );
-			$abortError = $msg->escaped();
-			return false;
-		}
-	}
-
 }
