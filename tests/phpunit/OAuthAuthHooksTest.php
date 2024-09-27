@@ -35,6 +35,7 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 
 		$services = $this->getServiceContainer();
 		( new Hooks(
+			$services->getMainConfig(),
 			$services->getDBLoadBalancer(),
 			$services->getLinkRenderer()
 		) )->onSkinTemplateNavigation__Universal( $skinTemplate, $links );

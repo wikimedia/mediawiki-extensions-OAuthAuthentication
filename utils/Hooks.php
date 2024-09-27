@@ -3,6 +3,7 @@
 
 namespace MediaWiki\Extension\OAuthAuthentication;
 
+use Config;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\OAuthClient\Client;
@@ -14,20 +15,21 @@ class Hooks implements
 	\MediaWiki\Preferences\Hook\GetPreferencesHook,
 	\MediaWiki\User\Hook\UserLoadAfterLoadFromSessionHook
 {
+	private Config $config;
 	private ILoadBalancer $loadBalancer;
 	private LinkRenderer $linkRenderer;
 
 	public function __construct(
+		Config $config,
 		ILoadBalancer $loadBalancer,
 		LinkRenderer $linkRenderer
 	) {
+		$this->config = $config;
 		$this->loadBalancer = $loadBalancer;
 		$this->linkRenderer = $linkRenderer;
 	}
 
 	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
-		global $wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
-
 		if ( $sktemplate->getUser()->getID() == 0 ) {
 			$personal_urls = &$links['user-menu'];
 			$title = $sktemplate->getTitle();
@@ -46,12 +48,13 @@ class Hooks implements
 			}
 			$personal_urls['login']['href'] =
 				\SpecialPage::getTitleFor( 'OAuthLogin', 'init' )->getFullURL( $query );
-			if ( $wgOAuthAuthenticationRemoteName ) {
+			$remoteName = $this->config->get( 'OAuthAuthenticationRemoteName' );
+			if ( $remoteName ) {
 				$personal_urls['login']['text'] = $sktemplate->msg( 'oauthauth-login',
-					$wgOAuthAuthenticationRemoteName )->text();
+					$remoteName )->text();
 			}
 
-			if ( $wgOAuthAuthenticationAllowLocalUsers === false ) {
+			if ( $this->config->get( 'OAuthAuthenticationAllowLocalUsers' ) === false ) {
 				unset( $personal_urls['createaccount'] );
 			}
 		}
@@ -74,8 +77,6 @@ class Hooks implements
 	}
 
 	public function onGetPreferences( $user, &$preferences ) {
-		global $wgOAuthAuthenticationRemoteName;
-
 		$resetlink = $this->linkRenderer->makeLink(
 			\SpecialPage::getTitleFor( 'PasswordReset' ),
 			wfMessage( 'passwordreset' )->text(),
@@ -96,16 +97,17 @@ class Hooks implements
 				unset( $preferences['password'] );
 			}
 
+			$remoteName = $this->config->get( 'OAuthAuthenticationRemoteName' );
 			$emailMsg = wfMessage(
 				'oauthauth-set-email',
-				$wgOAuthAuthenticationRemoteName
+				$remoteName
 			)->escaped();
 			$emailCss = 'mw-email-none';
 			if ( $user->getEmail() ) {
 				$emailMsg = wfMessage(
 					'oauthauth-email-set',
 					$user->getEmail(),
-					$wgOAuthAuthenticationRemoteName
+					$remoteName
 				)->escaped();
 				$emailCss = 'mw-email-authenticated';
 			}
@@ -135,8 +137,6 @@ class Hooks implements
 	 * @return true
 	 */
 	public function onUserLoadAfterLoadFromSession( $user ) {
-		global $wgOAuthAuthenticationMaxIdentityAge;
-
 		if ( Policy::policyToEnforce() ) {
 			$dbw = $this->loadBalancer->getConnection( DB_PRIMARY );
 			if ( !isset( $user->extAuthObj ) ) {
@@ -144,8 +144,9 @@ class Hooks implements
 			}
 
 			if ( $user->extAuthObj ) {
+				$maxIdentityAge = $this->config->get( 'OAuthAuthenticationMaxIdentityAge' );
 				$lastVerify = new \MWTimestamp( $user->extAuthObj->getIdentifyTS() );
-				$minVerify = new \MWTimestamp( time() - $wgOAuthAuthenticationMaxIdentityAge );
+				$minVerify = new \MWTimestamp( time() - $maxIdentityAge );
 
 				if ( $lastVerify->getTimestamp() <= $minVerify->getTimestamp() ) {
 					$config = Config::getDefaultConfig();
