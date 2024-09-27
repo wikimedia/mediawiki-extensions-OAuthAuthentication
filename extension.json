@@ -26,6 +26,7 @@
 		"MediaWiki\\Extension\\OAuthAuthentication\\Config": "utils/Config.php",
 		"MediaWiki\\Extension\\OAuthAuthentication\\Exception": "utils/Exception.php",
 		"MediaWiki\\Extension\\OAuthAuthentication\\Hooks": "utils/Hooks.php",
+		"MediaWiki\\Extension\\OAuthAuthentication\\Schema": "utils/Schema.php",
 		"MediaWiki\\Extension\\OAuthAuthentication\\Policy": "utils/Policy.php",
 		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthExternalUser": "utils/OAuthExternalUser.php",
 		"MediaWiki\\Extension\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
@@ -39,12 +40,15 @@
 	"HookHandlers": {
 		"main": {
 			"class": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks"
+		},
+		"schema": {
+			"class": "MediaWiki\\Extension\\OAuthAuthentication\\Schema"
 		}
 	},
 	"Hooks": {
 		"SkinTemplateNavigation::Universal": "main",
 		"PostLoginRedirect": "main",
-		"LoadExtensionSchemaUpdates": "main",
+		"LoadExtensionSchemaUpdates": "schema",
 		"GetPreferences": "main",
 		"UserLoadAfterLoadFromSession": "main"
 	},

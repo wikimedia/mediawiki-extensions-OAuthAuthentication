@@ -10,7 +10,6 @@ use MediaWiki\OAuthClient\Client;
 class Hooks implements
 	\MediaWiki\Hook\PostLoginRedirectHook,
 	\MediaWiki\Hook\SkinTemplateNavigation__UniversalHook,
-	\MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook,
 	\MediaWiki\Preferences\Hook\GetPreferencesHook,
 	\MediaWiki\User\Hook\UserLoadAfterLoadFromSessionHook
 {
@@ -60,10 +59,6 @@ class Hooks implements
 		if ( $query ) {
 			$returnToQuery = $query;
 		}
-	}
-
-	public function onLoadExtensionSchemaUpdates( $updater ) {
-		$updater->addExtensionTable( 'oauthauth_user', __DIR__ . '/../store/oauthauth.sql' );
 	}
 
 	public function onGetPreferences( $user, &$preferences ) {
