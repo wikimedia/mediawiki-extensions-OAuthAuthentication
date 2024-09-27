@@ -33,7 +33,11 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 			return wfMessage( $msg, $param );
 		} );
 
-		( new Hooks() )->onSkinTemplateNavigation__Universal( $skinTemplate, $links );
+		$services = $this->getServiceContainer();
+		( new Hooks(
+			$services->getDBLoadBalancer(),
+			$services->getLinkRenderer()
+		) )->onSkinTemplateNavigation__Universal( $skinTemplate, $links );
 
 		$this->assertStringContainsString(
 			'Special:OAuthLogin/init',

@@ -39,7 +39,11 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks"
+			"class": "MediaWiki\\Extension\\OAuthAuthentication\\Hooks",
+			"services": [
+				"DBLoadBalancer",
+				"LinkRenderer"
+			]
 		},
 		"schema": {
 			"class": "MediaWiki\\Extension\\OAuthAuthentication\\Schema"

@@ -3,9 +3,10 @@
 
 namespace MediaWiki\Extension\OAuthAuthentication;
 
+use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Logger\LoggerFactory;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\OAuthClient\Client;
+use Wikimedia\Rdbms\ILoadBalancer;
 
 class Hooks implements
 	\MediaWiki\Hook\PostLoginRedirectHook,
@@ -13,6 +14,17 @@ class Hooks implements
 	\MediaWiki\Preferences\Hook\GetPreferencesHook,
 	\MediaWiki\User\Hook\UserLoadAfterLoadFromSessionHook
 {
+	private ILoadBalancer $loadBalancer;
+	private LinkRenderer $linkRenderer;
+
+	public function __construct(
+		ILoadBalancer $loadBalancer,
+		LinkRenderer $linkRenderer
+	) {
+		$this->loadBalancer = $loadBalancer;
+		$this->linkRenderer = $linkRenderer;
+	}
+
 	public function onSkinTemplateNavigation__Universal( $sktemplate, &$links ): void {
 		global $wgOAuthAuthenticationAllowLocalUsers, $wgOAuthAuthenticationRemoteName;
 
@@ -64,8 +76,7 @@ class Hooks implements
 	public function onGetPreferences( $user, &$preferences ) {
 		global $wgOAuthAuthenticationRemoteName;
 
-		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
-		$resetlink = $linkRenderer->makeLink(
+		$resetlink = $this->linkRenderer->makeLink(
 			\SpecialPage::getTitleFor( 'PasswordReset' ),
 			wfMessage( 'passwordreset' )->text(),
 			[],
@@ -127,7 +138,7 @@ class Hooks implements
 		global $wgOAuthAuthenticationMaxIdentityAge;
 
 		if ( Policy::policyToEnforce() ) {
-			$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
+			$dbw = $this->loadBalancer->getConnection( DB_PRIMARY );
 			if ( !isset( $user->extAuthObj ) ) {
 				$user->extAuthObj = OAuthExternalUser::newFromUser( $user, $dbw );
 			}
