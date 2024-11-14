@@ -57,7 +57,7 @@ class Hooks {
 		}
 	}
 
-	public static function onLoadExtensionSchemaUpdates( \DatabaseUpdater $updater = null ) {
+	public static function onLoadExtensionSchemaUpdates( ?\DatabaseUpdater $updater = null ) {
 		$updater->addExtensionTable( 'oauthauth_user', __DIR__ . '/../store/oauthauth.sql' );
 	}
 
