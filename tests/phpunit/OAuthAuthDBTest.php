@@ -15,11 +15,6 @@ class OAuthAuthDBTest extends \MediaWikiIntegrationTestCase {
 	 */
 	protected $userName;
 
-	public function __construct( $name = null, array $data = [], $dataName = '' ) {
-		parent::__construct( $name, $data, $dataName );
-		$this->tablesUsed[] = 'oauthauth_user';
-	}
-
 	protected function setUp(): void {
 		parent::setUp();
 
