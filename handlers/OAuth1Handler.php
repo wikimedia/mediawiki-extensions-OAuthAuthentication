@@ -4,6 +4,7 @@ namespace MediaWiki\Extension\OAuthAuthentication;
 
 use MediaWiki\OAuthClient\Client;
 use MediaWiki\OAuthClient\Token;
+use MediaWiki\Request\WebResponse;
 
 class OAuth1Handler {
 
@@ -14,7 +15,7 @@ class OAuth1Handler {
 		return $redir;
 	}
 
-	public function authorize( \WebResponse $response, $url ) {
+	public function authorize( WebResponse $response, $url ) {
 		$response->header( "Location: $url", true );
 	}
 
