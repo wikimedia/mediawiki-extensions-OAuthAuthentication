@@ -2,6 +2,7 @@
 namespace MediaWiki\Extension\OAuthAuthentication;
 
 use MediaWiki\Request\FauxRequest;
+use MediaWiki\Title\Title;
 
 /**
  * @coversDefaultClass \MediaWiki\Extension\OAuthAuthentication\Hooks
@@ -17,7 +18,7 @@ class OAuthAuthHooksTest extends OAuthAuthDBTest {
 	public function testOnSkinTemplateNavigation__Universal() {
 		$links = [ 'user-menu' => [ 'login' => [ 'href' => 'fail' ] ] ];
 
-		$title = $this->createMock( \Title::class );
+		$title = $this->createMock( Title::class );
 		$user = $this->getMockBuilder( \User::class )
 			->onlyMethods( [ 'getId' ] )
 			->getMock();
