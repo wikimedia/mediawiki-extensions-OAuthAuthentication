@@ -21,18 +21,8 @@
 	"ExtensionMessagesFiles": {
 		"SpecialOAuthLoginNoTranslate": "OAuthAuthentication.notranslate-alias.php"
 	},
-	"AutoloadClasses": {
-		"MediaWiki\\Extension\\OAuthAuthentication\\SpecialOAuthLogin": "specials/SpecialOAuthLogin.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\Config": "utils/Config.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\Exception": "utils/Exception.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\Hooks": "utils/Hooks.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\Schema": "utils/Schema.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\Policy": "utils/Policy.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthExternalUser": "utils/OAuthExternalUser.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\AuthenticationHandler": "handlers/AuthenticationHandler.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\OAuth1Handler": "handlers/OAuth1Handler.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\SessionStore": "store/SessionStore.php",
-		"MediaWiki\\Extension\\OAuthAuthentication\\PhpSessionStore": "store/PhpSessionStore.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\OAuthAuthentication\\": "includes/"
 	},
 	"TestAutoloadClasses": {
 		"MediaWiki\\Extension\\OAuthAuthentication\\OAuthAuthDBTest": "tests/phpunit/OAuthAuthDBTest.php"
