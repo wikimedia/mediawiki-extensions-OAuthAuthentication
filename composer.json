@@ -18,7 +18,7 @@
 		"docs": "https://www.mediawiki.org/wiki/Extension:OAuthAuthentication"
 	},
 	"require": {
-		"composer/installers": "~1.0",
+		"composer/installers": "~1.0|~2",
 		"mediawiki/oauthclient": "~2.3.0"
 	},
 	"require-dev": {
